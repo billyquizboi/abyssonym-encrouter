@@ -1,6 +1,7 @@
 from utils import read_multi
 from math import log
-from monster import monsterdict
+from monster import monsterdict, monsters_from_table
+from sys import argv
 
 
 class Formation():
@@ -10,8 +11,17 @@ class Formation():
         self.auxpointer = 0xf5900 + (formid*4)
 
     def __repr__(self):
-        s = "%s %s" % (self.formid, [e.name for e in self.present_enemies])
-        return s
+        counter = {}
+        for e in self.present_enemies:
+            if e.name not in counter:
+                counter[e.name] = 0
+            counter[e.name] += 1
+        s = ""
+        for name, count in sorted(counter.items()):
+            s = ', '.join([s, "%s x%s" % (name, count)])
+        s = s[2:]
+        #return s
+        return "%s (%x)" % (s, self.formid)
 
     def read_data(self, filename):
         f = open(filename, 'r+b')
@@ -100,9 +110,13 @@ class FormationSet():
         self.pointer = baseptr + (setid * 8)
         self.floatingcontinent = False
 
+    @property
+    def overworld(self):
+        return self.setid <= 0x38
+
     def __repr__(self):
         s = ""
-        s += "SET ID %x\n" % self.setid
+        s += "PACK ID %x\n" % self.setid
         for f in self.formations:
             s += "%s\n" % str(f)
         return s.strip()
@@ -129,12 +143,16 @@ class FormationSet():
         return sum(f.rank() for f in self.formations) / 4.0
 
 
-def fsets_from_rom(filename):
-    formations = [Formation(i) for i in range(576)]
+def formations_from_rom(filename):
+    formations = [Formation(i) for i in xrange(576)]
     for f in formations:
         f.read_data(filename)
         f.lookup_enemies()
+        #print f
+    return formations
 
+
+def fsets_from_rom(filename, formations):
     fsets = []
     for i in xrange(0x100):
         f = FormationSet(i)
@@ -143,3 +161,15 @@ def fsets_from_rom(filename):
         fsets.append(f)
 
     return fsets
+
+
+if __name__ == "__main__":
+    filename = argv[1]
+    monsters = monsters_from_table()
+    formations = formations_from_rom(filename)
+    for f in formations:
+        print f
+    fsets = fsets_from_rom(filename, formations)
+    for fset in fsets:
+        print fset
+        print

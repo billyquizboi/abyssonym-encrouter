@@ -1,0 +1,24 @@
+# Narshe
+ev  0   2
+ev  0   29
+ev  0   54
+39  40  29
+ev  0   1b0
+39  40  1
+3a  70  16
+ev  0   1bf
+#3a  70  75
+3a  70  87
+ev  0   1e5
+ev  0   4
+# Outside of Narshe
+0   60  32-4
+2   C0! 1
+0   60! 1
+2   C0! 1
+0   60! 7
+0   C0  2
+1   C0  3
+0   C0  3
+1   C0  10
+# Figaro Castle
