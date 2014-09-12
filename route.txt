@@ -2,12 +2,14 @@
 ev  0   2
 ev  0   29
 ev  0   54
+re  xp  0
 39  40  29
 ev  0   1b0
 39  40  1
 3a  70  16
 ev  0   1bf
 3a  70  75
+re  xp  151
 ev  0   1e5
 ev  0   4
 # Outside of Narshe

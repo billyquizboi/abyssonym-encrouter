@@ -109,6 +109,7 @@ class Formation():
 
     @property
     def cost(self):
+        #return 1000
         cost = 5
         if not (len(self.present_enemies) == 1 or self.pincer_prohibited):
             cost += 3
@@ -119,6 +120,12 @@ class Formation():
         cost += len(self.present_enemies)
 
         return cost
+
+    @property
+    def xp(self):
+        xp = sum(e.stats['xp'] for e in self.present_enemies)
+        #print self, xp
+        return xp
 
 
 class FormationSet():
