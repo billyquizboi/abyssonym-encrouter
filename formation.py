@@ -21,7 +21,7 @@ class Formation():
             s = ', '.join([s, "%s x%s" % (name, count)])
         s = s[2:]
         #return s
-        return "%s (%x)" % (s, self.formid)
+        return "%s (%x) cost %s" % (s, self.formid, self.cost)
 
     def read_data(self, filename):
         f = open(filename, 'r+b')
@@ -95,12 +95,30 @@ class Formation():
             if enemy:
                 enemy.update_size(width, height)
 
-    def rank(self):
-        levels = [e.stats['level'] for e in self.enemies if e]
-        balance = sum(levels) / (log(len(levels))+1)
-        average = sum(levels) / len(levels)+1
-        score = max(levels) + balance + average
-        return score
+    @property
+    def pincer_prohibited(self):
+        return self.misc1 & 0x40
+
+    @property
+    def back_prohibited(self):
+        return self.misc1 & 0x20
+
+    @property
+    def inescapable(self):
+        return any([e.inescapable for e in self.present_enemies])
+
+    @property
+    def cost(self):
+        cost = 5
+        if not (len(self.present_enemies) == 1 or self.pincer_prohibited):
+            cost += 3
+        if not self.back_prohibited:
+            cost += 2
+        if self.inescapable:
+            cost += 15
+        cost += len(self.present_enemies)
+
+        return cost
 
 
 class FormationSet():
@@ -138,6 +156,7 @@ class FormationSet():
             f = [j for j in formations if j.formid == i]
             f = f[0]
             self.formations.append(f)
+        self.best_formation = min(self.formations, key=lambda f: f.cost)
 
     def rank(self):
         return sum(f.rank() for f in self.formations) / 4.0
@@ -166,6 +185,8 @@ def fsets_from_rom(filename, formations):
 if __name__ == "__main__":
     filename = argv[1]
     monsters = monsters_from_table()
+    for m in monsters:
+        m.read_stats(filename)
     formations = formations_from_rom(filename)
     for f in formations:
         print f

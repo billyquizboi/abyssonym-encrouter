@@ -85,6 +85,9 @@ class MonsterBlock:
     def floating(self):
         return self.statuses[2] & 0x1
 
+    @property
+    def inescapable(self):
+        return self.misc2 & 0x08
 
 monsterdict = {}
 
