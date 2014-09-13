@@ -69,6 +69,7 @@ class Formation():
             if not e:
                 continue
             e.add_mould(self.mould)
+        self.num_enemies = len(self.present_enemies)
 
     def set_big_enemy_ids(self, eids):
         self.bosses = 0
@@ -111,13 +112,13 @@ class Formation():
     def cost(self):
         #return 1000
         cost = 5
-        if not (len(self.present_enemies) == 1 or self.pincer_prohibited):
+        if not (self.num_enemies == 1 or self.pincer_prohibited):
             cost += 3
         if not self.back_prohibited:
             cost += 2
         if self.inescapable:
             cost += 15
-        cost += len(self.present_enemies)
+        cost += self.num_enemies
 
         return cost
 
@@ -185,6 +186,8 @@ def fsets_from_rom(filename, formations):
         f.read_data(filename)
         f.set_formations(formations)
         fsets.append(f)
+        #print f
+        #print
 
     return fsets
 

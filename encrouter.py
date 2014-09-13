@@ -4,6 +4,7 @@ from formation import formations_from_rom, fsets_from_rom
 from Queue import PriorityQueue
 
 STEP_VALUE = 0.1
+#STEP_VALUE = 1
 
 
 def get_rng_string(filename):
@@ -25,12 +26,17 @@ class Route():
         self.resetting = False
         self.boundary_flag = False
         self.overworld_threatrate = None
+        #self.forced_encounters = 0
+        self.last_forced_encounter = None
+        self.last_reset = None
+        self.num_encounters = 0
         self.xp = 0
 
     def __repr__(self):
         s = ""
         for attribute in ["stepseed", "battleseed", "stepcounter",
-                          "battlecounter", "threat", "initialseed"]:
+                          "battlecounter", "threat", "initialseed",
+                          "num_encounters"]:
             s += "%s: %x\n" % (attribute, getattr(self, attribute))
         s += "cost: %s\n" % self.cost
         return s.strip()
@@ -55,7 +61,8 @@ class Route():
                           "stepcounter", "battlecounter", "threat",
                           "rng", "cost", "travelog", "scriptptr", "seed",
                           "resetting", "boundary_flag",
-                          "overworld_threatrate", "xp"]:
+                          "last_forced_encounter", "last_reset",
+                          "overworld_threatrate", "xp", "num_encounters"]:
             setattr(new, attribute, getattr(self, attribute))
         return new
 
@@ -100,6 +107,8 @@ class Route():
             self.predict_encounters(instr)
         elif instr.event:
             self.travelog += "EVENT: %s\n" % instr.formation
+            self.increment_battle(rng=False)
+            self.overworld_threatrate = None
 
         return True
 
@@ -117,6 +126,8 @@ class Route():
             total += 1
 
             if self.take_a_step(instr):
+                #self.travelog += "STEP %s: \n" % taken
+                #self.travelog += "%s\n" % self
                 if steps == 0:
                     self.cost += 1
                     self.boundary_flag = True
@@ -141,6 +152,7 @@ class Route():
         self.increment_step()
         if self.predict_battle():
             self.increment_battle()
+            self.num_encounters += 1
             formation = self.predict_formation(instr.fset)
             self.xp += formation.xp
             self.cost += formation.cost
@@ -151,12 +163,42 @@ class Route():
 
             return formation
 
+    @property
+    def force_value(self):
+        if self.last_forced_encounter is None:
+            return None
+        diff = self.num_encounters - self.last_forced_encounter
+        return diff
+
+    def check_is_boundary(self):
+        instr = None
+        if (self.previous_instr and self.previous_instr.travel
+                and self.previous_instr.steps >= 2):
+            for i in range(self.scriptptr, self.scriptlength):
+                instr = Route.script[i]
+                if instr.travel:
+                    break
+            if self.previous_instr.fset == instr.fset:
+                return False
+        return bool(instr)
+
     def force_additional_encounter(self):
         if not self.boundary_flag:
             self.cost += 1
+        distance = self.force_value
+        if distance is not None:
+            if distance < 10:
+                return False
+            else:
+                factor = max(0, 20 - distance)
+                self.cost += (2 ** factor)
+        #self.forced_encounters += 1
+        #self.cost += (5 ** self.forced_encounters)
         instr = self.previous_instr
+        self.last_forced_encounter = self.num_encounters
         step = 0
         done = False
+        self.travelog += "*** FORCE ADDITIONAL ENCOUNTER ***\n"
         while True:
             step += 1
             if self.take_a_step(instr):
@@ -165,7 +207,7 @@ class Route():
             if done and (step & 1) == 0:
                 break
 
-        self.travelog += "*** FORCE ADDITIONAL ENCOUNTER ***\n"
+        return True
 
     @property
     def heuristic(self):
@@ -185,11 +227,20 @@ class Route():
                 tempcost += instruction.steps * STEP_VALUE
                 for i in xrange(instruction.steps):
                     tempthreat += instruction.threatrate
-                    if tempthreat >= 0xFF00:
+                    #if tempthreat >= 0xFF00:
+                    #if tempthreat >= 0x8000:
+                    if tempthreat >= 0x2000:
                         tempcost += best_encounter.cost
-                        best_encounter = None
+                        best_encounter = instruction.best_encounter
                         tempthreat = 0
         return tempcost
+
+    @property
+    def reset_value(self):
+        if self.last_reset is None:
+            return None
+        diff = self.num_encounters - self.last_reset
+        return diff
 
     def reset_one(self):
         self.cost += 25
@@ -198,9 +249,9 @@ class Route():
         self.travelog += "*** SAVE AND RESET TO TITLE SCREEN ***\n"
 
     def reset_fifteen(self):
-        self.cost += 40
         self.resetting = False
         self.set_seed(self.seed+15)
+        self.last_reset = self.num_encounters
         self.travelog += "*** SAVE AND RELOAD ***\n"
 
     def menu_reset_threatrate(self):
@@ -220,34 +271,47 @@ class Route():
             child = self.copy()
             child.reset_fifteen()
             children.append(child)
+            #children = [c for c in children if c.execute_script()]
             return children
 
-        if (self.previous_instr and self.previous_instr.travel
-                and self.previous_instr.steps >= 2):
+        if self.check_is_boundary():
             # force encounter
             child = self.copy()
-            child.force_additional_encounter()
-            children.append(child)
+            if child.force_additional_encounter():
+                if child.execute_script():
+                    children.append(child)
 
         if instr.travel:
             if (self.overworld_threatrate and instr.fset.overworld and
                     self.overworld_threatrate != instr.threatrate):
                 # change threat rate
-                child = self.copy()
-                child.menu_reset_threatrate()
-                children.append(child)
-            if ((self.overworld_threatrate and not instr.fset.overworld) or
-                    (instr.fset.overworld and not self.overworld_threatrate)):
-                # reset seed
-                child = self.copy()
-                child.reset_one()
-                children.append(child)
-                child = self.copy()
-                child.reset_fifteen()
-                children.append(child)
+                #child = self.copy()
+                #child.menu_reset_threatrate()
+                #children.append(child)
+                pass
+            distance = self.reset_value
+            if self.previous_instr.travel and (distance is None or distance >= 10):
+                if ((self.overworld_threatrate and not instr.fset.overworld) or
+                        (instr.fset.overworld and not self.overworld_threatrate)):
+                    # reset seed
+                    costval = 20
+                    if distance is not None:
+                        factor = max(0, 20 - distance)
+                        costval += (2 ** factor)
+                    child = self.copy()
+                    child.reset_one()
+                    child.cost += costval
+                    children.append(child)
+                    child = self.copy()
+                    child.reset_fifteen()
+                    child.cost += costval
+                    children.append(child)
 
+        #if self.execute_script():
+        #    children.append(self)
         if self.execute_script():
             children.append(self)
+        #children = [c for c in children if c.execute_script()]
         return children
 
 
@@ -255,6 +319,9 @@ class Instruction():
     def __init__(self):
         self.event, self.travel = False, False
         self.restriction = False
+
+    def __repr__(self):
+        return "event" if self.event else "travel" if self.travel else "restriction" if self.restriction else "None"
 
     def set_event(self, formation, rng=False):
         self.formation = formation
@@ -286,7 +353,9 @@ def encounter_search(routes):
     for r in routes:
         fringe.put((r.heuristic, r))
 
+    counter = 0
     while True:
+        counter += 1
         p, node = fringe.get()
         if node.scriptptr == Route.scriptlength:
             return node
@@ -294,6 +363,9 @@ def encounter_search(routes):
         for child in node.expand():
             fringe.put((child.heuristic, child))
 
+        if not counter % 1000:
+            print fringe.qsize()
+            #print child.scriptlength - child.scriptptr
         if fringe.qsize() == 0:
             raise Exception("No valid solutions found.")
 
@@ -339,6 +411,7 @@ def format_script(fsets, formations, filename):
                          steps=steps, force_threat=force_threat)
 
         Route.script.append(i)
+    Route.travelscript = [i for i in Route.script if i.travel]
     Route.scriptlength = len(Route.script)
 
 
@@ -354,6 +427,7 @@ if __name__ == "__main__":
     threat = 0x0
     rng = get_rng_string(filename)
     routes = [Route(seed, rng, threat) for seed in range(0x100)]
+    #routes = [Route(244, rng, threat)]
     format_script(fsets, formations, routefile)
     solution = encounter_search(routes)
     print solution
