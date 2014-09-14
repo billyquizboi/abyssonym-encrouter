@@ -89,6 +89,12 @@ class MonsterBlock:
     def inescapable(self):
         return self.misc2 & 0x08
 
+    @property
+    def escape_difficult(self):
+        if self.inescapable:
+            return False
+        return self.misc2 & 0x01
+
 monsterdict = {}
 
 

@@ -109,6 +109,10 @@ class Formation():
         return any([e.inescapable for e in self.present_enemies])
 
     @property
+    def escape_difficult(self):
+        return any([e.escape_difficult for e in self.present_enemies])
+
+    @property
     def cost(self):
         #return 1000
         cost = 5
@@ -118,6 +122,8 @@ class Formation():
             cost += 2
         if self.inescapable:
             cost += 15
+        elif self.escape_difficult:
+            cost += 5
         cost += self.num_enemies
 
         return cost
