@@ -1,7 +1,9 @@
 from utils import read_multi
-from math import log
 from monster import monsterdict, monsters_from_table
 from sys import argv
+
+
+BASE_COST = 10
 
 
 class Formation():
@@ -21,7 +23,7 @@ class Formation():
             s = ', '.join([s, "%s x%s" % (name, count)])
         s = s[2:]
         #return s
-        return "%s (%x) cost %s" % (s, self.formid, self.cost)
+        return "%s (%x)" % (s, self.formid)
 
     def read_data(self, filename):
         f = open(filename, 'r+b')
@@ -105,6 +107,10 @@ class Formation():
         return self.misc1 & 0x20
 
     @property
+    def front_prohibited(self):
+        return self.misc1 & 0x10
+
+    @property
     def inescapable(self):
         return any([e.inescapable for e in self.present_enemies])
 
@@ -112,19 +118,30 @@ class Formation():
     def escape_difficult(self):
         return any([e.escape_difficult for e in self.present_enemies])
 
-    @property
-    def cost(self):
-        #return 1000
-        cost = 5
-        if not (self.num_enemies == 1 or self.pincer_prohibited):
-            cost += 3
+    def cost(self, weight=1.0, smokebombs=False, avoidgau=False):
+        if avoidgau and self.front_prohibited:
+            return 1
+
+        cost = 1
+        if not smokebombs and weight >= 1:
+            cost = cost * weight * self.num_enemies
+        else:
+            cost = cost * weight
+        if self.escape_difficult and not self.inescapable and not smokebombs:
+            cost += 4 * weight
         if not self.back_prohibited:
             cost += 2
+        if not (self.num_enemies == 1 or self.pincer_prohibited):
+            value = 3
+            if not smokebombs:
+                #value = value * max(1, weight) * self.num_enemies
+                value = value * self.num_enemies
+            cost += value
         if self.inescapable:
-            cost += 15
-        elif self.escape_difficult:
-            cost += 5
-        cost += self.num_enemies
+            cost += 20
+            if avoidgau:
+                cost += 30
+        cost += BASE_COST
 
         return cost
 
@@ -139,7 +156,11 @@ class FormationSet():
     def __init__(self, setid):
         baseptr = 0xf4800
         self.setid = setid
-        self.pointer = baseptr + (setid * 8)
+        if self.setid <= 0xFF:
+            self.pointer = baseptr + (setid * 8)
+        else:
+            self.pointer = baseptr + (0x100 * 8) + ((setid - 0x100) * 4)
+
         self.floatingcontinent = False
 
     @property
@@ -157,7 +178,11 @@ class FormationSet():
         f = open(filename, 'r+b')
         f.seek(self.pointer)
         self.formids = []
-        for i in xrange(4):
+        if self.setid <= 0xFF:
+            num_encounters = 4
+        else:
+            num_encounters = 2
+        for i in xrange(num_encounters):
             self.formids.append(read_multi(f, length=2))
         f.close()
 
@@ -187,13 +212,11 @@ def formations_from_rom(filename):
 
 def fsets_from_rom(filename, formations):
     fsets = []
-    for i in xrange(0x100):
+    for i in xrange(0x200):
         f = FormationSet(i)
         f.read_data(filename)
         f.set_formations(formations)
         fsets.append(f)
-        #print f
-        #print
 
     return fsets
 
