@@ -4,8 +4,6 @@ from formation import formations_from_rom, fsets_from_rom
 from Queue import PriorityQueue
 
 STEP_VALUE = 1
-
-
 fsetdict = {}
 
 
@@ -104,7 +102,7 @@ class Route():
         best = None
         cost, bestcost = 0, 0
         bestnum = 0
-        for i in xrange(20):
+        for i in xrange(50):
             battlecounter = Route.riversequence[seed].count(True)
             if battlecounter <= 3:
                 if best is None and battlecounter == 3:
@@ -217,7 +215,30 @@ class Route():
                 else:
                     setattr(self, instr.rtype, 0)
         elif instr.travel:
-            self.predict_encounters(instr)
+            formations = self.predict_encounters(instr)
+            if instr.veldt and not instr.avoidgau:
+                if instr.seek_rage:
+                    for f in formations:
+                        if f.formid in instr.desired_formations:
+                            break
+                    else:
+                        for _ in xrange(10):
+                            f = self.force_additional_encounter(show_avoided=False)
+                            if f:
+                                formations.append(f)
+                                if f.formid in instr.desired_formations:
+                                    break
+                        else:
+                            return False
+
+                    if f == formations[-1]:
+                        self.force_additional_encounter()
+                    elif f == formations[0]:
+                        cost = 20
+                        self.travelog += "*** VELDT PENALTY +%s ***\n" % cost
+                        self.cost += cost
+
+                return True
         elif instr.event:
             self.travelog += "EVENT: %s\n" % instr.formation
             if instr.formation.formid < 0x200:
@@ -248,12 +269,14 @@ class Route():
         steps = instr.steps
         self.boundary_flag = False
 
+        formations = []
         while True:
             steps -= 1
             taken += 1
             total += 1
 
-            if self.take_a_step(instr):
+            formation = self.take_a_step(instr)
+            if formation:
                 #self.travelog += "STEP %s: \n" % taken
                 #self.travelog += "%s\n" % self
                 #if steps <= 1:
@@ -264,9 +287,10 @@ class Route():
                 if taken <= 4:
                     self.cost += 1
                 taken = 0
+                formations.append(formation)
 
             if steps == 0:
-                return
+                return formations
 
     def take_a_step(self, instr):
         if instr.force_threat:
@@ -283,6 +307,13 @@ class Route():
         self.cost += STEP_VALUE
         self.threat += threatrate
         if self.predict_battle():
+            if instr.veldt:
+                '''
+                self.travelog += "%x %x %x %x %x\n" % (
+                    self.stepseed, self.stepcounter, self.battleseed,
+                    self.battlecounter, self.threat)
+                '''
+
             self.num_encounters += 1
             if instr.veldt:
                 formation = self.predict_veldt_formation()
@@ -330,30 +361,26 @@ class Route():
                 return False
         return bool(instr)
 
-    def force_additional_encounter(self):
+    def force_additional_encounter(self, show_avoided=True):
         if not self.boundary_flag:
             self.cost += 1
         self.boundary_flag = False
-        distance = self.force_value
-        if distance is not None:
-            if distance < 2:
-                return False
-
         self.travelog += "*** FORCE ADDITIONAL ENCOUNTER ***\n"
-        parallel = self.copy()
-        parallel.travelog = ""
-        avoidance = None
-        while True:
-            if parallel.scriptptr == Route.scriptlength:
-                break
+        if show_avoided:
+            parallel = self.copy()
+            parallel.travelog = ""
+            avoidance = None
+            while True:
+                if parallel.scriptptr == Route.scriptlength:
+                    break
 
-            parallel.execute_script()
-            if "ENCOUNTER:" in parallel.travelog or "RANDOM EVENT:" in parallel.travelog:
-                avoidance = parallel.travelog.strip().split('\n')[-1]
-                assert avoidance
-                avoidance = avoidance.replace("ENCOUNTER:", "AVOIDED:")
-                avoidance = avoidance.replace("RANDOM EVENT:", "AVOIDED:")
-                break
+                parallel.execute_script()
+                if "ENCOUNTER:" in parallel.travelog or "RANDOM EVENT:" in parallel.travelog:
+                    avoidance = parallel.travelog.strip().split('\n')[-1]
+                    assert avoidance
+                    avoidance = avoidance.replace("ENCOUNTER:", "AVOIDED:")
+                    avoidance = avoidance.replace("RANDOM EVENT:", "AVOIDED:")
+                    break
 
         self.last_forced_encounter = self.num_encounters
         step = 0
@@ -361,16 +388,21 @@ class Route():
         instr = self.previous_instr
         while True:
             step += 1
-            if self.take_a_step(instr):
+            if not done:
+                formation = self.take_a_step(instr)
+            else:
+                self.take_a_step(instr)
+
+            if formation:
                 done = True
 
             if done and (step & 1) == 0:
                 break
 
-        if avoidance:
+        if show_avoided and avoidance:
             self.travelog += avoidance + "\n"
 
-        return True
+        return formation
 
     @property
     def heuristic(self):
@@ -429,6 +461,12 @@ class Route():
         instr = Route.script[self.scriptptr]
         if instr.veldt:
             self.travelog += "*** ENTER THE VELDT ***\n"
+            '''
+            self.travelog += "%x %x %x %x %x\n" % (
+                self.stepseed, self.stepcounter, self.battleseed,
+                self.battlecounter, self.threat)
+            '''
+
         if self.resetting:
             child = self.copy()
             child.reset_one()
@@ -441,10 +479,15 @@ class Route():
 
         if self.check_is_boundary():
             # force encounter
-            child = self.copy()
-            if child.force_additional_encounter():
-                if child.execute_script():
-                    children.append(child)
+            distance = self.force_value
+            if distance is not None and distance < 2:
+                pass
+            else:
+                child = self.copy()
+                if child.force_additional_encounter():
+                    if child.execute_script():
+                        children.append(child)
+                    #children.append(child)
 
         if instr.travel:
             '''
@@ -477,11 +520,9 @@ class Route():
         if instr.lete:
             pass
 
-        #if self.execute_script():
-        #    children.append(self)
         if self.execute_script():
             children.append(self)
-        #children = [c for c in children if c.execute_script()]
+
         return children
 
 
@@ -500,13 +541,20 @@ class Instruction():
     def set_lete(self):
         self.lete = True
 
-    def set_veldt(self, threatrate, steps):
+    def set_veldt(self, threatrate, steps, desired_rage):
         self.veldt = True
         self.travel = True
         self.threatrate = threatrate
         self.steps = steps
         self.force_threat = True
         self.avoidgau = False
+        if desired_rage is not None:
+            self.seek_rage = True
+            formations = [f.formid for f in Route.formations.values()
+                          if desired_rage in f.present_enemy_ids]
+            self.desired_formations = formations
+        else:
+            self.seek_rage = False
 
     def set_weight(self, weight):
         self.weight = True
@@ -541,20 +589,27 @@ class Instruction():
         return min(self.fset.formations, key=lambda f: f.cost())
 
 
-def encounter_search(routes, number=1):
+def encounter_search(routes, number=1, anynode=True, maxsize=25000):
     fringe = PriorityQueue()
     for r in routes:
         fringe.put((r.heuristic, r))
 
     counter = 0
     progress = 0
+    highest = 0
     solutions = []
     while len(solutions) < number:
         counter += 1
         p, node = fringe.get()
+        highest = max(highest, node.scriptptr)
         if node.scriptptr == Route.scriptlength:
-            solutions.append(node)
-            continue
+            if anynode or len([s for s in solutions if s.initialseed == node.initialseed]) < 2:
+                solutions.append(node)
+
+            if fringe.qsize() == 0:
+                break
+            else:
+                continue
 
         for child in node.expand():
             fringe.put((child.heuristic, child))
@@ -562,8 +617,7 @@ def encounter_search(routes, number=1):
         if not counter % 1000:
             size = fringe.qsize()
             nextsize = size
-            while nextsize > 25000:
-            #while nextsize > 1000:
+            while nextsize > maxsize:
                 progress += 1
                 print "%s/%s" % (progress, Route.scriptlength)
                 newfringe = PriorityQueue()
@@ -574,9 +628,9 @@ def encounter_search(routes, number=1):
                 fringe = newfringe
                 nextsize = fringe.qsize()
             if nextsize != size:
-                print size, nextsize
+                print highest, size, nextsize
             else:
-                print nextsize
+                print highest, nextsize
             #print child.scriptlength - child.scriptptr
         if fringe.qsize() == 0:
             raise Exception("No valid solutions found.")
@@ -593,6 +647,9 @@ def encounter_search(routes, number=1):
 
 def format_script(fsets, formations, filename):
     Route.script = []
+    Route.fsets = dict((f.setid, f) for f in fsets)
+    Route.formations = dict((f.formid, f) for f in formations)
+    veldted = False
     for line in open(filename):
         line = line.strip()
         if line[0] == "#":
@@ -604,7 +661,6 @@ def format_script(fsets, formations, filename):
         setid, threatrate, steps = parameters
 
         i = Instruction()
-        veldted = False
         if setid == "ev":
             steps = int(steps, 0x10)
             i.set_event(formation=formations[steps])
@@ -614,9 +670,14 @@ def format_script(fsets, formations, filename):
         elif setid == "lete":
             i.set_lete()
         elif setid == "vl":
-            threatrate = int(threatrate, 0x10)
-            steps = int(steps, 0x10)
-            i.set_veldt(threatrate=threatrate, steps=steps)
+            try:
+                desired_rage = int(threatrate, 0x10)
+            except ValueError:
+                desired_rage = None
+            threatrate = 0xC0
+            steps = int(steps)
+            i.set_veldt(threatrate=threatrate, steps=steps,
+                        desired_rage=desired_rage)
             if not veldted:
                 i.avoidgau = True
                 veldted = True
@@ -663,8 +724,6 @@ def format_script(fsets, formations, filename):
     Route.leterng = table_from_file("tables/leterng.txt", hexify=True)
     assert 2 in Route.leterng
     Route.returnerrng = table_from_file("tables/returnerrng.txt", hexify=True)
-    Route.fsets = dict((f.setid, f) for f in fsets)
-    Route.formations = dict((f.formid, f) for f in formations)
     Route.veldtpacks = {}
     for i in range(64):
         a = i * 8
@@ -690,13 +749,16 @@ if __name__ == "__main__":
     #seed = 244
     threat = 0x0
     rng = get_rng_string(filename)
-    #routes = [Route(seed, rng, threat) for seed in range(0x100)]
+    routes = [Route(seed, rng, threat) for seed in range(0x100)]
     #routes = [Route(244, rng, threat)]
-    routes = [Route(232, rng, threat)]
+    #routes = [Route(232, rng, threat)]
     #routes = [Route(21, rng, threat)]
-    #routes = [Route(seed, rng, threat) for seed in [21, 232, 244]]
+    #routes = [Route(seed, rng, threat) for seed in [248, 249]]
     format_script(fsets, formations, routefile)
-    solutions = encounter_search(routes, number=10)
+    #solutions = encounter_search(routes, number=1, anynode=True)
+    solutions = encounter_search(routes, number=20, anynode=False, maxsize=25000)
+    #solutions = encounter_search(routes, number=2, anynode=True, maxsize=10000)
+    #solutions = encounter_search(routes, number=10, anynode=True)
     f = open("report.txt", "w+")
     for solution in solutions:
         f.write("INITIAL SEED: %s\n" % solution.initialseed)

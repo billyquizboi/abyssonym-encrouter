@@ -5,6 +5,16 @@ from sys import argv
 
 BASE_COST = 10
 
+customcosts = {}
+for line in open("tables/customcosts.txt"):
+    line = line.strip()
+    while '  ' in line:
+        line = line.replace('  ', ' ')
+    formid, cost = tuple(line.split())
+    formid = int(formid, 0x10)
+    cost = int(cost)
+    customcosts[formid] = cost
+
 
 class Formation():
     def __init__(self, formid):
@@ -53,6 +63,10 @@ class Formation():
     @property
     def present_enemies(self):
         return [e for e in self.enemies if e]
+
+    @property
+    def present_enemy_ids(self):
+        return [e.id for e in self.present_enemies]
 
     def lookup_enemies(self):
         self.enemies = []
@@ -119,6 +133,9 @@ class Formation():
         return any([e.escape_difficult for e in self.present_enemies])
 
     def cost(self, weight=1.0, smokebombs=False, avoidgau=False):
+        if self.formid in customcosts:
+            return customcosts[self.formid]
+
         if avoidgau and self.front_prohibited:
             return 1
 
