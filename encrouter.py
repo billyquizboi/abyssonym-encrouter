@@ -42,7 +42,6 @@ class Route():
         self.cost = 0
         self.travelog = ""
         self.scriptptr = 0
-        self.resetting = False
         self.boundary_flag = False
         self.overworld_threatrate = None
         #self.forced_encounters = 0
@@ -84,7 +83,7 @@ class Route():
         for attribute in ["initialseed", "stepseed", "battleseed", "veldtseed",
                           "stepcounter", "battlecounter", "threat",
                           "rng", "cost", "travelog", "scriptptr", "seed",
-                          "resetting", "boundary_flag", "weight",
+                          "boundary_flag", "weight",
                           "last_forced_encounter", "last_reset",
                           "overworld_threatrate", "xp", "num_encounters"]:
             setattr(new, attribute, getattr(self, attribute))
@@ -439,12 +438,11 @@ class Route():
 
     def reset_one(self):
         self.cost += 55
-        self.resetting = True
         self.set_seed(self.seed+1)
-        self.travelog += "*** SAVE AND RESET TO TITLE SCREEN ***\n"
+        self.travelog += "*** SAVE AND RESET TO GAME LOAD SCREEN ***\n"
 
     def reset_fourteen(self):
-        self.resetting = False
+        self.cost += 60
         self.set_seed(self.seed+14)
         self.last_reset = self.num_encounters
         self.travelog += "*** SAVE AND RELOAD ***\n"
@@ -467,22 +465,12 @@ class Route():
                 self.battlecounter, self.threat)
             '''
 
-        if self.resetting:
-            child = self.copy()
-            child.reset_one()
-            children.append(child)
-            child = self.copy()
-            child.reset_fourteen()
-            children.append(child)
-            #children = [c for c in children if c.execute_script()]
-            return children
-
         if self.check_is_boundary():
             # force encounter
             distance = self.force_value
             if distance is not None and distance < 2:
                 pass
-            else:
+            elif self.scriptptr < (Route.scriptlength-1):
                 child = self.copy()
                 if child.force_additional_encounter():
                     if child.execute_script():
@@ -504,18 +492,21 @@ class Route():
                 if ((self.overworld_threatrate and not instr.fset.overworld) or
                         (instr.fset.overworld and not self.overworld_threatrate)):
                     # reset seed
-                    costval = 60
-                    factor = max(0, 20 - distance)
-                    costval += (2 * factor)
                     if distance is None or distance >= 5:
-                        child = self.copy()
-                        child.reset_one()
-                        child.cost += costval
-                        children.append(child)
-                        child = self.copy()
-                        child.reset_fourteen()
-                        child.cost += costval
-                        children.append(child)
+                        prev = self.copy()
+                        resetted = [prev]
+                        for i in xrange(4):
+                            child = prev.copy()
+                            child.reset_one()
+                            resetted.append(child)
+                            prev = child
+
+                        for child in resetted:
+                            child.reset_fourteen()
+                            children.append(child)
+                            child2 = child.copy()
+                            child2.reset_fourteen()
+                            children.append(child2)
 
         if instr.lete:
             pass
@@ -757,7 +748,8 @@ if __name__ == "__main__":
     format_script(fsets, formations, routefile)
     #solutions = encounter_search(routes, number=1, anynode=True)
     solutions = encounter_search(routes, number=20, anynode=False, maxsize=25000)
-    #solutions = encounter_search(routes, number=2, anynode=True, maxsize=10000)
+    #solutions = encounter_search(routes, number=10, anynode=False, maxsize=5000)
+    #solutions = encounter_search(routes, number=10, anynode=True, maxsize=10000)
     #solutions = encounter_search(routes, number=10, anynode=True)
     f = open("report.txt", "w+")
     for solution in solutions:

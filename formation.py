@@ -136,8 +136,8 @@ class Formation():
         if self.formid in customcosts:
             return customcosts[self.formid]
 
-        if avoidgau and self.front_prohibited:
-            return 1
+        if avoidgau and self.inescapable and self.front_prohibited:
+            return BASE_COST
 
         cost = 1
         if not smokebombs and weight >= 1:
