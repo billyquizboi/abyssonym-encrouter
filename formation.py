@@ -133,6 +133,7 @@ class Formation():
         return any([e.escape_difficult for e in self.present_enemies])
 
     def cost(self, weight=1.0, smokebombs=False, avoidgau=False):
+        smokebombs = smokebombs and not self.inescapable
         if self.formid in customcosts:
             return customcosts[self.formid]
 
@@ -144,7 +145,7 @@ class Formation():
             cost = cost * weight * self.num_enemies
         else:
             cost = cost * weight
-        if self.escape_difficult and not self.inescapable and not smokebombs:
+        if self.escape_difficult and not smokebombs:
             cost += 4 * weight
         if not self.back_prohibited:
             cost += 2
