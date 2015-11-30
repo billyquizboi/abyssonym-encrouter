@@ -8,6 +8,8 @@ BASE_COST = 10
 customcosts = {}
 for line in open("tables/customcosts.txt"):
     line = line.strip()
+    if line and line[0] == '#':
+        continue
     while '  ' in line:
         line = line.replace('  ', ' ')
     formid, cost = tuple(line.split())
@@ -25,9 +27,10 @@ class Formation():
     def __repr__(self):
         counter = {}
         for e in self.present_enemies:
-            if e.name not in counter:
-                counter[e.name] = 0
-            counter[e.name] += 1
+            name = "%s %s %s" % (e.name, e.stats['level'], e.id)
+            if name not in counter:
+                counter[name] = 0
+            counter[name] += 1
         s = ""
         for name, count in sorted(counter.items()):
             s = ', '.join([s, "%s x%s" % (name, count)])
@@ -39,7 +42,6 @@ class Formation():
         f = open(filename, 'r+b')
         f.seek(self.pointer)
         self.mouldbyte = ord(f.read(1))
-        self.mould = self.mouldbyte >> 4
         self.enemies_present = ord(f.read(1))
         self.enemy_ids = map(ord, f.read(6))
         self.enemy_pos = map(ord, f.read(6))
@@ -136,6 +138,9 @@ class Formation():
         smokebombs = smokebombs and not self.inescapable
         if self.formid in customcosts:
             return customcosts[self.formid]
+
+        if self.front_prohibited and self.back_prohibited:
+            return 100 * weight
 
         if avoidgau and self.inescapable and self.front_prohibited:
             return BASE_COST
@@ -246,7 +251,7 @@ if __name__ == "__main__":
         m.read_stats(filename)
     formations = formations_from_rom(filename)
     for f in formations:
-        print f
+        print f, f.mould
     fsets = fsets_from_rom(filename, formations)
     for fset in fsets:
         print fset
