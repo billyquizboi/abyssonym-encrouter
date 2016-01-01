@@ -27,7 +27,8 @@ class Formation():
     def __repr__(self):
         counter = {}
         for e in self.present_enemies:
-            name = "%s %s %s" % (e.name, e.stats['level'], e.id)
+            #name = "%s %s %s" % (e.name, e.stats['level'], e.id)
+            name = e.name
             if name not in counter:
                 counter[name] = 0
             counter[name] += 1
@@ -36,7 +37,8 @@ class Formation():
             s = ', '.join([s, "%s x%s" % (name, count)])
         s = s[2:]
         #return s
-        return "%s (%x)" % (s, self.formid)
+        #return "%s (%x)" % (s, self.formid)
+        return "%s (%x) %s" % (s, self.formid, bool(self.pincer_prohibited))
 
     def read_data(self, filename):
         f = open(filename, 'r+b')
@@ -146,7 +148,7 @@ class Formation():
             return BASE_COST
 
         cost = 1
-        if not smokebombs and weight >= 1:
+        if not smokebombs and abs(weight) >= 1:
             cost = cost * weight * self.num_enemies
         else:
             cost = cost * weight

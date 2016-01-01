@@ -20,8 +20,9 @@ ev  0   4
 2   C0! 1
 0   60! 7
 0   C0  2
-1   C0  3
-0   C0  3
+1   C0  2
+0   60  4
+0   C0  2
 1   C0  9
 # Figaro Castle+Cave
 ev  0   22
@@ -52,7 +53,6 @@ wt  0   1.5
 wt  0   2.0
 lete 0  0
 wt  0   1.0
-# Sabin's scenario
 ev  0   183
 6   C0  25
 7   C0  2
@@ -93,10 +93,8 @@ ev  0   1b5
 8   C0  4
 ev  0   4f
 wt  0   3.0
-vl  no  51
-wt  0   1.0
-vl  no  51
-0   0   0
+#vl  no  51
+#wt  0   1.0
 #vl  18  51
 #wt  0   2.0
 #rd  0   113

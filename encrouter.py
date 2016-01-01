@@ -3,6 +3,7 @@ from monster import monsters_from_table
 from formation import formations_from_rom, fsets_from_rom
 from Queue import PriorityQueue
 
+JAPAN = False
 STEP_VALUE = 0.5
 fsetdict = {}
 
@@ -34,7 +35,11 @@ def get_rng_string(filename):
 
 
 def get_reset_bunch(node, ones=2, fourteens=2):
+    if JAPAN:
+        ones += 1
+        fourteens += 1
     prev = node.copy()
+    prev.cost += 20
     resetted = [prev]
     for i in xrange(ones):
         child = prev.copy()
@@ -71,6 +76,7 @@ class Route():
         self.weight = 1.0
         self.smokebombs = False
         self.seen_formations = set([])
+        self.gau_encounters = 0
 
     def __repr__(self):
         s = ""
@@ -112,7 +118,8 @@ class Route():
                           "rng", "cost", "travelog", "scriptptr", "seed",
                           "boundary_flag", "weight", "smokebombs",
                           "last_forced_encounter", "last_reset",
-                          "overworld_threatrate", "xp", "num_encounters"]:
+                          "overworld_threatrate", "xp", "num_encounters",
+                          "gau_encounters"]:
             setattr(new, attribute, getattr(self, attribute))
         new.seen_formations = set(self.seen_formations)
         return new
@@ -138,7 +145,7 @@ class Route():
                     bestnum = i
                     break
             #self.cost += STEP_VALUE * 2
-            cost += 0.1
+            #cost += 0.1
             seed = Route.returnerrng[seed]
         if best is None:
             return False
@@ -221,6 +228,11 @@ class Route():
             self.battleseed = self.battleseed & 0xFF
 
     def execute_script(self, debug=True):
+        if (self.previous_instr and self.previous_instr.veldt
+                and not self.previous_instr.avoidgau):
+            while self.gau_encounters <= 1:
+                self.force_additional_encounter(show_avoided=False)
+
         if self.scriptptr == Route.scriptlength:
             raise Exception("Script pointer out of bounds.")
         if debug:
@@ -278,12 +290,19 @@ class Route():
             self.overworld_threatrate = None
         elif instr.weight:
             self.weight = instr.weightval
-            if self.weight <= 0.09:
-                self.smokebombs = True
+            #if self.weight <= 0.09:
+            #    self.smokebombs = True
         elif instr.lete:
             return False
         elif instr.reset:
             return False
+        elif instr.force:
+            prevtrav = [i for i in self.script[:self.scriptptr] if i.travel][-1]
+            instr.force_threat = prevtrav.force_threat
+            instr.fset = prevtrav.fset
+            instr.threatrate = prevtrav.threatrate
+            self.force_additional_encounter()
+            return True
 
         return True
 
@@ -299,6 +318,9 @@ class Route():
 
         formations = []
         while True:
+            if steps == 0:
+                return formations
+
             steps -= 1
             taken += 1
             total += 1
@@ -316,9 +338,6 @@ class Route():
                     self.cost += 0.1
                 taken = 0
                 formations.append(formation)
-
-            if steps == 0:
-                return formations
 
     def take_a_step(self, instr, debug=True):
         if instr.force_threat:
@@ -345,6 +364,8 @@ class Route():
             self.num_encounters += 1
             if instr.veldt:
                 formation = self.predict_veldt_formation()
+                if not instr.avoidgau:
+                    self.gau_encounters += 1
             else:
                 formation = self.predict_formation(instr.fset)
             self.xp += formation.xp
@@ -434,6 +455,7 @@ class Route():
 
     @property
     def heuristic(self):
+        #return (self.num_encounters << 16) + self.cost + (self.threat >> 12)
         return self.cost + (self.threat >> 12)
 
         '''
@@ -471,15 +493,21 @@ class Route():
         return diff
 
     def reset_one(self):
-        self.cost += 30
+        if JAPAN:
+            self.cost += 10
+        else:
+            self.cost += 25
         self.set_seed(self.seed+1)
-        self.travelog += "*** SAVE AND RESET TO GAME LOAD SCREEN ***\n"
+        self.travelog += "*** RESET TO GAME LOAD SCREEN ***\n"
 
     def reset_fourteen(self):
-        self.cost += 50
+        if JAPAN:
+            self.cost += 15
+        else:
+            self.cost += 30
         self.set_seed(self.seed+14)
         self.last_reset = self.num_encounters
-        self.travelog += "*** SAVE AND RELOAD ***\n"
+        self.travelog += "*** RELOAD ***\n"
 
     def menu_reset_threatrate(self):
         self.cost += 1
@@ -519,7 +547,7 @@ class Route():
         if instr.travel and not instr.veldt and hasattr(instr, 'fset'):
             if (self.overworld_threatrate and instr.fset.overworld and
                     self.overworld_threatrate > instr.threatrate and
-                    not instr.force_threat):
+                    not instr.force_threat) and False:
                 # change threat rate
                 child = self.copy()
                 child.menu_reset_threatrate()
@@ -559,6 +587,7 @@ class Route():
             resetted = get_reset_bunch(self)
             for node in resetted:
                 child = node.copy()
+                #if child.get_best_river(battles=1) and child.execute_script():
                 if child.get_best_river(battles=0) and child.execute_script():
                     children.append(child)
                 continue
@@ -572,6 +601,12 @@ class Route():
                 child = node.copy()
                 child.execute_script()
                 children.append(child)
+        elif instr.force and False:
+            instr.force_threat = self.previous_instr.force_threat
+            instr.fset = self.previous_instr.fset
+            instr.threatrate = self.previous_instr.threatrate
+            self.force_additional_encounter()
+            children.append(self)
         elif self.execute_script():
             children.append(self)
 
@@ -587,6 +622,7 @@ class Instruction():
         self.random = False
         self.veldt = False
         self.reset = False
+        self.force = False
 
     def __repr__(self):
         return "event" if self.event else "travel" if self.travel else "restriction" if self.restriction else "lete" if self.lete else "None"
@@ -596,6 +632,9 @@ class Instruction():
 
     def set_reset(self):
         self.reset = True
+
+    def set_force(self):
+        self.force = True
 
     def set_veldt(self, threatrate, steps, desired_rage):
         self.veldt = True
@@ -675,13 +714,16 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
             nextsize = size
             while nextsize > maxsize:
                 progress += 1
-                print "%s/%s" % (progress, Route.scriptlength)
+                print "%s/%s/%s" % (progress, highest, Route.scriptlength)
                 newfringe = PriorityQueue()
                 seen_seeds = set([])
                 seen_sigs = set([])
                 toggler = [False] * 0x100
+                seencount = 0
+                fringesize = fringe.qsize()
                 while fringe.qsize() > 0:
                     p, node = fringe.get()
+                    seencount += 1
                     signature = (node.initialseed, node.scriptptr)
                     if (node.scriptptr >= progress or
                             node.initialseed not in seen_seeds or
@@ -690,7 +732,9 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
                         newfringe.put((p, node))
                         seen_sigs.add(signature)
                         seen_seeds.add(node.initialseed)
-                    elif toggler[node.initialseed] is False:
+                    elif (toggler[node.initialseed] is False
+                            or (node.scriptptr == highest
+                                and seencount < fringesize / 2)):
                         newfringe.put((p, node))
                         seen_sigs.add(signature)
                         seen_seeds.add(node.initialseed)
@@ -765,6 +809,8 @@ def format_script(fsets, formations, filename):
             i = None
         elif setid == "reset":
             i.set_reset()
+        elif setid == "fc":
+            i.set_force()
         else:
             setid = int(setid, 0x10)
             if "-" in steps:
@@ -826,32 +872,39 @@ if __name__ == "__main__":
     fsets = fsets_from_rom(filename, formations)
     for fset in fsets:
         fsetdict[fset.setid] = fset
-    #seed = 244
-    threat = 0x0
     rng = get_rng_string(filename)
-    #routes = [Route(seed, rng, threat) for seed in range(0x100)]
-    #routes = [Route(244, rng, threat)]
-    #routes = [Route(0xc6, rng, threat)]
-    #routes = [Route(0xb6, rng, threat)]
-    #routes = [Route(0xb5, rng, threat)]
-    #routes = [Route(245, rng, threat)]
-    #routes = [Route(0xa7, rng, threat)]
-    threats = [0xC0 * i for i in range(80)]
-    routes = [Route(seed, rng, t) for t in threats for seed in range(0x100)]
-    #routes = [Route(seed, rng, t) for t in threats for seed in [247]]
-    #routes = [Route(0xf4, rng, 0)]
-    #routes += [Route(0xf5, rng, t) for t in threats]
-    #routes = [Route(92, rng, threat)]  # 92 is the best FF4 seed
-    #routes = [Route(129, rng, threat)]
-    #routes = [Route(seed, rng, threat) for seed in [248, 249]]
+
+    threats = [0]
+    routes = [Route(seed, rng, t) for t in threats for seed in [96]]
+    #threats = [0xC0 * i for i in range(80, 160)]
+    #routes = [Route(seed, rng, t) for t in threats for seed in range(0x100)]
     format_script(fsets, formations, routefile)
-    #solutions = encounter_search(routes, number=20, anynode=True, maxsize=200000)
-    #solutions = encounter_search(routes, number=20, anynode=False, maxsize=100000)
-    solutions = encounter_search(routes, number=20, anynode=False, maxsize=200000)
-    #solutions = encounter_search(routes, number=20, anynode=False, maxsize=1000)
-    #solutions = encounter_search(routes, number=10, anynode=True, maxsize=25000)
-    #solutions = encounter_search(routes, number=10, anynode=False, maxsize=10000)
-    #solutions = encounter_search(routes, number=10, anynode=True, maxsize=1000)
+    maxsize = 10000
+    solutions = encounter_search(routes, number=20, anynode=False, maxsize=maxsize)
+    '''
+    import pdb; pdb.set_trace()
+    print len(solutions)
+    solutions = [s for s in solutions if "Were-Rat x3" in s.travelog]
+    print len(solutions)
+    solutions = [s for s in solutions if "Repo Man x1, Vaporite x1" in s.travelog]
+    print len(solutions)
+    solutions = [s for s in solutions if "Vaporite x2" not in s.travelog]
+    print len(solutions)
+    solutions = [s for s in solutions if "Were-Rat x2" not in s.travelog]
+    print len(solutions)
+    solutions = [s for s in solutions if "Areneid x2, Sand Ray x1" in s.travelog]
+    print len(solutions)
+    '''
+    '''
+    seeds = sorted(set([s.initialseed for s in solutions]))
+    #assert len(seeds) <= 20
+    #threats = [0xC0 * i for i in range(80, 160)]
+    threats = [0]
+    routes = [Route(seed, rng, t) for t in threats for seed in seeds]
+    del(solutions)
+    solutions = encounter_search(routes, number=20, anynode=False, maxsize=maxsize)
+    '''
+
     f = open(outfile, "w+")
     for solution in solutions:
         f.write("INITIAL SEED: %s\n" % solution.initialseed)

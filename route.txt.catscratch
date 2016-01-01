@@ -36,7 +36,7 @@ wt  0   1.5
 3d  70  6
 3f  70  40
 wt  0   1.0
-# Received Atlus Armlet
+# Received Atlas Armlet
 3f  70  54
 3d  70  7
 3e  70  25
@@ -52,7 +52,6 @@ wt  0   1.5
 wt  0   2.0
 lete 0  0
 wt  0   1.0
-# Sabin's scenario
 ev  0   183
 6   C0  25
 7   C0  2
@@ -95,9 +94,9 @@ ev  0   4f
 wt  0   3.0
 vl  no  51
 wt  0   1.0
-vl  no  51
-0   0   0
-#vl  18  51
+reset 0 0
+vl  18  51
+#vl  no  51
 #wt  0   2.0
 #rd  0   113
 #rd  0   114
