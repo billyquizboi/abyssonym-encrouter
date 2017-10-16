@@ -1,0 +1,5727 @@
+INITIAL SEED: 39
+--- 27 27 27 27 0 0
+--- 27 27 27 27 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 27 27 27 28 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 27 27 27 29 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 27 27 27 2a 0 0
+--- 27 27 27 2a 0 0
+29 threat steps in encounter zone 39.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 27 49 27 2b 880 42.0
+AVOIDED: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 27 4a 27 2b 40 42.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 27 4a 27 2c 40 42.5
+1 threat steps in encounter zone 39.
+--- 27 4b 27 2c 80 43.0
+16 threat steps in encounter zone 3a.
+--- 27 5b 27 2c 780 51.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 27 5b 27 2d 780 51.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 5e 27 2e 8d0 66.5
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 79 27 2f bd0 94.1
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 8d 27 30 8c0 118.1
+--- 27 a6 27 30 af0 130.6
+--- 27 a6 27 30 af0 130.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 27 a6 27 31 af0 130.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 27 a6 27 32 af0 130.6
+28 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 27 bc 27 33 1330 154.6
+--- 27 c2 27 33 240 157.6
+1 threat steps in encounter zone 2.
+--- 27 c3 27 33 300 158.1
+1 threat steps in encounter zone 0.
+--- 27 c4 27 33 360 158.6
+1 threat steps in encounter zone 2.
+--- 27 c5 27 33 420 159.1
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 27 cb 27 34 660 175.1
+--- 27 cc 27 34 60 175.7
+2 threat steps in encounter zone 0.
+--- 27 ce 27 34 120 176.7
+3 threat steps in encounter zone 1.
+--- 27 d1 27 34 240 178.2
+3 threat steps in encounter zone 0.
+--- 27 d4 27 34 360 179.7
+9 threat steps in encounter zone 1.
+--- 27 dd 27 34 6c0 184.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 27 dd 27 35 6c0 184.2
+--- 27 dd 27 35 6c0 184.2
+17 threat steps in encounter zone 3c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- 27 f1 27 36 f80 207.3
+AVOIDED: Hornet 6 46 x2 (d) COST: 12.1
+--- 27 f2 27 36 70 207.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 38 f 27 37 d20 234.4
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 38 2f 27 38 e00 262.5
+--- 38 34 27 38 230 265.0
+--- 38 34 27 38 230 265.0
+11 threat steps in encounter zone 3.
+--- 38 3f 27 38 a70 270.5
+--- 38 3f 27 38 a70 270.5
+24 threat steps in encounter zone 3f.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 38 59 27 39 15d0 299.5
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 25.5
+--- 38 59 27 39 0 299.5
+6 threat steps in encounter zone 3d.
+--- 38 5f 27 39 2a0 302.5
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 38 63 27 3a 460 325.5
+--- 38 87 27 3a fc0 343.6
+--- 38 87 27 3a fc0 343.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 8f 27 3b 1340 361.6
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 a7 27 3c a80 387.6
+--- 38 bd 27 3c 9a0 398.6
+7 threat steps in encounter zone 3d.
+--- 38 c4 27 3c cb0 402.1
+25 threat steps in encounter zone 3e.
+--- 38 dd 27 3c 17a0 414.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 38 ec 27 3d 1e30 442.1
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 f9 27 3e 5b0 462.6
+--- 49 4 27 3e 4d0 468.1
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 49 1c 27 3f f50 496.1
+--- 49 2a 27 3f 620 503.1
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 44 27 40 1180 532.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 4d 27 41 3f0 552.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 77 27 42 1260 589.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 7f 27 43 380 609.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 49 99 27 44 b60 636.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 b2 27 45 af0 665.1
+--- 49 be 27 45 540 671.1
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 49 be 27 46 540 671.1
+--- 49 be 27 46 540 671.1
+4 threat steps in encounter zone 3e.
+--- 49 c2 27 46 700 673.1
+21 threat steps in encounter zone 3f.
+--- 49 d7 27 46 1030 683.6
+7 threat steps in encounter zone 40.
+--- 49 de 27 46 1340 687.1
+25 threat steps in encounter zone 5.
+ENCOUNTER: Rhinotaur 8 21 x1, Rhodox 7 18 x2 (14) COST: 25.5
+--- 49 e7 27 47 1a00 717.1
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 49 f7 27 48 c00 741.6
+--- 49 f7 27 48 0 741.7
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 35 35 35 37 0 829.6
+--- 35 35 35 37 0 829.6
+EVENT: Ultros 25 302 x1 (183)
+--- 35 35 35 38 0 829.6
+25 threat steps in encounter zone 6.
+--- 35 4e 35 38 12c0 842.1
+2 threat steps in encounter zone 7.
+--- 35 50 35 38 1440 843.1
+1 threat steps in encounter zone 6.
+--- 35 51 35 38 1500 843.6
+1 threat steps in encounter zone 7.
+--- 35 52 35 38 15c0 844.1
+1 threat steps in encounter zone 6.
+--- 35 53 35 38 1680 844.6
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 35 59 35 39 1b00 853.6
+AVOIDED: Rhobite 10 118 x3 (38) COST: 24.0
+--- 35 59 35 39 0 853.6
+24 threat steps in encounter zone 6.
+--- 35 71 35 39 1200 865.6
+1 threat steps in encounter zone 1.
+--- 35 72 35 39 12c0 866.1
+EVENT: Leader 12 334 x1 (199)
+--- 35 72 35 3a 12c0 866.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 35 72 35 3b 12c0 866.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 35 72 35 3c 12c0 866.1
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 35 72 35 3d 12c0 900.1
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 35 72 35 3e 12c0 934.1
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 35 72 35 3f 12c0 967.1
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 35 72 35 40 12c0 1000.1
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 35 72 35 41 12c0 1033.1
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 35 72 35 42 12c0 1077.1
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 35 72 35 43 12c0 1111.1
+--- 35 72 35 43 12c0 1111.1
+19 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 35 79 35 44 1800 1141.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 35 8f 35 45 1080 1158.6
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 35 8f 35 45 0 1158.6
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 35 a7 35 46 a80 1197.6
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 35 ba 35 47 850 1221.1
+--- 35 be 35 47 1c0 1223.1
+6 threat steps in encounter zone 43.
+--- 35 c4 35 47 460 1226.1
+24 threat steps in encounter zone 45.
+--- 35 dc 35 47 ee0 1238.1
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 35 ec 35 48 15e0 1266.1
+--- 35 f5 35 48 3f0 1270.6
+7 threat steps in encounter zone 4c.
+--- 35 fc 35 48 700 1274.1
+27 threat steps in encounter zone 46.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 46 18 35 49 1340 1303.1
+AVOIDED: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 46 19 35 49 70 1303.6
+10 threat steps in encounter zone 4c.
+--- 46 23 35 49 4d0 1308.6
+2 threat steps in encounter zone 46.
+--- 46 25 35 49 5b0 1309.6
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 46 25 35 4a 5b0 1323.6
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 46 2b 35 4b 850 1358.6
+--- 46 2d 35 4b e0 1359.7
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 46 48 35 4c cb0 1393.2
+--- 46 4e 35 4c 2a0 1396.2
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 46 77 35 4d 1490 1430.7
+ENCOUNTER: Bomb 8 79 x3 (4c) COST: 27.0
+--- 46 99 35 4e ee0 1474.7
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 46 b2 35 4f af0 1501.2
+--- 46 b2 35 4f 0 1501.3
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 46 b2 35 50 0 1501.3
+2 threat steps in encounter zone 8.
+--- 46 b4 35 50 180 1502.3
+14 threat steps in encounter zone 8.
+--- 46 c2 35 50 c00 1509.3
+4 threat steps in encounter zone 8.
+--- 46 c6 35 50 f00 1511.3
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 46 c6 35 51 f00 1511.3
+*** ENTER THE VELDT ***
+--- 46 c6 35 51 f00 1511.3
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 46 e7 35 52 27c0 1543.8
+--- 46 f9 35 52 d80 1552.8
+*** SAVE AND RELOAD ***
+--- 43 43 43 43 d80 1602.8
+*** ENTER THE VELDT ***
+--- 43 43 43 43 d80 1602.8
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 43 44 43 44 e40 1617.3
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 43 4e 43 45 780 1664.4
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 43 63 43 46 fc0 1679.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 24.0
+--- 43 7c 43 47 12c0 1717.4
+
+initialseed: 27
+stepseed: 43
+battleseed: 43
+stepcounter: 7c
+battlecounter: 47
+threat: 0
+cost: 1717.4
+num_encounters: 43
+
+------------------------------------------------------------
+INITIAL SEED: 231
+--- e7 e7 e7 e7 0 0
+--- e7 e7 e7 e7 0 0
+EVENT: Guard 5 0 x2 (2)
+--- e7 e7 e7 e8 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- e7 e7 e7 e9 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- e7 e7 e7 ea 0 0
+--- e7 e7 e7 ea 0 0
+29 threat steps in encounter zone 39.
+--- f8 4 e7 ea 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- f8 4 e7 eb 740 14.5
+1 threat steps in encounter zone 39.
+--- f8 5 e7 eb 780 15.0
+16 threat steps in encounter zone 3a.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- f8 22 e7 ec 1430 44.5
+AVOIDED: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f8 23 e7 ec 70 45.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- f8 23 e7 ed 70 45.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f8 39 e7 ee a10 76.0
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- f8 62 e7 ef 11f0 110.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f8 7e e7 f0 c40 145.5
+--- f8 7e e7 f0 0 145.5
+--- f8 7e e7 f0 0 145.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- f8 7e e7 f1 0 145.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- f8 7e e7 f2 0 145.5
+28 threat steps in encounter zone 0.
+--- f8 9a e7 f2 a80 159.5
+1 threat steps in encounter zone 2.
+--- f8 9b e7 f2 b40 160.0
+1 threat steps in encounter zone 0.
+--- f8 9c e7 f2 ba0 160.5
+1 threat steps in encounter zone 2.
+--- f8 9d e7 f2 c60 161.0
+7 threat steps in encounter zone 0.
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- f8 a1 e7 f3 de0 178.0
+--- f8 a4 e7 f3 120 179.7
+2 threat steps in encounter zone 0.
+--- f8 a6 e7 f3 1e0 180.7
+3 threat steps in encounter zone 1.
+--- f8 a9 e7 f3 300 182.2
+3 threat steps in encounter zone 0.
+--- f8 ac e7 f3 420 183.7
+9 threat steps in encounter zone 1.
+--- f8 b5 e7 f3 780 188.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- f8 b5 e7 f4 780 188.2
+--- f8 b5 e7 f4 780 188.2
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- f8 c1 e7 f5 cc0 206.3
+--- f8 c6 e7 f5 230 208.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- f8 e1 e7 f6 e00 234.4
+--- 9 8 e7 f6 1110 253.9
+--- 9 8 e7 f6 1110 253.9
+11 threat steps in encounter zone 3.
+--- 9 13 e7 f6 1950 259.4
+--- 9 13 e7 f6 1950 259.4
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 9 23 e7 f7 2050 288.4
+--- 9 2b e7 f7 380 292.4
+6 threat steps in encounter zone 3d.
+--- 9 31 e7 f7 620 295.4
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 9 38 e7 f8 930 313.9
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 9 51 e7 f9 af0 341.4
+--- 9 59 e7 f9 380 345.4
+--- 9 59 e7 f9 380 345.4
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 9 78 e7 fa 1110 374.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 9 92 e7 fb b60 402.9
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 9 93 e7 fb 70 403.4
+7 threat steps in encounter zone 3d.
+--- 9 9a e7 fb 380 406.9
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 9 9f e7 fc 5b0 425.4
+--- 9 b3 e7 fc 8c0 435.4
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 9 b6 e7 fd a10 450.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 9 df e7 fe 11f0 492.5
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 9 e0 e7 fe 70 493.0
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 9 ff e7 ff e00 532.5
+--- 1a 6 e7 ff 310 536.0
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 1a 1d fe 0 d20 563.5
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 1a 34 fe 1 a10 589.0
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 1a 3c fe 2 380 607.0
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 1a 5d fe 3 e70 639.5
+--- 1a 9a fe 3 1ab0 670.0
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 1a 9a fe 4 1ab0 670.0
+--- 1a 9a fe 4 1ab0 670.0
+4 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 15.0
+--- 1a 9e fe 5 1c70 687.0
+--- 1a 9e fe 5 0 687.2
+21 threat steps in encounter zone 3f.
+--- 1a b3 fe 5 930 697.7
+7 threat steps in encounter zone 40.
+--- 1a ba fe 5 c40 701.2
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 15.0
+--- 1a ce fe 6 1b40 726.2
+--- 1a d3 fe 6 3c0 728.7
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x2, Pterodon 12 34 x1 (27) COST: 16.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- f5 f5 f5 f7 3c0 810.7
+--- f5 f5 f5 f7 3c0 810.7
+EVENT: Ultros 25 302 x1 (183)
+--- f5 f5 f5 f8 3c0 810.7
+25 threat steps in encounter zone 6.
+--- 6 e f5 f8 1680 823.2
+2 threat steps in encounter zone 7.
+--- 6 10 f5 f8 1800 824.2
+1 threat steps in encounter zone 6.
+--- 6 11 f5 f8 18c0 824.7
+1 threat steps in encounter zone 7.
+--- 6 12 f5 f8 1980 825.2
+1 threat steps in encounter zone 6.
+--- 6 13 f5 f8 1a40 825.7
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 6 22 f5 f9 2580 839.2
+AVOIDED: Beakor 11 41 x1 (35) COST: 13.0
+--- 6 23 f5 f9 c0 839.7
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 6 38 f5 fa 1080 863.2
+--- 6 3b f5 fa 240 864.8
+1 threat steps in encounter zone 1.
+--- 6 3c f5 fa 300 865.3
+EVENT: Leader 12 334 x1 (199)
+--- 6 3c f5 fb 300 865.3
+EVENT: Kefka 83 282 x1 (1c5)
+--- 6 3c f5 fc 300 865.3
+EVENT: Kefka 83 282 x1 (1c5)
+--- 6 3c f5 fd 300 865.3
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 6 3c f5 fe 300 899.3
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 6 3c f5 ff 300 933.3
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 6 3c c 0 300 966.3
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 6 3c c 1 300 999.3
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 6 3c c 2 300 1032.3
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 6 3c c 3 300 1076.3
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 6 3c c 4 300 1110.3
+--- 6 3c c 4 300 1110.3
+19 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 6 51 c 5 12c0 1126.8
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- 6 51 c 5 0 1126.8
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 6 78 c 6 1110 1160.3
+--- 6 80 c 6 380 1164.3
+6 threat steps in encounter zone 43.
+--- 6 86 c 6 620 1167.3
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 6 90 c 7 a80 1199.3
+--- 6 9e c 7 620 1206.3
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 6 9f c 8 690 1226.8
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 6 b6 c 9 a10 1265.4
+--- 6 b7 c 9 70 1266.0
+7 threat steps in encounter zone 4c.
+--- 6 be c 9 380 1269.5
+27 threat steps in encounter zone 46.
+--- 6 d9 c 9 f50 1283.0
+10 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 6 e1 c a 12d0 1301.0
+--- 6 e3 c a e0 1302.1
+2 threat steps in encounter zone 46.
+--- 6 e5 c a 1c0 1303.1
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 6 e5 c b 1c0 1317.1
+8 threat steps in encounter zone 4c.
+--- 6 ed c b 540 1321.1
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 17 2 c c e70 1351.6
+--- 17 e c c 540 1357.6
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 17 1d c d bd0 1392.1
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 17 40 c e f50 1441.6
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 17 5d c f cb0 1470.1
+--- 17 72 c f 930 1480.6
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 17 72 c 10 930 1480.6
+2 threat steps in encounter zone 8.
+--- 17 74 c 10 ab0 1481.6
+14 threat steps in encounter zone 8.
+--- 17 82 c 10 1530 1488.6
+4 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 17 90 c 11 1fb0 1501.6
+AVOIDED: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 21.0
+--- 17 90 c 11 0 1501.6
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 17 90 c 12 0 1501.6
+*** ENTER THE VELDT ***
+--- 17 90 c 12 0 1501.6
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 17 b6 c 13 1c80 1536.6
+--- 17 c3 c 13 9c0 1543.1
+*** SAVE AND RELOAD ***
+--- 3 3 3 3 9c0 1593.1
+*** ENTER THE VELDT ***
+--- 3 3 3 3 9c0 1593.1
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 3 22 3 4 2100 1622.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 3 38 3 5 1080 1676.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 3 57 3 6 1740 1706.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 3 78 3 7 18c0 1728.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 13.0
+--- 3 82 3 8 780 1747.6
+
+initialseed: e7
+stepseed: 3
+battleseed: 3
+stepcounter: 82
+battlecounter: 8
+threat: 0
+cost: 1747.6
+num_encounters: 43
+
+------------------------------------------------------------
+INITIAL SEED: 229
+--- e5 e5 e5 e5 0 0
+--- e5 e5 e5 e5 0 0
+EVENT: Guard 5 0 x2 (2)
+--- e5 e5 e5 e6 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- e5 e5 e5 e7 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- e5 e5 e5 e8 0 0
+--- e5 e5 e5 e8 0 0
+29 threat steps in encounter zone 39.
+--- f6 2 e5 e8 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- f6 2 e5 e9 740 14.5
+1 threat steps in encounter zone 39.
+--- f6 3 e5 e9 780 15.0
+16 threat steps in encounter zone 3a.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- f6 22 e5 ea 1510 51.5
+AVOIDED: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- f6 23 e5 ea 70 52.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- f6 23 e5 eb 70 52.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- f6 39 e5 ec a10 77.0
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f6 62 e5 ed 11f0 117.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f6 7e e5 ee c40 152.5
+--- f6 7e e5 ee 0 152.5
+--- f6 7e e5 ee 0 152.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- f6 7e e5 ef 0 152.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- f6 7e e5 f0 0 152.5
+28 threat steps in encounter zone 0.
+--- f6 9a e5 f0 a80 166.5
+1 threat steps in encounter zone 2.
+--- f6 9b e5 f0 b40 167.0
+1 threat steps in encounter zone 0.
+--- f6 9c e5 f0 ba0 167.5
+1 threat steps in encounter zone 2.
+--- f6 9d e5 f0 c60 168.0
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- f6 a1 e5 f1 de0 183.0
+--- f6 a4 e5 f1 120 184.7
+2 threat steps in encounter zone 0.
+--- f6 a6 e5 f1 1e0 185.7
+3 threat steps in encounter zone 1.
+--- f6 a9 e5 f1 300 187.2
+3 threat steps in encounter zone 0.
+--- f6 ac e5 f1 420 188.7
+9 threat steps in encounter zone 1.
+ENCOUNTER: Sand Ray 6 92 x2 (a) COST: 14.0
+--- f6 b3 e5 f2 6c0 206.2
+--- f6 b5 e5 f2 180 207.3
+EVENT: M-TekArmor 8 66 x2 (22)
+--- f6 b5 e5 f3 180 207.3
+--- f6 b5 e5 f3 180 207.3
+17 threat steps in encounter zone 3c.
+--- f6 c6 e5 f3 8f0 215.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- f6 d2 e5 f4 e30 233.9
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- f6 fe e5 f5 1340 268.0
+--- 7 8 e5 f5 460 273.0
+--- 7 8 e5 f5 460 273.0
+11 threat steps in encounter zone 3.
+--- 7 13 e5 f5 ca0 278.5
+--- 7 13 e5 f5 ca0 278.5
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 7 25 e5 f6 1480 302.5
+--- 7 2b e5 f6 2a0 305.5
+6 threat steps in encounter zone 3d.
+--- 7 31 e5 f6 540 308.5
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 7 38 e5 f7 850 333.0
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 7 51 e5 f8 af0 360.5
+--- 7 59 e5 f8 380 364.5
+--- 7 59 e5 f8 380 364.5
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 7 78 e5 f9 1110 394.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 7 90 e5 fa a80 421.0
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 7 91 e5 fa 70 421.5
+7 threat steps in encounter zone 3d.
+--- 7 98 e5 fa 380 425.0
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 7 9f e5 fb 690 442.5
+--- 7 b1 e5 fb 7e0 451.5
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 7 b6 e5 fc a10 468.0
+--- 7 d8 e5 fc ee0 485.0
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 7 df e5 fd 11f0 512.5
+--- 7 fe e5 fd d90 528.0
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 18 2 e5 fe f50 546.0
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 18 1d e5 ff bd0 573.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 18 40 fc 0 f50 607.1
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 18 5d fc 1 cb0 635.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 18 92 fc 2 1730 676.1
+--- 18 92 fc 2 0 676.2
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 18 92 fc 3 0 676.2
+--- 18 92 fc 3 0 676.2
+4 threat steps in encounter zone 3e.
+--- 18 96 fc 3 1c0 678.2
+21 threat steps in encounter zone 3f.
+--- 18 ab fc 3 af0 688.7
+7 threat steps in encounter zone 40.
+--- 18 b2 fc 3 e00 692.2
+25 threat steps in encounter zone 5.
+--- 18 cb fc 3 20c0 704.7
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- f3 f3 f3 f5 20c0 784.7
+--- f3 f3 f3 f5 20c0 784.7
+EVENT: Ultros 25 302 x1 (183)
+--- f3 f3 f3 f6 20c0 784.7
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- f3 fe f3 f7 2900 803.2
+--- 4 c f3 f7 a80 810.2
+2 threat steps in encounter zone 7.
+--- 4 e f3 f7 c00 811.2
+1 threat steps in encounter zone 6.
+--- 4 f f3 f7 cc0 811.7
+1 threat steps in encounter zone 7.
+--- 4 10 f3 f7 d80 812.2
+1 threat steps in encounter zone 6.
+--- 4 11 f3 f7 e40 812.7
+2 threat steps in encounter zone 7.
+--- 4 13 f3 f7 fc0 813.7
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 4 22 f3 f8 1b00 845.2
+--- 4 2b f3 f8 6c0 849.7
+1 threat steps in encounter zone 1.
+--- 4 2c f3 f8 780 850.2
+EVENT: Leader 12 334 x1 (199)
+--- 4 2c f3 f9 780 850.2
+EVENT: Kefka 83 282 x1 (1c5)
+--- 4 2c f3 fa 780 850.2
+EVENT: Kefka 83 282 x1 (1c5)
+--- 4 2c f3 fb 780 850.2
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 4 2c f3 fc 780 884.2
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 4 2c f3 fd 780 918.2
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 4 2c f3 fe 780 951.2
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 4 2c f3 ff 780 984.2
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 4 2c a 0 780 1017.2
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 4 2c a 1 780 1061.2
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 4 2c a 2 780 1095.2
+--- 4 2c a 2 780 1095.2
+19 threat steps in encounter zone 8.
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 4 38 a 3 1080 1106.2
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 4 51 a 4 12c0 1124.7
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 4 51 a 4 0 1124.7
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 4 78 a 5 1110 1171.2
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 4 90 a 6 a80 1198.2
+AVOIDED: Ghost 10 90 x3 (42) COST: 27.0
+--- 4 90 a 6 0 1198.2
+6 threat steps in encounter zone 43.
+--- 4 96 a 6 2a0 1201.2
+24 threat steps in encounter zone 45.
+--- 4 ae a 6 d20 1213.2
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 4 b4 a 7 fc0 1236.2
+--- 4 c7 a 7 850 1245.7
+7 threat steps in encounter zone 4c.
+--- 4 ce a 7 b60 1249.2
+27 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 4 e1 a 8 13b0 1278.7
+--- 4 e9 a 8 380 1282.7
+10 threat steps in encounter zone 4c.
+--- 4 f3 a 8 7e0 1287.7
+2 threat steps in encounter zone 46.
+--- 4 f5 a 8 8c0 1288.7
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 4 f5 a 9 8c0 1302.7
+8 threat steps in encounter zone 4c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 15 2 a a e70 1324.2
+AVOIDED: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- 15 3 a a 70 1324.7
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- 15 1d a b bd0 1355.7
+--- 15 24 a b 310 1359.2
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 15 40 a c f50 1387.2
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 15 5d a d cb0 1428.7
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 15 60 a e 150 1462.2
+--- 15 88 a e 1180 1482.3
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 15 88 a f 1180 1482.3
+2 threat steps in encounter zone 8.
+--- 15 8a a f 1300 1483.3
+14 threat steps in encounter zone 8.
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 15 92 a 10 1900 1492.3
+--- 15 98 a 10 900 1495.3
+4 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 15 9e a 11 1200 1504.3
+AVOIDED: Sand Ray 6 92 x2 (a) COST: 18.0
+--- 15 9e a 11 0 1504.3
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 15 9e a 12 0 1504.3
+*** ENTER THE VELDT ***
+--- 15 9e a 12 0 1504.3
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 15 b7 a 13 12c0 1532.8
+--- 15 d1 a 13 1380 1545.8
+*** SAVE AND RELOAD ***
+--- 1 1 1 1 1380 1595.8
+*** ENTER THE VELDT ***
+--- 1 1 1 1 1380 1595.8
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 1 22 1 2 2c40 1632.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 1 38 1 3 1080 1688.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- 1 57 1 4 1740 1716.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 1 61 1 5 780 1742.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 1 78 1 6 1140 1760.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 1 82 1 7 780 1771.3
+
+initialseed: e5
+stepseed: 1
+battleseed: 1
+stepcounter: 82
+battlecounter: 7
+threat: 0
+cost: 1771.3
+num_encounters: 45
+
+------------------------------------------------------------
+INITIAL SEED: 102
+--- 66 66 66 66 0 0
+--- 66 66 66 66 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 66 66 66 67 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 66 66 66 68 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 66 66 66 69 0 0
+--- 66 66 66 69 0 0
+29 threat steps in encounter zone 39.
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 66 73 66 6a 340 30.5
+--- 66 83 66 6a 400 38.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 66 83 66 6b 400 38.5
+1 threat steps in encounter zone 39.
+--- 66 84 66 6b 440 39.0
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 66 93 66 6c ad0 60.5
+--- 66 94 66 6c 70 61.1
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 66 94 66 6d 70 61.1
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 66 b5 66 6e ee0 91.6
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 66 d9 66 6f fc0 123.6
+--- 66 df 66 6f 2a0 126.6
+--- 66 df 66 6f 2a0 126.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 66 df 66 70 2a0 126.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 66 df 66 71 2a0 126.6
+28 threat steps in encounter zone 0.
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 66 eb 66 72 720 147.6
+--- 66 fb 66 72 600 155.6
+1 threat steps in encounter zone 2.
+--- 66 fc 66 72 6c0 156.1
+1 threat steps in encounter zone 0.
+--- 66 fd 66 72 720 156.6
+1 threat steps in encounter zone 2.
+--- 66 fe 66 72 7e0 157.1
+7 threat steps in encounter zone 0.
+--- 77 5 66 72 a80 160.6
+2 threat steps in encounter zone 0.
+--- 77 7 66 72 b40 161.6
+3 threat steps in encounter zone 1.
+--- 77 a 66 72 c60 163.1
+3 threat steps in encounter zone 0.
+--- 77 d 66 72 d80 164.6
+9 threat steps in encounter zone 1.
+ENCOUNTER: Sand Ray 6 92 x2 (a) COST: 14.0
+--- 77 11 66 73 f00 180.6
+--- 77 16 66 73 3c0 183.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 77 16 66 74 3c0 183.2
+--- 77 16 66 74 3c0 183.2
+17 threat steps in encounter zone 3c.
+--- 77 27 66 74 b30 191.7
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 77 31 66 75 f90 208.8
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 77 3b 66 76 460 225.9
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 77 58 66 77 cb0 252.5
+--- 77 69 66 77 770 261.0
+--- 77 69 66 77 770 261.0
+11 threat steps in encounter zone 3.
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 15.0
+--- 77 72 66 78 e30 280.5
+--- 77 74 66 78 180 281.6
+--- 77 74 66 78 180 281.6
+24 threat steps in encounter zone 3f.
+--- 77 8c 66 78 c00 293.6
+6 threat steps in encounter zone 3d.
+--- 77 92 66 78 ea0 296.6
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 77 a6 66 79 1760 321.6
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 77 b1 66 7a 4d0 342.1
+--- 77 ba 66 7a 3f0 346.6
+--- 77 ba 66 7a 3f0 346.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 77 d1 66 7b e00 372.1
+--- 77 f0 66 7b d90 387.6
+7 threat steps in encounter zone 3d.
+--- 77 f7 66 7b 10a0 391.1
+25 threat steps in encounter zone 3e.
+--- 88 10 66 7b 1b90 403.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 88 11 66 7c 1c00 418.1
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 88 2e 66 7d cb0 446.7
+--- 88 37 66 7d 3f0 451.2
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 88 47 66 7e af0 475.2
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 88 5a 66 7f 850 508.7
+--- 88 5d 66 7f 150 510.3
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 88 6f 66 80 930 533.3
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 88 9b 66 81 1340 569.3
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 88 a8 66 82 5b0 589.8
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 88 c6 66 83 d20 618.8
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 88 ed 66 84 1110 652.3
+--- 88 f1 66 84 1c0 654.3
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 88 f1 66 85 1c0 654.3
+--- 88 f1 66 85 1c0 654.3
+4 threat steps in encounter zone 3e.
+--- 88 f5 66 85 380 656.3
+21 threat steps in encounter zone 3f.
+--- 99 a 66 85 cb0 666.8
+7 threat steps in encounter zone 40.
+--- 99 11 66 85 fc0 670.3
+25 threat steps in encounter zone 5.
+ENCOUNTER: Rhinotaur 8 21 x1, Rhodox 7 18 x2 (14) COST: 25.5
+--- 99 19 66 86 15c0 699.8
+--- 99 2a 66 86 cc0 708.3
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 74 74 74 76 cc0 793.9
+--- 74 74 74 76 cc0 793.9
+EVENT: Ultros 25 302 x1 (183)
+--- 74 74 74 77 cc0 793.9
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 74 88 74 78 1bc0 827.9
+--- 74 8d 74 78 3c0 830.4
+2 threat steps in encounter zone 7.
+--- 74 8f 74 78 540 831.4
+1 threat steps in encounter zone 6.
+--- 74 90 74 78 600 831.9
+1 threat steps in encounter zone 7.
+--- 74 91 74 78 6c0 832.4
+1 threat steps in encounter zone 6.
+--- 74 92 74 78 780 832.9
+2 threat steps in encounter zone 7.
+--- 74 94 74 78 900 833.9
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 74 a6 74 79 1680 866.9
+--- 74 ac 74 79 480 869.9
+1 threat steps in encounter zone 1.
+--- 74 ad 74 79 540 870.4
+EVENT: Leader 12 334 x1 (199)
+--- 74 ad 74 7a 540 870.4
+EVENT: Kefka 83 282 x1 (1c5)
+--- 74 ad 74 7b 540 870.4
+EVENT: Kefka 83 282 x1 (1c5)
+--- 74 ad 74 7c 540 870.4
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 74 ad 74 7d 540 904.4
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 74 ad 74 7e 540 937.4
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 74 ad 74 7f 540 970.4
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 74 ad 74 80 540 1003.4
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 74 ad 74 81 540 1036.4
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 74 ad 74 82 540 1080.4
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 74 ad 74 83 540 1114.4
+--- 74 ad 74 83 540 1114.4
+19 threat steps in encounter zone 8.
+--- 74 c0 74 83 1380 1123.9
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 74 d9 74 84 1e70 1163.4
+--- 74 ef 74 84 9a0 1174.4
+6 threat steps in encounter zone 43.
+--- 74 f5 74 84 c40 1177.4
+24 threat steps in encounter zone 45.
+--- 85 d 74 84 16c0 1189.4
+25 threat steps in encounter zone 46.
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 85 11 74 85 1880 1218.4
+--- 85 26 74 85 930 1229.0
+7 threat steps in encounter zone 4c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 85 2e 74 86 cb0 1248.0
+AVOIDED: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 85 2f 74 86 70 1248.5
+27 threat steps in encounter zone 46.
+--- 85 4a 74 86 c40 1262.0
+10 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 85 4f 74 87 e70 1278.5
+--- 85 54 74 87 230 1281.0
+2 threat steps in encounter zone 46.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 85 5a 74 88 4d0 1299.0
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- 85 5a 74 88 0 1299.0
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 85 5a 74 89 0 1313.0
+8 threat steps in encounter zone 4c.
+--- 85 62 74 89 380 1317.0
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 85 6f 74 8a 930 1343.5
+--- 85 83 74 8a 8c0 1353.5
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 85 9b 74 8b 1340 1379.5
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 85 d0 74 8c 1730 1433.0
+--- 85 e7 74 8c a10 1444.5
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 85 e7 74 8d a10 1444.5
+2 threat steps in encounter zone 8.
+--- 85 e9 74 8d b90 1445.5
+14 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 85 ed 74 8e e90 1474.5
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 85 ee 74 8f 180 1480.1
+--- 85 f7 74 8f d80 1484.7
+4 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 96 e 74 90 3000 1502.2
+AVOIDED: Sand Ray 6 92 x2 (a) COST: 18.0
+--- 96 f 74 90 c0 1502.7
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 96 f 74 91 c0 1502.7
+*** ENTER THE VELDT ***
+--- 96 f 74 91 c0 1502.7
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 96 2c 74 92 1680 1533.2
+--- 96 42 74 92 1080 1544.2
+*** SAVE AND RELOAD ***
+--- 82 82 82 82 1080 1594.2
+*** ENTER THE VELDT ***
+--- 82 82 82 82 1080 1594.2
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 82 9b 82 83 2340 1620.7
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- 82 b1 82 84 1080 1643.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 82 d0 82 85 1740 1702.2
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 82 d7 82 86 540 1730.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 82 ed 82 87 1080 1747.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 13.0
+--- 93 e 82 88 18c0 1778.2
+
+initialseed: 66
+stepseed: 93
+battleseed: 82
+stepcounter: f
+battlecounter: 88
+threat: c0
+cost: 1778.7
+num_encounters: 45
+
+------------------------------------------------------------
+INITIAL SEED: 230
+--- e6 e6 e6 e6 0 0
+--- e6 e6 e6 e6 0 0
+EVENT: Guard 5 0 x2 (2)
+--- e6 e6 e6 e7 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- e6 e6 e6 e8 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- e6 e6 e6 e9 0 0
+--- e6 e6 e6 e9 0 0
+29 threat steps in encounter zone 39.
+--- f7 3 e6 e9 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- f7 3 e6 ea 740 14.5
+1 threat steps in encounter zone 39.
+--- f7 4 e6 ea 780 15.0
+16 threat steps in encounter zone 3a.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f7 22 e6 eb 14a0 51.0
+AVOIDED: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f7 22 e6 eb 0 51.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- f7 22 e6 ec 0 51.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f7 39 e6 ed a10 82.5
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f7 62 e6 ee 11f0 123.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- f7 7e e6 ef c40 152.0
+--- f7 7f e6 ef 70 152.5
+--- f7 7f e6 ef 70 152.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- f7 7f e6 f0 70 152.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- f7 7f e6 f1 70 152.5
+28 threat steps in encounter zone 0.
+--- f7 9b e6 f1 af0 166.5
+1 threat steps in encounter zone 2.
+--- f7 9c e6 f1 bb0 167.0
+1 threat steps in encounter zone 0.
+--- f7 9d e6 f1 c10 167.5
+1 threat steps in encounter zone 2.
+--- f7 9e e6 f1 cd0 168.0
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- f7 a1 e6 f2 df0 182.5
+--- f7 a5 e6 f2 180 184.6
+2 threat steps in encounter zone 0.
+--- f7 a7 e6 f2 240 185.6
+3 threat steps in encounter zone 1.
+--- f7 aa e6 f2 360 187.1
+3 threat steps in encounter zone 0.
+--- f7 ad e6 f2 480 188.6
+9 threat steps in encounter zone 1.
+ENCOUNTER: Areneid 6 93 x3 (b) COST: 15.0
+--- f7 b3 e6 f3 6c0 206.6
+--- f7 b6 e6 f3 240 208.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- f7 b6 e6 f4 240 208.2
+--- f7 b6 e6 f4 240 208.2
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- f7 c1 e6 f5 710 225.8
+--- f7 c7 e6 f5 2a0 228.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- f7 fe e6 f6 1ab0 268.4
+--- 8 9 e6 f6 4d0 273.9
+--- 8 9 e6 f6 4d0 273.9
+11 threat steps in encounter zone 3.
+--- 8 14 e6 f6 d10 279.4
+--- 8 14 e6 f6 d10 279.4
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 8 25 e6 f7 1480 308.9
+--- 8 2c e6 f7 310 312.4
+6 threat steps in encounter zone 3d.
+--- 8 32 e6 f7 5b0 315.4
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 8 38 e6 f8 850 333.4
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 8 51 e6 f9 af0 360.9
+--- 8 5a e6 f9 3f0 365.4
+--- 8 5a e6 f9 3f0 365.4
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 8 78 e6 fa 1110 394.4
+--- 8 90 e6 fa a80 406.4
+7 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 8 92 e6 fb b60 431.4
+--- 8 97 e6 fb 230 434.0
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 8 9f e6 fc 5b0 454.0
+--- 8 b0 e6 fc 770 462.5
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 8 b6 e6 fd a10 479.5
+--- 8 d7 e6 fd e70 496.0
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 8 df e6 fe 11f0 524.0
+--- 8 fd e6 fe d20 539.0
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 8 ff e6 ff e00 554.0
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 19 1d fd 0 d20 585.1
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 19 34 fd 1 a10 610.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 19 5d fd 2 11f0 645.1
+--- 19 91 fd 2 16c0 671.1
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 19 91 fd 3 16c0 671.1
+--- 19 91 fd 3 16c0 671.1
+4 threat steps in encounter zone 3e.
+--- 19 95 fd 3 1880 673.1
+21 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 19 9e fd 4 1c70 698.6
+--- 19 aa fd 4 540 704.6
+7 threat steps in encounter zone 40.
+--- 19 b1 fd 4 850 708.1
+25 threat steps in encounter zone 5.
+--- 19 ca fd 4 1b10 720.6
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 24 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1, Pterodon 12 34 x1 (25) COST: 16.0
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+--- f4 f4 f4 f7 1b10 815.6
+--- f4 f4 f4 f7 1b10 815.6
+EVENT: Ultros 25 302 x1 (183)
+--- f4 f4 f4 f8 1b10 815.6
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- f4 fe f4 f9 2290 833.6
+--- 5 d f4 f9 b40 841.1
+2 threat steps in encounter zone 7.
+--- 5 f f4 f9 cc0 842.1
+1 threat steps in encounter zone 6.
+--- 5 10 f4 f9 d80 842.6
+1 threat steps in encounter zone 7.
+--- 5 11 f4 f9 e40 843.1
+1 threat steps in encounter zone 6.
+--- 5 12 f4 f9 f00 843.6
+2 threat steps in encounter zone 7.
+--- 5 14 f4 f9 1080 844.6
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 5 25 f4 fa 1d40 866.1
+--- 5 2c f4 fa 540 869.6
+1 threat steps in encounter zone 1.
+--- 5 2d f4 fa 600 870.1
+EVENT: Leader 12 334 x1 (199)
+--- 5 2d f4 fb 600 870.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 5 2d f4 fc 600 870.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 5 2d f4 fd 600 870.1
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 5 2d f4 fe 600 904.1
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 5 2d f4 ff 600 938.1
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 5 2d b 0 600 971.1
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 5 2d b 1 600 1004.1
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 5 2d b 2 600 1037.1
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 5 2d b 3 600 1081.1
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 5 2d b 4 600 1115.1
+--- 5 2d b 4 600 1115.1
+19 threat steps in encounter zone 8.
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 5 38 b 5 e40 1125.6
+--- 5 40 b 5 600 1129.6
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 5 51 b 6 d70 1152.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 5 78 b 7 1110 1186.6
+AVOIDED: Ghost 10 90 x3 (42) COST: 27.0
+--- 5 79 b 7 70 1187.1
+6 threat steps in encounter zone 43.
+--- 5 7f b 7 310 1190.1
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 5 90 b 8 a80 1225.6
+--- 5 97 b 8 310 1229.1
+25 threat steps in encounter zone 46.
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 5 9f b 9 690 1260.1
+--- 5 b0 b 9 770 1268.6
+7 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 5 b6 b a a10 1285.6
+--- 5 b7 b a 70 1286.2
+27 threat steps in encounter zone 46.
+--- 5 d2 b a c40 1299.7
+10 threat steps in encounter zone 4c.
+--- 5 dc b a 10a0 1304.7
+2 threat steps in encounter zone 46.
+--- 5 de b a 1180 1305.7
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 5 de b b 1180 1319.7
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 5 e1 b c 12d0 1335.2
+--- 5 e6 b c 230 1337.8
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x2 (4b) COST: 22.0
+--- 16 2 b d e70 1373.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- 16 1d b e bd0 1406.3
+AVOIDED: Whisper 12 14 x4 (4a) COST: 32.0
+--- 16 1d b e 0 1406.3
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 16 40 b f f50 1437.8
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 16 5d b 10 cb0 1484.3
+--- 16 81 b 10 fc0 1502.3
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 16 81 b 11 fc0 1502.3
+2 threat steps in encounter zone 8.
+--- 16 83 b 11 1140 1503.3
+14 threat steps in encounter zone 8.
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 16 90 b 12 1b00 1514.8
+--- 16 91 b 12 180 1515.4
+4 threat steps in encounter zone 8.
+--- 16 95 b 12 780 1517.4
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 16 95 b 13 780 1517.4
+*** ENTER THE VELDT ***
+--- 16 95 b 13 780 1517.4
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 16 9e b 14 e40 1537.9
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 21.0
+--- 16 b7 b 15 12c0 1571.4
+--- 16 c8 b 15 cc0 1579.9
+*** SAVE AND RELOAD ***
+--- 2 2 2 2 cc0 1629.9
+*** ENTER THE VELDT ***
+--- 2 2 2 2 cc0 1629.9
+ENCOUNTER: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 2 22 2 3 24c0 1689.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 2 38 2 4 1080 1715.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 2 57 2 5 1740 1752.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 2 78 2 6 18c0 1774.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 2 82 2 7 780 1785.9
+
+initialseed: e6
+stepseed: 2
+battleseed: 2
+stepcounter: 83
+battlecounter: 7
+threat: c0
+cost: 1786.4
+num_encounters: 45
+
+------------------------------------------------------------
+INITIAL SEED: 103
+--- 67 67 67 67 0 0
+--- 67 67 67 67 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 67 67 67 68 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 67 67 67 69 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 67 67 67 6a 0 0
+--- 67 67 67 6a 0 0
+29 threat steps in encounter zone 39.
+--- 67 84 67 6a 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 67 84 67 6b 740 14.5
+1 threat steps in encounter zone 39.
+--- 67 85 67 6b 780 15.0
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 93 67 6c da0 36.0
+--- 67 95 67 6c e0 37.1
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 67 95 67 6d e0 37.1
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 b5 67 6e ee0 67.1
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 d9 67 6f fc0 99.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 eb 67 70 7e0 123.1
+--- 67 ec 67 70 70 123.6
+--- 67 ec 67 70 70 123.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 67 ec 67 71 70 123.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 67 ec 67 72 70 123.6
+28 threat steps in encounter zone 0.
+--- 78 8 67 72 af0 137.6
+1 threat steps in encounter zone 2.
+--- 78 9 67 72 bb0 138.1
+1 threat steps in encounter zone 0.
+--- 78 a 67 72 c10 138.6
+1 threat steps in encounter zone 2.
+--- 78 b 67 72 cd0 139.1
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 78 11 67 73 f10 155.1
+--- 78 12 67 73 60 155.7
+2 threat steps in encounter zone 0.
+--- 78 14 67 73 120 156.7
+3 threat steps in encounter zone 1.
+ENCOUNTER: Areneid 6 93 x3, Sand Ray 6 92 x1 (9) COST: 16.0
+--- 78 17 67 74 240 174.2
+--- 78 17 67 74 0 174.4
+3 threat steps in encounter zone 0.
+--- 78 1a 67 74 240 175.9
+9 threat steps in encounter zone 1.
+--- 78 23 67 74 900 180.4
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 78 23 67 75 900 180.4
+--- 78 23 67 75 900 180.4
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- 78 31 67 76 f20 199.5
+--- 78 34 67 76 150 201.1
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 78 52 67 77 e70 228.2
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 78 72 67 78 e00 256.3
+--- 78 76 67 78 1c0 258.3
+--- 78 76 67 78 1c0 258.3
+11 threat steps in encounter zone 3.
+--- 78 81 67 78 a00 263.8
+--- 78 81 67 78 a00 263.8
+24 threat steps in encounter zone 3f.
+--- 78 99 67 78 1480 275.8
+6 threat steps in encounter zone 3d.
+--- 78 9f 67 78 1720 278.8
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 78 a6 67 79 1a30 297.3
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 78 b1 67 7a 4d0 317.8
+--- 78 c7 67 7a 9a0 328.8
+--- 78 c7 67 7a 9a0 328.8
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 78 d1 67 7b e00 347.8
+--- 78 fd 67 7b 1340 369.8
+7 threat steps in encounter zone 3d.
+--- 89 4 67 7b 1650 373.3
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 89 e 67 7c 1ab0 394.3
+--- 89 1d 67 7c 690 401.8
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 89 2e 67 7d e00 424.3
+--- 89 44 67 7d 9a0 435.3
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 89 47 67 7e af0 452.8
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 89 5a 67 7f 850 486.4
+--- 89 6a 67 7f 700 494.4
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 6f 67 80 930 510.9
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 9b 67 81 1340 546.9
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 a8 67 82 5b0 567.4
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 c6 67 83 d20 596.4
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 ed 67 84 1110 629.9
+--- 89 fe 67 84 770 638.4
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 89 fe 67 85 770 638.4
+--- 89 fe 67 85 770 638.4
+4 threat steps in encounter zone 3e.
+--- 9a 2 67 85 930 640.4
+21 threat steps in encounter zone 3f.
+--- 9a 17 67 85 1260 650.9
+7 threat steps in encounter zone 40.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 9a 19 67 86 1340 672.9
+--- 9a 1e 67 86 230 675.5
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 9a 2c 67 87 cb0 699.0
+--- 9a 37 67 87 840 704.5
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 75 75 75 77 840 790.1
+--- 75 75 75 77 840 790.1
+EVENT: Ultros 25 302 x1 (183)
+--- 75 75 75 78 840 790.1
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 75 88 75 79 1680 823.6
+--- 75 8e 75 79 480 826.6
+2 threat steps in encounter zone 7.
+--- 75 90 75 79 600 827.6
+1 threat steps in encounter zone 6.
+--- 75 91 75 79 6c0 828.1
+1 threat steps in encounter zone 7.
+--- 75 92 75 79 780 828.6
+1 threat steps in encounter zone 6.
+--- 75 93 75 79 840 829.1
+2 threat steps in encounter zone 7.
+--- 75 95 75 79 9c0 830.1
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 75 a6 75 7a 1680 851.6
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 75 a9 75 7b 240 877.1
+--- 75 ad 75 7b 300 879.2
+1 threat steps in encounter zone 1.
+--- 75 ae 75 7b 3c0 879.7
+EVENT: Leader 12 334 x1 (199)
+--- 75 ae 75 7c 3c0 879.7
+EVENT: Kefka 83 282 x1 (1c5)
+--- 75 ae 75 7d 3c0 879.7
+EVENT: Kefka 83 282 x1 (1c5)
+--- 75 ae 75 7e 3c0 879.7
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 75 ae 75 7f 3c0 913.7
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 75 ae 75 80 3c0 946.7
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 75 ae 75 81 3c0 979.7
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 75 ae 75 82 3c0 1012.7
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 75 ae 75 83 3c0 1045.7
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 75 ae 75 84 3c0 1089.7
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 75 ae 75 85 3c0 1123.7
+--- 75 ae 75 85 3c0 1123.7
+19 threat steps in encounter zone 8.
+--- 75 c1 75 85 1200 1133.2
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 75 d9 75 86 1c80 1159.2
+--- 75 f0 75 86 a10 1170.7
+6 threat steps in encounter zone 43.
+--- 75 f6 75 86 cb0 1173.7
+24 threat steps in encounter zone 45.
+--- 86 e 75 86 1730 1185.7
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 86 11 75 87 1880 1207.2
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 86 2e 75 88 cb0 1236.8
+AVOIDED: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 86 2f 75 88 70 1237.3
+7 threat steps in encounter zone 4c.
+--- 86 36 75 88 380 1240.8
+27 threat steps in encounter zone 46.
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 86 4f 75 89 e70 1280.3
+--- 86 51 75 89 e0 1281.4
+10 threat steps in encounter zone 4c.
+--- 86 5b 75 89 540 1286.4
+2 threat steps in encounter zone 46.
+--- 86 5d 75 89 620 1287.4
+RANDOM EVENT: Ghost 10 90 x3 (42) COST: 27.0
+--- 86 5d 75 8a 620 1314.4
+8 threat steps in encounter zone 4c.
+--- 86 65 75 8a 9a0 1318.4
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 86 6f 75 8b e00 1343.4
+--- 86 86 75 8b a10 1354.9
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 86 9b 75 8c 1340 1392.4
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 86 a8 75 8d 5b0 1430.9
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 86 d0 75 8e 1180 1464.9
+--- 86 ea 75 8e b60 1477.9
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 86 ea 75 8f b60 1477.9
+2 threat steps in encounter zone 8.
+--- 86 ec 75 8f ce0 1478.9
+14 threat steps in encounter zone 8.
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 86 ed 75 90 da0 1484.4
+--- 86 fa 75 90 1380 1491.0
+4 threat steps in encounter zone 8.
+--- 86 fe 75 90 1980 1493.0
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 86 fe 75 91 1980 1493.0
+*** ENTER THE VELDT ***
+--- 86 fe 75 91 1980 1493.0
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 21.0
+--- 97 e 75 92 2580 1522.0
+ENCOUNTER: Areneid 6 93 x3, Sand Ray 6 92 x1 (9) COST: 24.0
+--- 97 2c 75 93 1680 1561.0
+--- 97 31 75 93 3c0 1563.5
+*** SAVE AND RELOAD ***
+--- 83 83 83 83 3c0 1613.5
+*** ENTER THE VELDT ***
+--- 83 83 83 83 3c0 1613.5
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- 83 9b 83 84 15c0 1637.5
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 83 b1 83 85 1080 1690.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 83 d0 83 86 1740 1731.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 83 ed 83 87 15c0 1751.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 24.0
+--- 94 e 83 88 18c0 1793.0
+
+initialseed: 67
+stepseed: 94
+battleseed: 83
+stepcounter: e
+battlecounter: 88
+threat: 0
+cost: 1793.0
+num_encounters: 44
+
+------------------------------------------------------------
+INITIAL SEED: 39
+--- 27 27 27 27 0 0
+--- 27 27 27 27 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 27 27 27 28 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 27 27 27 29 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 27 27 27 2a 0 0
+--- 27 27 27 2a 0 0
+29 threat steps in encounter zone 39.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 27 49 27 2b 880 42.0
+AVOIDED: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 27 4a 27 2b 40 42.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 27 4a 27 2c 40 42.5
+1 threat steps in encounter zone 39.
+--- 27 4b 27 2c 80 43.0
+16 threat steps in encounter zone 3a.
+--- 27 5b 27 2c 780 51.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 27 5b 27 2d 780 51.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 5e 27 2e 8d0 66.5
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 79 27 2f bd0 94.1
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 8d 27 30 8c0 118.1
+--- 27 a6 27 30 af0 130.6
+--- 27 a6 27 30 af0 130.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 27 a6 27 31 af0 130.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 27 a6 27 32 af0 130.6
+28 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 27 bc 27 33 1330 154.6
+--- 27 c2 27 33 240 157.6
+1 threat steps in encounter zone 2.
+--- 27 c3 27 33 300 158.1
+1 threat steps in encounter zone 0.
+--- 27 c4 27 33 360 158.6
+1 threat steps in encounter zone 2.
+--- 27 c5 27 33 420 159.1
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 27 cb 27 34 660 175.1
+--- 27 cc 27 34 60 175.7
+2 threat steps in encounter zone 0.
+--- 27 ce 27 34 120 176.7
+3 threat steps in encounter zone 1.
+--- 27 d1 27 34 240 178.2
+3 threat steps in encounter zone 0.
+--- 27 d4 27 34 360 179.7
+9 threat steps in encounter zone 1.
+--- 27 dd 27 34 6c0 184.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 27 dd 27 35 6c0 184.2
+--- 27 dd 27 35 6c0 184.2
+17 threat steps in encounter zone 3c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- 27 f1 27 36 f80 207.3
+AVOIDED: Hornet 6 46 x2 (d) COST: 12.1
+--- 27 f2 27 36 70 207.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 38 f 27 37 d20 234.4
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 38 2f 27 38 e00 262.5
+--- 38 34 27 38 230 265.0
+--- 38 34 27 38 230 265.0
+11 threat steps in encounter zone 3.
+--- 38 3f 27 38 a70 270.5
+--- 38 3f 27 38 a70 270.5
+24 threat steps in encounter zone 3f.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 38 59 27 39 15d0 299.5
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 25.5
+--- 38 59 27 39 0 299.5
+6 threat steps in encounter zone 3d.
+--- 38 5f 27 39 2a0 302.5
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 38 63 27 3a 460 325.5
+--- 38 87 27 3a fc0 343.6
+--- 38 87 27 3a fc0 343.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 8f 27 3b 1340 361.6
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 a7 27 3c a80 387.6
+--- 38 bd 27 3c 9a0 398.6
+7 threat steps in encounter zone 3d.
+--- 38 c4 27 3c cb0 402.1
+25 threat steps in encounter zone 3e.
+--- 38 dd 27 3c 17a0 414.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 38 ec 27 3d 1e30 442.1
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 f9 27 3e 5b0 462.6
+--- 49 4 27 3e 4d0 468.1
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 49 1c 27 3f f50 496.1
+--- 49 2a 27 3f 620 503.1
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 44 27 40 1180 532.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 4d 27 41 3f0 552.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 77 27 42 1260 589.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 7f 27 43 380 609.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 49 99 27 44 b60 636.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 b2 27 45 af0 665.1
+--- 49 be 27 45 540 671.1
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 49 be 27 46 540 671.1
+--- 49 be 27 46 540 671.1
+4 threat steps in encounter zone 3e.
+--- 49 c2 27 46 700 673.1
+21 threat steps in encounter zone 3f.
+--- 49 d7 27 46 1030 683.6
+7 threat steps in encounter zone 40.
+--- 49 de 27 46 1340 687.1
+25 threat steps in encounter zone 5.
+ENCOUNTER: Rhinotaur 8 21 x1, Rhodox 7 18 x2 (14) COST: 25.5
+--- 49 e7 27 47 1a00 717.1
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 49 f7 27 48 c00 741.6
+--- 49 f7 27 48 0 741.7
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 35 35 35 37 0 829.6
+--- 35 35 35 37 0 829.6
+EVENT: Ultros 25 302 x1 (183)
+--- 35 35 35 38 0 829.6
+25 threat steps in encounter zone 6.
+--- 35 4e 35 38 12c0 842.1
+2 threat steps in encounter zone 7.
+--- 35 50 35 38 1440 843.1
+1 threat steps in encounter zone 6.
+--- 35 51 35 38 1500 843.6
+1 threat steps in encounter zone 7.
+--- 35 52 35 38 15c0 844.1
+1 threat steps in encounter zone 6.
+--- 35 53 35 38 1680 844.6
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 35 59 35 39 1b00 853.6
+AVOIDED: Rhobite 10 118 x3 (38) COST: 24.0
+--- 35 59 35 39 0 853.6
+24 threat steps in encounter zone 6.
+--- 35 71 35 39 1200 865.6
+1 threat steps in encounter zone 1.
+--- 35 72 35 39 12c0 866.1
+EVENT: Leader 12 334 x1 (199)
+--- 35 72 35 3a 12c0 866.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 35 72 35 3b 12c0 866.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 35 72 35 3c 12c0 866.1
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 35 72 35 3d 12c0 900.1
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 35 72 35 3e 12c0 934.1
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 35 72 35 3f 12c0 967.1
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 35 72 35 40 12c0 1000.1
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 35 72 35 41 12c0 1033.1
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 35 72 35 42 12c0 1077.1
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 35 72 35 43 12c0 1111.1
+--- 35 72 35 43 12c0 1111.1
+19 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 35 79 35 44 1800 1141.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 35 8f 35 45 1080 1158.6
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 35 8f 35 45 0 1158.6
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 35 a7 35 46 a80 1197.6
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 35 ba 35 47 850 1221.1
+--- 35 be 35 47 1c0 1223.1
+6 threat steps in encounter zone 43.
+--- 35 c4 35 47 460 1226.1
+24 threat steps in encounter zone 45.
+--- 35 dc 35 47 ee0 1238.1
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 35 ec 35 48 15e0 1266.1
+--- 35 f5 35 48 3f0 1270.6
+7 threat steps in encounter zone 4c.
+--- 35 fc 35 48 700 1274.1
+27 threat steps in encounter zone 46.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 46 18 35 49 1340 1303.1
+AVOIDED: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 46 19 35 49 70 1303.6
+10 threat steps in encounter zone 4c.
+--- 46 23 35 49 4d0 1308.6
+2 threat steps in encounter zone 46.
+--- 46 25 35 49 5b0 1309.6
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 46 25 35 4a 5b0 1323.6
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 46 2b 35 4b 850 1358.6
+--- 46 2d 35 4b e0 1359.7
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 46 48 35 4c cb0 1393.2
+--- 46 4e 35 4c 2a0 1396.2
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 46 77 35 4d 1490 1430.7
+ENCOUNTER: Bomb 8 79 x3 (4c) COST: 27.0
+--- 46 99 35 4e ee0 1474.7
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 46 b2 35 4f af0 1501.2
+--- 46 b2 35 4f 0 1501.3
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 46 b2 35 50 0 1501.3
+2 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 46 e7 35 51 27c0 1533.8
+AVOIDED: Guard 5 0 x2 (2) COST: 16.0
+--- 46 e8 35 51 c0 1534.3
+14 threat steps in encounter zone 8.
+--- 46 f6 35 51 b40 1541.3
+4 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 46 fa 35 52 e40 1570.3
+--- 46 fa 35 52 0 1570.5
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 46 fa 35 53 0 1570.5
+*** ENTER THE VELDT ***
+--- 46 fa 35 53 0 1570.5
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 15.0
+--- 57 8 35 54 a80 1592.5
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 18.0
+--- 57 20 35 55 1200 1622.5
+--- 57 2d 35 55 9c0 1629.0
+*** SAVE AND RELOAD ***
+--- 43 43 43 43 9c0 1679.0
+*** ENTER THE VELDT ***
+--- 43 43 43 43 9c0 1679.0
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 43 44 43 44 a80 1693.5
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 43 4e 43 45 780 1740.6
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 43 63 43 46 fc0 1756.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 24.0
+--- 43 7c 43 47 12c0 1793.6
+
+initialseed: 27
+stepseed: 43
+battleseed: 43
+stepcounter: 7c
+battlecounter: 47
+threat: 0
+cost: 1793.6
+num_encounters: 46
+
+------------------------------------------------------------
+INITIAL SEED: 244
+--- f4 f4 f4 f4 0 0
+--- f4 f4 f4 f4 0 0
+EVENT: Guard 5 0 x2 (2)
+--- f4 f4 f4 f5 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- f4 f4 f4 f6 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- f4 f4 f4 f7 0 0
+--- f4 f4 f4 f7 0 0
+29 threat steps in encounter zone 39.
+--- 5 11 f4 f7 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 5 11 f4 f8 740 14.5
+1 threat steps in encounter zone 39.
+--- 5 12 f4 f8 780 15.0
+16 threat steps in encounter zone 3a.
+--- 5 22 f4 f8 e80 23.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 5 22 f4 f9 e80 23.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 5 25 f4 fa fd0 38.5
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 5 38 f4 fb 850 62.1
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 5 51 f4 fc af0 94.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 5 78 f4 fd 1110 129.1
+--- 5 79 f4 fd 70 129.6
+--- 5 79 f4 fd 70 129.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 5 79 f4 fe 70 129.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 5 79 f4 ff 70 129.6
+28 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 5 90 b 0 910 154.1
+--- 5 95 b 0 1e0 156.6
+1 threat steps in encounter zone 2.
+--- 5 96 b 0 2a0 157.1
+1 threat steps in encounter zone 0.
+--- 5 97 b 0 300 157.6
+1 threat steps in encounter zone 2.
+--- 5 98 b 0 3c0 158.1
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 5 9f b 1 660 174.6
+--- 5 9f b 1 0 174.7
+2 threat steps in encounter zone 0.
+--- 5 a1 b 1 c0 175.7
+3 threat steps in encounter zone 1.
+--- 5 a4 b 1 1e0 177.2
+3 threat steps in encounter zone 0.
+--- 5 a7 b 1 300 178.7
+9 threat steps in encounter zone 1.
+--- 5 b0 b 1 660 183.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 5 b0 b 2 660 183.2
+--- 5 b0 b 2 660 183.2
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- 5 b6 b 3 900 198.3
+--- 5 c1 b 3 4d0 203.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 5 e1 b 4 12d0 231.9
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 16 2 b 5 e70 260.5
+--- 16 3 b 5 70 261.1
+--- 16 3 b 5 70 261.1
+11 threat steps in encounter zone 3.
+--- 16 e b 5 8b0 266.6
+--- 16 e b 5 8b0 266.6
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 16 1d b 6 f40 289.1
+--- 16 26 b 6 3f0 293.6
+6 threat steps in encounter zone 3d.
+--- 16 2c b 6 690 296.6
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 16 40 b 7 f50 321.6
+--- 16 54 b 7 8c0 331.6
+--- 16 54 b 7 8c0 331.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 16 5d b 8 cb0 350.1
+--- 16 8a b 8 13b0 372.6
+7 threat steps in encounter zone 3d.
+--- 16 91 b 8 16c0 376.1
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 16 92 b 9 1730 390.6
+--- 16 aa b 9 a80 402.7
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 16 ce b a 1a40 434.7
+--- 16 d1 b a 150 436.3
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 16 e0 b b 7e0 459.8
+--- 16 f7 b b a10 471.3
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 16 fb b c bd0 487.3
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 27 1f b d fc0 521.4
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 27 45 b e 10a0 554.4
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 27 5e b f af0 580.9
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 27 79 b 10 bd0 608.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 27 8d b 11 8c0 633.4
+AVOIDED: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 18.0
+--- 27 8d b 11 0 633.4
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 27 8d b 12 0 633.4
+--- 27 8d b 12 0 633.4
+4 threat steps in encounter zone 3e.
+--- 27 91 b 12 1c0 635.4
+21 threat steps in encounter zone 3f.
+--- 27 a6 b 12 af0 645.9
+7 threat steps in encounter zone 40.
+--- 27 ad b 12 e00 649.4
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 15.0
+--- 27 bc b 13 1940 671.9
+--- 27 c6 b 13 780 676.9
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 2 2 2 4 780 756.3
+--- 2 2 2 4 780 756.3
+EVENT: Ultros 25 302 x1 (183)
+--- 2 2 2 5 780 756.3
+25 threat steps in encounter zone 6.
+--- 2 1b 2 5 1a40 768.8
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 2 22 2 6 1f80 778.3
+AVOIDED: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 2 23 2 6 c0 778.8
+1 threat steps in encounter zone 6.
+--- 2 24 2 6 180 779.3
+1 threat steps in encounter zone 7.
+--- 2 25 2 6 240 779.8
+1 threat steps in encounter zone 6.
+--- 2 26 2 6 300 780.3
+2 threat steps in encounter zone 7.
+--- 2 28 2 6 480 781.3
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 2 38 2 7 1080 802.3
+--- 2 40 2 7 600 806.3
+1 threat steps in encounter zone 1.
+--- 2 41 2 7 6c0 806.8
+EVENT: Leader 12 334 x1 (199)
+--- 2 41 2 8 6c0 806.8
+EVENT: Kefka 83 282 x1 (1c5)
+--- 2 41 2 9 6c0 806.8
+EVENT: Kefka 83 282 x1 (1c5)
+--- 2 41 2 a 6c0 806.8
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 2 41 2 b 6c0 840.8
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 2 41 2 c 6c0 873.8
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 2 41 2 d 6c0 907.8
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 2 41 2 e 6c0 940.8
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 2 41 2 f 6c0 973.8
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 2 41 2 10 6c0 1017.8
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 2 41 2 11 6c0 1051.8
+--- 2 41 2 11 6c0 1051.8
+19 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 2 57 2 12 1740 1068.8
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- 2 58 2 12 c0 1069.3
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 2 78 2 13 ec0 1099.3
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 2 82 2 14 460 1118.3
+--- 2 87 2 14 230 1120.8
+6 threat steps in encounter zone 43.
+--- 2 8d 2 14 4d0 1123.8
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 2 90 2 15 620 1152.3
+--- 2 a5 2 15 930 1162.9
+25 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 2 b4 2 16 fc0 1184.4
+--- 2 be 2 16 460 1189.4
+7 threat steps in encounter zone 4c.
+--- 2 c5 2 16 770 1192.9
+27 threat steps in encounter zone 46.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 2 e1 2 17 13b0 1234.9
+AVOIDED: Whisper 12 14 x4 (4a) COST: 32.0
+--- 2 e2 2 17 70 1235.4
+10 threat steps in encounter zone 4c.
+--- 2 ec 2 17 4d0 1240.4
+2 threat steps in encounter zone 46.
+--- 2 ee 2 17 5b0 1241.4
+RANDOM EVENT: Ghost 10 90 x3 (42) COST: 27.0
+--- 2 ee 2 18 5b0 1268.4
+8 threat steps in encounter zone 4c.
+--- 2 f6 2 18 930 1272.4
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- 13 2 2 19 e70 1296.4
+--- 13 17 2 19 930 1306.9
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 13 1d 2 1a bd0 1323.9
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 13 40 2 1b f50 1355.4
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 13 43 2 1c 150 1370.9
+ENCOUNTER: Bomb 8 79 x3 (4c) COST: 27.0
+--- 13 5d 2 1d b60 1411.0
+--- 13 7b 2 1d d20 1426.0
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 13 7b 2 1e d20 1426.0
+2 threat steps in encounter zone 8.
+--- 13 7d 2 1e ea0 1427.0
+14 threat steps in encounter zone 8.
+--- 13 8b 2 1e 1920 1434.0
+4 threat steps in encounter zone 8.
+--- 13 8f 2 1e 1c20 1436.0
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 13 8f 2 1f 1c20 1436.0
+*** ENTER THE VELDT ***
+--- 13 8f 2 1f 1c20 1436.0
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 24.0
+--- 13 90 2 20 1ce0 1460.5
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 16.0
+--- 13 9e 2 21 a80 1483.6
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 10
+--- 13 b6 2 22 1200 1505.6
+--- 13 c2 2 22 900 1511.6
+*** SAVE AND RELOAD ***
+--- 10 10 10 10 900 1561.6
+*** ENTER THE VELDT ***
+--- 10 10 10 10 900 1561.6
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 10 1d 10 11 12c0 1602.1
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 15.0
+--- 10 38 10 12 1440 1630.6
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 14.0
+--- 10 40 10 13 600 1648.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 10 57 10 14 1140 1677.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- 10 78 10 15 18c0 1706.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 10 92 10 16 1380 1762.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 10 9e 10 17 900 1774.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 10 b6 10 18 1200 1807.6
+
+initialseed: f4
+stepseed: 10
+battleseed: 10
+stepcounter: b7
+battlecounter: 18
+threat: c0
+cost: 1808.1
+num_encounters: 48
+
+------------------------------------------------------------
+INITIAL SEED: 38
+--- 26 26 26 26 0 0
+--- 26 26 26 26 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 26 26 26 27 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 26 26 26 28 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 26 26 26 29 0 0
+--- 26 26 26 29 0 0
+29 threat steps in encounter zone 39.
+--- 26 43 26 29 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 26 43 26 2a 740 14.5
+1 threat steps in encounter zone 39.
+--- 26 44 26 2a 780 15.0
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 26 49 26 2b 9b0 31.5
+--- 26 54 26 2b 4d0 37.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 26 54 26 2c 4d0 37.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 26 5e 26 2d 930 62.0
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 26 79 26 2e bd0 89.5
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 26 8d 26 2f 8c0 113.5
+--- 26 9f 26 2f 7e0 122.5
+--- 26 9f 26 2f 7e0 122.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- 26 9f 26 30 7e0 122.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 26 9f 26 31 7e0 122.5
+28 threat steps in encounter zone 0.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 26 bc 26 32 12c0 151.0
+AVOIDED: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 26 bd 26 32 60 151.5
+1 threat steps in encounter zone 2.
+--- 26 be 26 32 120 152.0
+1 threat steps in encounter zone 0.
+--- 26 bf 26 32 180 152.5
+1 threat steps in encounter zone 2.
+--- 26 c0 26 32 240 153.0
+7 threat steps in encounter zone 0.
+--- 26 c7 26 32 4e0 156.5
+2 threat steps in encounter zone 0.
+--- 26 c9 26 32 5a0 157.5
+3 threat steps in encounter zone 1.
+--- 26 cc 26 32 6c0 159.0
+3 threat steps in encounter zone 0.
+--- 26 cf 26 32 7e0 160.5
+9 threat steps in encounter zone 1.
+--- 26 d8 26 32 b40 165.0
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 26 d8 26 33 b40 165.0
+--- 26 d8 26 33 b40 165.0
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- 26 dc 26 34 d00 179.1
+--- 26 e9 26 34 5b0 185.7
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 26 f1 26 35 930 201.8
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 37 f 26 36 d20 228.9
+--- 37 2b 26 36 c40 242.9
+--- 37 2b 26 36 c40 242.9
+11 threat steps in encounter zone 3.
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 14.0
+--- 37 2f 26 37 f40 258.9
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 14.0
+--- 37 35 26 38 480 276.0
+--- 37 36 26 38 c0 276.6
+--- 37 36 26 38 c0 276.6
+24 threat steps in encounter zone 3f.
+--- 37 4e 26 38 b40 288.6
+6 threat steps in encounter zone 3d.
+--- 37 54 26 38 de0 291.6
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 37 59 26 39 1010 309.1
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 37 63 26 3a 460 335.1
+--- 37 7c 26 3a af0 347.6
+--- 37 7c 26 3a af0 347.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 37 8f 26 3b 1340 371.1
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 37 a7 26 3c a80 397.1
+--- 37 b2 26 3c 4d0 402.6
+7 threat steps in encounter zone 3d.
+--- 37 b9 26 3c 7e0 406.1
+25 threat steps in encounter zone 3e.
+--- 37 d2 26 3c 12d0 418.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 37 ec 26 3d 1e30 451.6
+--- 37 f9 26 3d 5b0 458.1
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 48 18 26 3e 1340 497.6
+--- 48 1f 26 3e 310 501.1
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 48 2b 26 3f 850 521.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 48 48 26 40 cb0 551.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 48 4d 26 41 230 570.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 48 77 26 42 1260 607.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 48 99 26 43 ee0 640.1
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 48 b2 26 44 af0 666.6
+--- 48 b3 26 44 70 667.2
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 48 b3 26 45 70 667.2
+--- 48 b3 26 45 70 667.2
+4 threat steps in encounter zone 3e.
+--- 48 b7 26 45 230 669.2
+21 threat steps in encounter zone 3f.
+--- 48 cc 26 45 b60 679.7
+7 threat steps in encounter zone 40.
+--- 48 d3 26 45 e70 683.2
+25 threat steps in encounter zone 5.
+ENCOUNTER: Rhinotaur 8 21 x1, Rhodox 7 18 x2 (14) COST: 25.5
+--- 48 e7 26 46 1d70 718.7
+--- 48 ec 26 46 3c0 721.2
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x2, Pterodon 12 34 x1 (27) COST: 16.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 34 34 34 36 3c0 810.8
+--- 34 34 34 36 3c0 810.8
+EVENT: Ultros 25 302 x1 (183)
+--- 34 34 34 37 3c0 810.8
+25 threat steps in encounter zone 6.
+ENCOUNTER: Rhobite 10 118 x3 (38) COST: 24.0
+--- 34 36 34 38 540 835.8
+--- 34 4d 34 38 1140 847.4
+2 threat steps in encounter zone 7.
+--- 34 4f 34 38 12c0 848.4
+1 threat steps in encounter zone 6.
+--- 34 50 34 38 1380 848.9
+1 threat steps in encounter zone 7.
+--- 34 51 34 38 1440 849.4
+1 threat steps in encounter zone 6.
+--- 34 52 34 38 1500 849.9
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 34 59 34 39 1a40 859.4
+AVOIDED: Rhobite 10 118 x3 (38) COST: 24.0
+--- 34 5a 34 39 c0 859.9
+24 threat steps in encounter zone 6.
+--- 34 72 34 39 12c0 871.9
+1 threat steps in encounter zone 1.
+--- 34 73 34 39 1380 872.4
+EVENT: Leader 12 334 x1 (199)
+--- 34 73 34 3a 1380 872.4
+EVENT: Kefka 83 282 x1 (1c5)
+--- 34 73 34 3b 1380 872.4
+EVENT: Kefka 83 282 x1 (1c5)
+--- 34 73 34 3c 1380 872.4
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 34 73 34 3d 1380 906.4
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 34 73 34 3e 1380 940.4
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 34 73 34 3f 1380 973.4
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 34 73 34 40 1380 1006.4
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 34 73 34 41 1380 1039.4
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 34 73 34 42 1380 1083.4
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 34 73 34 43 1380 1117.4
+--- 34 73 34 43 1380 1117.4
+19 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 34 79 34 44 1800 1147.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 34 8f 34 45 1080 1164.4
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 34 90 34 45 c0 1164.9
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 34 a7 34 46 ad0 1203.4
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 34 ba 34 47 850 1226.9
+--- 34 bf 34 47 230 1229.4
+6 threat steps in encounter zone 43.
+--- 34 c5 34 47 4d0 1232.4
+24 threat steps in encounter zone 45.
+--- 34 dd 34 47 f50 1244.4
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 34 ec 34 48 15e0 1271.9
+--- 34 f6 34 48 460 1276.9
+7 threat steps in encounter zone 4c.
+--- 34 fd 34 48 770 1280.4
+27 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 45 18 34 49 1340 1307.9
+--- 45 18 34 49 0 1308.0
+10 threat steps in encounter zone 4c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 45 2b 34 4a 850 1350.5
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- 45 2c 34 4a 70 1351.0
+2 threat steps in encounter zone 46.
+--- 45 2e 34 4a 150 1352.0
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 45 2e 34 4b 150 1366.0
+8 threat steps in encounter zone 4c.
+--- 45 36 34 4b 4d0 1370.0
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 45 44 34 4c af0 1397.0
+--- 45 57 34 4c 850 1406.5
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 45 77 34 4d 1650 1436.5
+ENCOUNTER: Bomb 8 79 x3 (4c) COST: 27.0
+--- 45 99 34 4e ee0 1480.5
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 45 b2 34 4f af0 1507.0
+--- 45 bb 34 4f 3f0 1511.5
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 45 bb 34 50 3f0 1511.5
+2 threat steps in encounter zone 8.
+--- 45 bd 34 50 570 1512.5
+14 threat steps in encounter zone 8.
+--- 45 cb 34 50 ff0 1519.5
+4 threat steps in encounter zone 8.
+--- 45 cf 34 50 12f0 1521.5
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 45 cf 34 51 12f0 1521.5
+*** ENTER THE VELDT ***
+--- 45 cf 34 51 12f0 1521.5
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 45 e7 34 52 24f0 1549.5
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 18.0
+--- 45 fa 34 53 e40 1577.0
+--- 56 2 34 53 600 1581.0
+*** SAVE AND RELOAD ***
+--- 42 42 42 42 600 1631.0
+*** ENTER THE VELDT ***
+--- 42 42 42 42 600 1631.0
+ENCOUNTER: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 42 44 42 43 780 1676.0
+ENCOUNTER: Exocite 11 57 x2, Pterodon 12 34 x1 (27) COST: 13.0
+--- 42 4e 42 44 780 1694.1
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 42 63 42 45 fc0 1746.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 42 7c 42 46 12c0 1765.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Rhobite 10 118 x3 (38) COST: 24.0
+--- 42 a7 42 47 2040 1811.6
+
+initialseed: 26
+stepseed: 42
+battleseed: 42
+stepcounter: a7
+battlecounter: 47
+threat: 0
+cost: 1811.6
+num_encounters: 45
+
+------------------------------------------------------------
+INITIAL SEED: 104
+--- 68 68 68 68 0 0
+--- 68 68 68 68 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 68 68 68 69 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 68 68 68 6a 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 68 68 68 6b 0 0
+--- 68 68 68 6b 0 0
+29 threat steps in encounter zone 39.
+--- 68 85 68 6b 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 68 85 68 6c 740 14.5
+1 threat steps in encounter zone 39.
+--- 68 86 68 6c 780 15.0
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 68 93 68 6d d30 35.5
+--- 68 96 68 6d 150 37.1
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 68 96 68 6e 150 37.1
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 68 b5 68 6f ee0 66.6
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 68 d9 68 70 fc0 98.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 68 eb 68 71 7e0 128.6
+--- 68 eb 68 71 0 128.6
+--- 68 eb 68 71 0 128.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 68 eb 68 72 0 128.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 68 eb 68 73 0 128.6
+28 threat steps in encounter zone 0.
+--- 79 7 68 73 a80 142.6
+1 threat steps in encounter zone 2.
+--- 79 8 68 73 b40 143.1
+1 threat steps in encounter zone 0.
+--- 79 9 68 73 ba0 143.6
+1 threat steps in encounter zone 2.
+--- 79 a 68 73 c60 144.1
+7 threat steps in encounter zone 0.
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 79 11 68 74 f00 162.6
+--- 79 11 68 74 0 162.7
+2 threat steps in encounter zone 0.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 79 17 68 75 240 179.7
+AVOIDED: Leafer 5 23 x1 (6) COST: 13.0
+--- 79 17 68 75 0 179.7
+3 threat steps in encounter zone 1.
+--- 79 1a 68 75 240 181.2
+3 threat steps in encounter zone 0.
+--- 79 1d 68 75 480 182.7
+9 threat steps in encounter zone 1.
+--- 79 26 68 75 b40 187.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 79 26 68 76 b40 187.2
+--- 79 26 68 76 b40 187.2
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- 79 31 68 77 1010 204.8
+--- 79 37 68 77 2a0 207.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 79 58 68 78 1110 236.4
+--- 79 79 68 78 e70 252.9
+--- 79 79 68 78 e70 252.9
+11 threat steps in encounter zone 3.
+--- 79 84 68 78 16b0 258.4
+--- 79 84 68 78 16b0 258.4
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 79 88 68 79 1870 275.4
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 79 9b 68 7a 850 300.0
+--- 79 9c 68 7a 70 300.6
+6 threat steps in encounter zone 3d.
+--- 79 a2 68 7a 310 303.6
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 79 a9 68 7b 620 322.1
+--- 79 ca 68 7b e70 338.6
+--- 79 ca 68 7b e70 338.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 79 d1 68 7c 1180 356.1
+--- 8a 0 68 7c 1490 379.6
+7 threat steps in encounter zone 3d.
+--- 8a 7 68 7c 17a0 383.1
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 8a e 68 7d 1ab0 402.6
+--- 8a 20 68 7d 7e0 411.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 8a 2e 68 7e e00 438.6
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 8a 47 68 7f af0 465.1
+--- 8a 47 68 7f 0 465.2
+38 threat steps in encounter zone 3d.
+--- 8a 6d 68 7f 10a0 484.2
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 8a 6f 68 80 1180 499.2
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 8a 9b 68 81 1340 535.3
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 8a a8 68 82 5b0 555.8
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 8a c6 68 83 d20 584.8
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 8a ed 68 84 1110 618.3
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 8a f0 68 85 150 633.8
+--- 9b 1 68 85 770 642.4
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 9b 1 68 86 770 642.4
+--- 9b 1 68 86 770 642.4
+4 threat steps in encounter zone 3e.
+--- 9b 5 68 86 930 644.4
+21 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 9b 19 68 87 11f0 669.4
+--- 9b 1a 68 87 70 670.0
+7 threat steps in encounter zone 40.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 9b 2c 68 88 850 701.0
+AVOIDED: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 9b 2d 68 88 70 701.5
+25 threat steps in encounter zone 5.
+--- 9b 46 68 88 1330 714.0
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 244 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+--- 76 76 76 79 1330 811.1
+--- 76 76 76 79 1330 811.1
+EVENT: Ultros 25 302 x1 (183)
+--- 76 76 76 7a 1330 811.1
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 76 88 76 7b 20b0 844.1
+--- 76 8f 76 7b 540 847.6
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 76 a6 76 7c 1680 865.1
+AVOIDED: Rhobite 10 118 x3 (38) COST: 24.0
+--- 76 a7 76 7c c0 865.6
+1 threat steps in encounter zone 6.
+--- 76 a8 76 7c 180 866.1
+1 threat steps in encounter zone 7.
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 76 a9 76 7d 240 871.6
+--- 76 a9 76 7d 0 871.8
+1 threat steps in encounter zone 6.
+--- 76 aa 76 7d c0 872.3
+2 threat steps in encounter zone 7.
+--- 76 ac 76 7d 240 873.3
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 76 b1 76 7e 600 899.8
+--- 76 c4 76 7e e40 909.3
+1 threat steps in encounter zone 1.
+--- 76 c5 76 7e f00 909.8
+EVENT: Leader 12 334 x1 (199)
+--- 76 c5 76 7f f00 909.8
+EVENT: Kefka 83 282 x1 (1c5)
+--- 76 c5 76 80 f00 909.8
+EVENT: Kefka 83 282 x1 (1c5)
+--- 76 c5 76 81 f00 909.8
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 76 c5 76 82 f00 943.8
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 76 c5 76 83 f00 976.8
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 76 c5 76 84 f00 1009.8
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 76 c5 76 85 f00 1042.8
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 76 c5 76 86 f00 1075.8
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 76 c5 76 87 f00 1119.8
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 76 c5 76 88 f00 1153.8
+--- 76 c5 76 88 f00 1153.8
+19 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 76 d9 76 89 1e00 1169.8
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 76 da 76 89 c0 1170.3
+47 threat steps in encounter zone 44.
+--- 87 9 76 89 1550 1193.8
+6 threat steps in encounter zone 43.
+--- 87 f 76 89 17f0 1196.8
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 87 11 76 8a 18d0 1224.8
+--- 87 27 76 8a 9a0 1235.9
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 87 2e 76 8b cb0 1259.4
+--- 87 40 76 8b 7e0 1268.4
+7 threat steps in encounter zone 4c.
+--- 87 47 76 8b af0 1271.9
+27 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 87 4f 76 8c e70 1289.9
+--- 87 62 76 8c 850 1299.4
+10 threat steps in encounter zone 4c.
+--- 87 6c 76 8c cb0 1304.4
+2 threat steps in encounter zone 46.
+--- 87 6e 76 8c d90 1305.4
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 87 6e 76 8d d90 1319.4
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 87 6f 76 8e e00 1333.9
+--- 87 76 76 8e 310 1337.5
+33 threat steps in encounter zone 47.
+--- 87 97 76 8e 1180 1354.0
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 87 9b 76 8f 1340 1383.0
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 87 a8 76 90 5b0 1421.6
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 87 c6 76 91 d20 1450.6
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 87 ed 76 92 1110 1502.1
+--- 87 fb 76 92 620 1509.1
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 87 fb 76 93 620 1509.1
+2 threat steps in encounter zone 8.
+--- 87 fd 76 93 7a0 1510.1
+14 threat steps in encounter zone 8.
+--- 98 b 76 93 1220 1517.1
+4 threat steps in encounter zone 8.
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 98 e 76 94 1460 1523.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 98 19 76 95 840 1557.2
+AVOIDED: Tusker 10 122 x2 (10) COST: 24.0
+--- 98 19 76 95 0 1557.2
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 98 19 76 96 0 1557.2
+*** ENTER THE VELDT ***
+--- 98 19 76 96 0 1557.2
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 15.0
+--- 98 2c 76 97 e40 1581.7
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 24.0
+--- 98 47 76 98 1440 1619.2
+--- 98 4c 76 98 3c0 1621.7
+*** SAVE AND RELOAD ***
+--- 84 84 84 84 3c0 1671.7
+*** ENTER THE VELDT ***
+--- 84 84 84 84 3c0 1671.7
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 84 9b 84 85 1500 1725.2
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 84 b1 84 86 1080 1760.2
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 84 d0 84 87 1740 1781.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 24.0
+--- 84 ed 84 88 15c0 1821.2
+
+initialseed: 68
+stepseed: 84
+battleseed: 84
+stepcounter: ed
+battlecounter: 88
+threat: 0
+cost: 1821.2
+num_encounters: 47
+
+------------------------------------------------------------
+INITIAL SEED: 12
+--- c c c c 0 0
+--- c c c c 0 0
+EVENT: Guard 5 0 x2 (2)
+--- c c c d 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- c c c e 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- c c c f 0 0
+--- c c c f 0 0
+29 threat steps in encounter zone 39.
+ENCOUNTER: Repo Man 5 77 x1, Were-Rat 4 19 x1 (2c) COST: 20.0
+--- c 23 c 10 5c0 31.5
+--- c 29 c 10 180 34.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- c 29 c 11 180 34.5
+1 threat steps in encounter zone 39.
+--- c 2a c 11 1c0 35.0
+16 threat steps in encounter zone 3a.
+--- c 3a c 11 8c0 43.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- c 3a c 12 8c0 43.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- c 40 c 13 b60 66.0
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- c 78 c 14 1880 108.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- c 92 c 15 b60 142.0
+--- c 93 c 15 70 142.5
+--- c 93 c 15 70 142.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- c 93 c 16 70 142.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- c 93 c 17 70 142.5
+28 threat steps in encounter zone 0.
+--- c af c 17 af0 156.5
+1 threat steps in encounter zone 2.
+--- c b0 c 17 bb0 157.0
+1 threat steps in encounter zone 0.
+--- c b1 c 17 c10 157.5
+1 threat steps in encounter zone 2.
+--- c b2 c 17 cd0 158.0
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- c b6 c 18 e50 173.0
+--- c b9 c 18 120 174.7
+2 threat steps in encounter zone 0.
+--- c bb c 18 1e0 175.7
+3 threat steps in encounter zone 1.
+--- c be c 18 300 177.2
+3 threat steps in encounter zone 0.
+--- c c1 c 18 420 178.7
+9 threat steps in encounter zone 1.
+--- c ca c 18 780 183.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- c ca c 19 780 183.2
+--- c ca c 19 780 183.2
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- c d4 c 1a be0 200.3
+--- c db c 1a 310 203.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- c ff c 1b 12d0 233.9
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 1d 7 c 1c 380 250.0
+--- 1d 1d c 1c 9a0 261.0
+--- 1d 1d c 1c 9a0 261.0
+11 threat steps in encounter zone 3.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Rhinotaur 8 21 x1 (13) COST: 13.0
+--- 1d 34 c 1d 1ae0 286.5
+AVOIDED: Tusker 10 122 x2 (10) COST: 21.0
+--- 1d 34 c 1d 0 286.5
+--- 1d 34 c 1d 0 286.5
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 1d 45 c 1e 770 310.0
+--- 1d 4c c 1e 310 313.5
+6 threat steps in encounter zone 3d.
+--- 1d 52 c 1e 5b0 316.5
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 1d 5c c 1f a10 336.5
+--- 1d 7a c 1f d20 351.5
+--- 1d 7a c 1f d20 351.5
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 1d 9e c 20 1ce0 383.5
+--- 1d b0 c 20 7e0 392.5
+7 threat steps in encounter zone 3d.
+--- 1d b7 c 20 af0 396.0
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 1d ce c 21 1500 421.5
+--- 1d d0 c 21 e0 422.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 1d ef c 22 e70 452.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 1d fd c 23 620 474.1
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 1d fd c 23 0 474.1
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 2e 1a c 24 cb0 512.6
+--- 2e 23 c 24 3f0 517.1
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 2e 2f c 25 930 539.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 2e 3a c 26 4d0 560.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 2e 5e c 27 fc0 592.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 2e 7b c 28 cb0 621.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 2e ba c 29 1b90 667.6
+AVOIDED: Trilium 9 50 x2 (1e) COST: 15.0
+--- 2e bb c 29 70 668.1
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 2e bb c 2a 70 668.1
+--- 2e bb c 2a 70 668.1
+4 threat steps in encounter zone 3e.
+--- 2e bf c 2a 230 670.1
+21 threat steps in encounter zone 3f.
+--- 2e d4 c 2a b60 680.6
+7 threat steps in encounter zone 40.
+--- 2e db c 2a e70 684.1
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 2e ec c 2b 1b30 709.1
+--- 2e f4 c 2b 600 713.1
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x2, Pterodon 12 34 x1 (27) COST: 16.0
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1, Pterodon 12 34 x1 (25) COST: 16.0
+--- 1a 1a 1a 1c 600 795.5
+--- 1a 1a 1a 1c 600 795.5
+EVENT: Ultros 25 302 x1 (183)
+--- 1a 1a 1a 1d 600 795.5
+25 threat steps in encounter zone 6.
+--- 1a 33 1a 1d 18c0 808.0
+2 threat steps in encounter zone 7.
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 1a 34 1a 1e 1980 813.5
+--- 1a 35 1a 1e c0 814.2
+1 threat steps in encounter zone 6.
+--- 1a 36 1a 1e 180 814.7
+1 threat steps in encounter zone 7.
+--- 1a 37 1a 1e 240 815.2
+1 threat steps in encounter zone 6.
+--- 1a 38 1a 1e 300 815.7
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 1a 3c 1a 1f 600 823.7
+AVOIDED: Beakor 11 41 x1 (35) COST: 13.0
+--- 1a 3c 1a 1f 0 823.7
+24 threat steps in encounter zone 6.
+--- 1a 54 1a 1f 1200 835.7
+1 threat steps in encounter zone 1.
+--- 1a 55 1a 1f 12c0 836.2
+EVENT: Leader 12 334 x1 (199)
+--- 1a 55 1a 20 12c0 836.2
+EVENT: Kefka 83 282 x1 (1c5)
+--- 1a 55 1a 21 12c0 836.2
+EVENT: Kefka 83 282 x1 (1c5)
+--- 1a 55 1a 22 12c0 836.2
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 1a 55 1a 23 12c0 870.2
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 1a 55 1a 24 12c0 903.2
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 1a 55 1a 25 12c0 936.2
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 1a 55 1a 26 12c0 969.2
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 1a 55 1a 27 12c0 1002.2
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 1a 55 1a 28 12c0 1046.2
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 1a 55 1a 29 12c0 1080.2
+--- 1a 55 1a 29 12c0 1080.2
+19 threat steps in encounter zone 8.
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 1a 5d 1a 2a 18c0 1089.2
+--- 1a 68 1a 2a 840 1094.7
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 1a 92 1a 2b 1aa0 1129.7
+--- 1a 97 1a 2b 230 1132.2
+6 threat steps in encounter zone 43.
+--- 1a 9d 1a 2b 4d0 1135.2
+24 threat steps in encounter zone 45.
+--- 1a b5 1a 2b f50 1147.2
+25 threat steps in encounter zone 46.
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 1a ce 1a 2c 1a40 1186.7
+--- 1a ce 1a 2c 0 1186.8
+7 threat steps in encounter zone 4c.
+--- 1a d5 1a 2c 310 1190.3
+27 threat steps in encounter zone 46.
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 1a ef 1a 2d e70 1230.3
+--- 1a f0 1a 2d 70 1230.9
+10 threat steps in encounter zone 4c.
+--- 1a fa 1a 2d 4d0 1235.9
+2 threat steps in encounter zone 46.
+--- 1a fc 1a 2d 5b0 1236.9
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 1a fc 1a 2e 5b0 1250.9
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 1a fd 1a 2f 620 1265.4
+--- 2b 4 1a 2f 310 1269.0
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 2b 1a 1a 30 cb0 1300.0
+--- 2b 25 1a 30 4d0 1305.5
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 2b 2f 1a 31 930 1324.5
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 2b 49 1a 32 b60 1351.5
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 2b 5e 1a 33 930 1376.0
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 2b 79 1a 34 bd0 1416.5
+--- 2b 89 1a 34 700 1424.5
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 2b 89 1a 35 700 1424.5
+2 threat steps in encounter zone 8.
+--- 2b 8b 1a 35 880 1425.5
+14 threat steps in encounter zone 8.
+--- 2b 99 1a 35 1300 1432.5
+4 threat steps in encounter zone 8.
+--- 2b 9d 1a 35 1600 1434.5
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 2b 9d 1a 36 1600 1434.5
+*** ENTER THE VELDT ***
+--- 2b 9d 1a 36 1600 1434.5
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 72.0
+--- 2b b7 1a 37 2980 1519.5
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 2b cb 1a 38 f00 1545.5
+--- 2b d0 1a 38 3c0 1548.0
+*** SAVE AND RELOAD ***
+--- 28 28 28 28 3c0 1598.0
+*** ENTER THE VELDT ***
+--- 28 28 28 28 3c0 1598.0
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 28 3c 28 29 12c0 1642.0
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 28 49 28 2a 9c0 1661.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 15.0
+--- 28 5c 28 2b e40 1687.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 28 79 28 2c 15c0 1718.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Exocite 11 57 x2, Pterodon 12 34 x1 (27) COST: 13.0
+--- 28 7d 28 2d 300 1734.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 28 8d 28 2e c00 1785.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 28 bc 28 2f 2340 1815.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 28 cb 28 30 b40 1828.5
+
+initialseed: c
+stepseed: 28
+battleseed: 28
+stepcounter: cb
+battlecounter: 30
+threat: 0
+cost: 1828.5
+num_encounters: 46
+
+------------------------------------------------------------
+INITIAL SEED: 26
+--- 1a 1a 1a 1a 0 0
+--- 1a 1a 1a 1a 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 1a 1a 1a 1b 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 1a 1a 1a 1c 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 1a 1a 1a 1d 0 0
+--- 1a 1a 1a 1d 0 0
+29 threat steps in encounter zone 39.
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 1a 34 1a 1e 680 37.0
+--- 1a 37 1a 1e c0 38.6
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 1a 37 1a 1f c0 38.6
+1 threat steps in encounter zone 39.
+--- 1a 38 1a 1f 100 39.1
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 1a 3c 1a 20 2c0 55.1
+--- 1a 48 1a 20 540 61.2
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 1a 48 1a 21 540 61.2
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 1a 5d 1a 22 e70 91.7
+--- 1a 93 1a 22 17a0 118.7
+--- 1a 93 1a 22 17a0 118.7
+EVENT: Soldier 2 377 x3 (1e5)
+--- 1a 93 1a 23 17a0 118.7
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 1a 93 1a 24 17a0 118.7
+28 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 1a 9e 1a 25 1bc0 137.2
+--- 1a af 1a 25 660 145.7
+1 threat steps in encounter zone 2.
+--- 1a b0 1a 25 720 146.2
+1 threat steps in encounter zone 0.
+--- 1a b1 1a 25 780 146.7
+1 threat steps in encounter zone 2.
+--- 1a b2 1a 25 840 147.2
+7 threat steps in encounter zone 0.
+--- 1a b9 1a 25 ae0 150.7
+2 threat steps in encounter zone 0.
+--- 1a bb 1a 25 ba0 151.7
+3 threat steps in encounter zone 1.
+--- 1a be 1a 25 cc0 153.2
+3 threat steps in encounter zone 0.
+--- 1a c1 1a 25 de0 154.7
+9 threat steps in encounter zone 1.
+--- 1a ca 1a 25 1140 159.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 1a ca 1a 26 1140 159.2
+--- 1a ca 1a 26 1140 159.2
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- 1a ce 1a 27 1300 173.3
+--- 1a db 1a 27 5b0 179.9
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 1a ef 1a 28 e70 202.0
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 1a fd 1a 29 620 221.1
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 2b 1a 1a 2a cb0 247.7
+--- 2b 1d 1a 2a 150 249.3
+--- 2b 1d 1a 2a 150 249.3
+11 threat steps in encounter zone 3.
+--- 2b 28 1a 2a 990 254.8
+--- 2b 28 1a 2a 990 254.8
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 2b 2f 1a 2b ca0 273.3
+--- 2b 40 1a 2b 770 281.8
+6 threat steps in encounter zone 3d.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 18.0
+--- 2b 49 1a 2c b60 305.3
+AVOIDED: Tusker 10 122 x2 (10) COST: 21.0
+--- 2b 4a 1a 2c 70 305.8
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 2b 5e 1a 2d 930 336.8
+--- 2b 72 1a 2d 8c0 346.8
+--- 2b 72 1a 2d 8c0 346.8
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 2b 79 1a 2e bd0 370.3
+--- 2b a8 1a 2e 1490 393.8
+7 threat steps in encounter zone 3d.
+--- 2b af 1a 2e 17a0 397.3
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 2b bc 1a 2f 1d50 417.8
+--- 2b c8 1a 2f 540 423.8
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 2b cb 1a 30 690 439.3
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 2b ec 1a 31 e70 469.9
+--- 2b ef 1a 31 150 471.5
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 3c f 1a 32 f50 511.5
+--- 3c 15 1a 32 2a0 514.5
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 3c 35 1a 33 10a0 544.5
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 3c 44 1a 34 690 568.0
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 3c 63 1a 35 d90 597.5
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 3c 7c 1a 36 af0 624.0
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 3c a7 1a 37 12d0 661.5
+--- 3c a9 1a 37 e0 662.6
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 3c a9 1a 38 e0 662.6
+--- 3c a9 1a 38 e0 662.6
+4 threat steps in encounter zone 3e.
+--- 3c ad 1a 38 2a0 664.6
+21 threat steps in encounter zone 3f.
+--- 3c c2 1a 38 bd0 675.1
+7 threat steps in encounter zone 40.
+--- 3c c9 1a 38 ee0 678.6
+25 threat steps in encounter zone 5.
+--- 3c e2 1a 38 21a0 691.1
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 28 28 28 2a 21a0 779.5
+--- 28 28 28 2a 21a0 779.5
+EVENT: Ultros 25 302 x1 (183)
+--- 28 28 28 2b 21a0 779.5
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 28 34 28 2c 2aa0 809.5
+--- 28 41 28 2c 9c0 816.0
+2 threat steps in encounter zone 7.
+--- 28 43 28 2c b40 817.0
+1 threat steps in encounter zone 6.
+--- 28 44 28 2c c00 817.5
+1 threat steps in encounter zone 7.
+--- 28 45 28 2c cc0 818.0
+1 threat steps in encounter zone 6.
+--- 28 46 28 2c d80 818.5
+2 threat steps in encounter zone 7.
+--- 28 48 28 2c f00 819.5
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 28 49 28 2d fc0 844.0
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 28 5c 28 2e e40 866.6
+--- 28 60 28 2e 300 868.6
+1 threat steps in encounter zone 1.
+--- 28 61 28 2e 3c0 869.1
+EVENT: Leader 12 334 x1 (199)
+--- 28 61 28 2f 3c0 869.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 28 61 28 30 3c0 869.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 28 61 28 31 3c0 869.1
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 28 61 28 32 3c0 903.1
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 28 61 28 33 3c0 937.1
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 28 61 28 34 3c0 970.1
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 28 61 28 35 3c0 1003.1
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 28 61 28 36 3c0 1036.1
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 28 61 28 37 3c0 1080.1
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 28 61 28 38 3c0 1114.1
+--- 28 61 28 38 3c0 1114.1
+19 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 28 79 28 39 15c0 1132.1
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 28 7a 28 39 c0 1132.6
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 28 7d 28 3a 210 1161.1
+--- 28 a9 28 3a 1340 1183.2
+6 threat steps in encounter zone 43.
+--- 28 af 28 3a 15e0 1186.2
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 28 bc 28 3b 1b90 1219.7
+--- 28 c7 28 3b 4d0 1225.2
+25 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 28 cb 28 3c 690 1241.2
+--- 28 e0 28 3c 930 1251.8
+7 threat steps in encounter zone 4c.
+--- 28 e7 28 3c c40 1255.3
+27 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 28 f1 28 3d 10a0 1280.3
+--- 39 2 28 3d 770 1288.8
+10 threat steps in encounter zone 4c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 39 f 28 3e d20 1310.3
+AVOIDED: Ghost 10 90 x3 (42) COST: 27.0
+--- 39 10 28 3e 70 1310.8
+2 threat steps in encounter zone 46.
+--- 39 12 28 3e 150 1311.8
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 39 12 28 3f 150 1325.8
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 39 18 28 40 3f0 1355.8
+--- 39 1a 28 40 e0 1356.9
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x2 (4b) COST: 22.0
+--- 39 35 28 41 cb0 1392.4
+--- 39 3b 28 41 2a0 1395.4
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 39 59 28 42 fc0 1437.4
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 39 63 28 43 460 1469.4
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 39 8f 28 44 1340 1505.4
+--- 39 9f 28 44 700 1513.4
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 39 9f 28 45 700 1513.4
+2 threat steps in encounter zone 8.
+--- 39 a1 28 45 880 1514.4
+14 threat steps in encounter zone 8.
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 39 a7 28 46 d00 1522.4
+--- 39 af 28 46 c00 1526.4
+4 threat steps in encounter zone 8.
+--- 39 b3 28 46 1200 1528.4
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 39 b3 28 47 1200 1528.4
+*** ENTER THE VELDT ***
+--- 39 b3 28 47 1200 1528.4
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 72.0
+--- 39 ba 28 48 1740 1603.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 39 ec 28 49 2580 1645.9
+--- 39 ec 28 49 0 1645.9
+*** SAVE AND RELOAD ***
+*** SAVE AND RELOAD ***
+--- 44 44 44 44 0 1745.9
+*** ENTER THE VELDT ***
+--- 44 44 44 44 0 1745.9
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 44 63 44 45 1740 1803.4
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 44 77 44 46 f00 1818.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 44 8f 44 47 1200 1836.4
+
+initialseed: 1a
+stepseed: 44
+battleseed: 44
+stepcounter: 8f
+battlecounter: 47
+threat: 0
+cost: 1836.4
+num_encounters: 43
+
+------------------------------------------------------------
+INITIAL SEED: 87
+--- 57 57 57 57 0 0
+--- 57 57 57 57 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 57 57 57 58 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 57 57 57 59 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 57 57 57 5a 0 0
+--- 57 57 57 5a 0 0
+29 threat steps in encounter zone 39.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Were-Rat 4 19 x1 (2c) COST: 20.0
+--- 57 75 57 5b 780 36.0
+AVOIDED: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 57 76 57 5b 40 36.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 57 76 57 5c 40 36.5
+1 threat steps in encounter zone 39.
+--- 57 77 57 5c 80 37.0
+16 threat steps in encounter zone 3a.
+--- 57 87 57 5c 780 45.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 57 87 57 5d 780 45.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 57 8c 57 5e 9b0 67.5
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 57 9d 57 5f 770 90.0
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 57 c3 57 60 10a0 129.0
+--- 57 d2 57 60 690 136.5
+--- 57 d2 57 60 690 136.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- 57 d2 57 61 690 136.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 57 d2 57 62 690 136.5
+28 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 57 d5 57 63 7b0 151.0
+--- 57 ee 57 63 960 163.6
+1 threat steps in encounter zone 2.
+--- 57 ef 57 63 a20 164.1
+1 threat steps in encounter zone 0.
+--- 57 f0 57 63 a80 164.6
+1 threat steps in encounter zone 2.
+--- 57 f1 57 63 b40 165.1
+7 threat steps in encounter zone 0.
+--- 57 f8 57 63 de0 168.6
+2 threat steps in encounter zone 0.
+--- 57 fa 57 63 ea0 169.6
+3 threat steps in encounter zone 1.
+--- 57 fd 57 63 fc0 171.1
+3 threat steps in encounter zone 0.
+--- 68 0 57 63 10e0 172.6
+9 threat steps in encounter zone 1.
+--- 68 9 57 63 1440 177.1
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 68 9 57 64 1440 177.1
+--- 68 9 57 64 1440 177.1
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- 68 c 57 65 1590 190.7
+--- 68 1a 57 65 620 197.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 68 27 57 66 bd0 216.4
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 68 3e 57 67 a10 240.0
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 68 5b 57 68 cb0 266.6
+--- 68 5c 57 68 70 267.2
+--- 68 5c 57 68 70 267.2
+11 threat steps in encounter zone 3.
+--- 68 67 57 68 8b0 272.7
+--- 68 67 57 68 8b0 272.7
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 68 73 57 69 df0 293.7
+--- 68 7f 57 69 540 299.7
+6 threat steps in encounter zone 3d.
+--- 68 85 57 69 7e0 302.7
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 68 93 57 6a e00 330.7
+--- 68 ad 57 6a b60 343.7
+--- 68 ad 57 6a b60 343.7
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 68 b5 57 6b ee0 361.7
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 68 d9 57 6c fc0 393.7
+--- 68 e3 57 6c 460 398.7
+7 threat steps in encounter zone 3d.
+--- 68 ea 57 6c 770 402.2
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 68 eb 57 6d 7e0 416.7
+--- 79 3 57 6d a80 428.8
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 79 11 57 6e 10a0 449.8
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 79 17 57 6f 2a0 466.8
+--- 79 2a 57 6f 850 476.3
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 79 31 57 70 b60 503.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 79 58 57 71 1110 540.3
+AVOIDED: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 79 58 57 71 0 540.3
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 79 88 57 72 1500 578.3
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 79 9b 57 73 850 603.8
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 79 a9 57 74 620 624.8
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 79 d1 57 75 1180 660.8
+--- 79 ec 57 75 bd0 674.3
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 79 ec 57 76 bd0 674.3
+--- 79 ec 57 76 bd0 674.3
+4 threat steps in encounter zone 3e.
+--- 79 f0 57 76 d90 676.3
+21 threat steps in encounter zone 3f.
+--- 8a 5 57 76 16c0 686.8
+7 threat steps in encounter zone 40.
+--- 8a c 57 76 19d0 690.3
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 15.0
+--- 8a e 57 77 1b50 706.3
+--- 8a 25 57 77 1140 717.9
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 65 65 65 67 1140 804.1
+--- 65 65 65 67 1140 804.1
+EVENT: Ultros 25 302 x1 (183)
+--- 65 65 65 68 1140 804.1
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 65 66 65 69 1200 817.6
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 65 73 65 6a 9c0 837.2
+--- 65 7e 65 6a 840 842.7
+2 threat steps in encounter zone 7.
+--- 65 80 65 6a 9c0 843.7
+1 threat steps in encounter zone 6.
+--- 65 81 65 6a a80 844.2
+1 threat steps in encounter zone 7.
+--- 65 82 65 6a b40 844.7
+1 threat steps in encounter zone 6.
+--- 65 83 65 6a c00 845.2
+2 threat steps in encounter zone 7.
+--- 65 85 65 6a d80 846.2
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 65 93 65 6b 1800 866.2
+--- 65 9d 65 6b 780 871.2
+1 threat steps in encounter zone 1.
+--- 65 9e 65 6b 840 871.7
+EVENT: Leader 12 334 x1 (199)
+--- 65 9e 65 6c 840 871.7
+EVENT: Kefka 83 282 x1 (1c5)
+--- 65 9e 65 6d 840 871.7
+EVENT: Kefka 83 282 x1 (1c5)
+--- 65 9e 65 6e 840 871.7
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 65 9e 65 6f 840 905.7
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 65 9e 65 70 840 939.7
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 65 9e 65 71 840 972.7
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 65 9e 65 72 840 1005.7
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 65 9e 65 73 840 1038.7
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 65 9e 65 74 840 1082.7
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 65 9e 65 75 840 1116.7
+--- 65 9e 65 75 840 1116.7
+19 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 65 b5 65 76 1980 1134.2
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- 65 b5 65 76 0 1134.2
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 65 d9 65 77 fc0 1166.2
+--- 65 e4 65 77 4d0 1171.7
+6 threat steps in encounter zone 43.
+--- 65 ea 65 77 770 1174.7
+24 threat steps in encounter zone 45.
+--- 76 2 65 77 11f0 1186.7
+25 threat steps in encounter zone 46.
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- 76 c 65 78 1650 1218.7
+--- 76 1b 65 78 690 1226.2
+7 threat steps in encounter zone 4c.
+--- 76 22 65 78 9a0 1229.7
+27 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 76 31 65 79 1030 1251.2
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 76 3b 65 7a 460 1276.2
+--- 76 3d 65 7a e0 1277.3
+10 threat steps in encounter zone 4c.
+--- 76 47 65 7a 540 1282.3
+2 threat steps in encounter zone 46.
+--- 76 49 65 7a 620 1283.3
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 76 49 65 7b 620 1297.3
+8 threat steps in encounter zone 4c.
+--- 76 51 65 7b 9a0 1301.3
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x2 (4b) COST: 22.0
+--- 76 58 65 7c cb0 1326.8
+ENCOUNTER: Over-Mind 13 15 x2 (4b) COST: 22.0
+--- 76 72 65 7d b60 1361.8
+--- 76 72 65 7d 0 1361.9
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 76 a6 65 7e 16c0 1419.9
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 76 b1 65 7f 4d0 1452.4
+--- 76 d6 65 7f 1030 1470.9
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 76 d6 65 80 1030 1470.9
+2 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 76 da 65 81 1330 1478.9
+AVOIDED: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 76 da 65 81 0 1478.9
+14 threat steps in encounter zone 8.
+--- 76 e8 65 81 a80 1485.9
+4 threat steps in encounter zone 8.
+--- 76 ec 65 81 d80 1487.9
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 76 ec 65 82 d80 1487.9
+*** ENTER THE VELDT ***
+--- 76 ec 65 82 d80 1487.9
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 72.0
+--- 87 c 65 83 2580 1575.9
+--- 87 1f 65 83 e40 1585.4
+*** SAVE AND RELOAD ***
+--- 73 73 73 73 e40 1635.4
+*** ENTER THE VELDT ***
+--- 73 73 73 73 e40 1635.4
+ENCOUNTER: Guard 5 0 x2 (2) COST: 12.0
+--- 73 74 73 74 f00 1647.9
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 15.0
+--- 73 88 73 75 f00 1673.0
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 14.0
+--- 73 a6 73 76 1680 1702.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 73 cd 73 77 1d40 1738.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- 73 da 73 78 9c0 1758.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 73 e2 73 79 600 1805.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 84 c 73 7a 1f80 1832.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 84 2e 73 7b 1980 1855.0
+
+initialseed: 57
+stepseed: 84
+battleseed: 73
+stepcounter: 2e
+battlecounter: 7b
+threat: 0
+cost: 1855.0
+num_encounters: 47
+
+------------------------------------------------------------
+INITIAL SEED: 33
+--- 21 21 21 21 0 0
+--- 21 21 21 21 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 21 21 21 22 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 21 21 21 23 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 21 21 21 24 0 0
+--- 21 21 21 24 0 0
+29 threat steps in encounter zone 39.
+--- 21 3e 21 24 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 21 3e 21 25 740 14.5
+1 threat steps in encounter zone 39.
+--- 21 3f 21 25 780 15.0
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 21 45 21 26 a20 38.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 21 5c 21 27 a10 64.5
+AVOIDED: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 21 5d 21 27 70 65.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 21 5d 21 28 70 65.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 21 8d 21 29 1570 109.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 21 bc 21 2a 1490 153.5
+--- 21 bc 21 2a 0 153.5
+--- 21 bc 21 2a 0 153.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- 21 bc 21 2b 0 153.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 21 bc 21 2c 0 153.5
+28 threat steps in encounter zone 0.
+--- 21 d8 21 2c a80 167.5
+1 threat steps in encounter zone 2.
+--- 21 d9 21 2c b40 168.0
+1 threat steps in encounter zone 0.
+--- 21 da 21 2c ba0 168.5
+1 threat steps in encounter zone 2.
+--- 21 db 21 2c c60 169.0
+7 threat steps in encounter zone 0.
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 21 dc 21 2d cc0 184.5
+--- 21 e2 21 2d 240 187.6
+2 threat steps in encounter zone 0.
+--- 21 e4 21 2d 300 188.6
+3 threat steps in encounter zone 1.
+--- 21 e7 21 2d 420 190.1
+3 threat steps in encounter zone 0.
+--- 21 ea 21 2d 540 191.6
+9 threat steps in encounter zone 1.
+ENCOUNTER: Areneid 6 93 x2, Sand Ray 6 92 x1 (c) COST: 15.0
+--- 21 f1 21 2e 7e0 210.1
+--- 21 f3 21 2e 180 211.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 21 f3 21 2f 180 211.2
+--- 21 f3 21 2f 180 211.2
+17 threat steps in encounter zone 3c.
+--- 32 4 21 2f 8f0 219.7
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 32 1a 21 30 1290 242.8
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 32 2f 21 31 930 265.4
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 32 36 21 32 310 281.0
+--- 32 46 21 32 700 289.0
+--- 32 46 21 32 700 289.0
+11 threat steps in encounter zone 3.
+--- 32 51 21 32 f40 294.5
+--- 32 51 21 32 f40 294.5
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 32 5e 21 33 14f0 316.0
+--- 32 69 21 33 4d0 321.5
+6 threat steps in encounter zone 3d.
+--- 32 6f 21 33 770 324.5
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 32 7d 21 34 d90 346.5
+--- 32 97 21 34 b60 359.5
+--- 32 97 21 34 b60 359.5
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 32 a7 21 35 1260 381.5
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 32 ba 21 36 850 405.0
+--- 32 cd 21 36 850 414.5
+7 threat steps in encounter zone 3d.
+--- 32 d4 21 36 b60 418.0
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 32 ec 21 37 15e0 446.0
+--- 32 ed 21 37 70 446.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 32 f6 21 38 460 465.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 43 18 21 39 ee0 497.1
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 43 18 21 39 0 497.1
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 43 2b 21 3a 850 530.6
+--- 43 3e 21 3a 850 540.1
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 43 44 21 3b af0 557.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 43 63 21 3c d90 588.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 43 7c 21 3d af0 617.1
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 43 99 21 3e cb0 645.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 43 b2 21 3f af0 672.1
+--- 43 d2 21 3f e00 688.1
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 43 d2 21 40 e00 688.1
+--- 43 d2 21 40 e00 688.1
+4 threat steps in encounter zone 3e.
+--- 43 d6 21 40 fc0 690.1
+21 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 43 e8 21 41 17a0 714.1
+--- 43 eb 21 41 150 715.7
+7 threat steps in encounter zone 40.
+--- 43 f2 21 41 460 719.2
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 15.0
+--- 43 fa 21 42 a60 738.2
+ENCOUNTER: GreaseMonk 8 168 x2 (17) COST: 15.0
+--- 54 8 21 43 a80 760.2
+--- 54 b 21 43 240 761.8
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x2, Pterodon 12 34 x1 (27) COST: 16.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 2f 2f 2f 31 240 851.9
+--- 2f 2f 2f 31 240 851.9
+EVENT: Ultros 25 302 x1 (183)
+--- 2f 2f 2f 32 240 851.9
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 2f 3a 2f 33 a80 870.4
+--- 2f 48 2f 33 a80 877.4
+2 threat steps in encounter zone 7.
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 2f 49 2f 34 b40 882.9
+--- 2f 4a 2f 34 c0 883.6
+1 threat steps in encounter zone 6.
+--- 2f 4b 2f 34 180 884.1
+1 threat steps in encounter zone 7.
+--- 2f 4c 2f 34 240 884.6
+1 threat steps in encounter zone 6.
+--- 2f 4d 2f 34 300 885.1
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 2f 5e 2f 35 fc0 899.6
+AVOIDED: Beakor 11 41 x1 (35) COST: 13.0
+--- 2f 5f 2f 35 c0 900.1
+24 threat steps in encounter zone 6.
+--- 2f 77 2f 35 12c0 912.1
+1 threat steps in encounter zone 1.
+--- 2f 78 2f 35 1380 912.6
+EVENT: Leader 12 334 x1 (199)
+--- 2f 78 2f 36 1380 912.6
+EVENT: Kefka 83 282 x1 (1c5)
+--- 2f 78 2f 37 1380 912.6
+EVENT: Kefka 83 282 x1 (1c5)
+--- 2f 78 2f 38 1380 912.6
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 2f 78 2f 39 1380 946.6
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 2f 78 2f 3a 1380 979.6
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 2f 78 2f 3b 1380 1012.6
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 2f 78 2f 3c 1380 1045.6
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 2f 78 2f 3d 1380 1078.6
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 2f 78 2f 3e 1380 1122.6
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 2f 78 2f 3f 1380 1156.6
+--- 2f 78 2f 3f 1380 1156.6
+19 threat steps in encounter zone 8.
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 2f 79 2f 40 1440 1162.1
+--- 2f 8b 2f 40 d80 1171.2
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 2f ba 2f 41 2210 1208.7
+--- 2f ba 2f 41 0 1208.8
+6 threat steps in encounter zone 43.
+--- 2f c0 2f 41 2a0 1211.8
+24 threat steps in encounter zone 45.
+--- 2f d8 2f 41 d20 1223.8
+25 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 2f ec 2f 42 15e0 1247.8
+--- 2f f1 2f 42 230 1250.3
+7 threat steps in encounter zone 4c.
+--- 2f f8 2f 42 540 1253.8
+27 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 40 f 2f 43 f50 1279.3
+--- 40 13 2f 43 1c0 1281.3
+10 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x3 (4c) COST: 27.0
+--- 40 1c 2f 44 5b0 1312.8
+--- 40 1d 2f 44 70 1313.4
+2 threat steps in encounter zone 46.
+--- 40 1f 2f 44 150 1314.4
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 40 1f 2f 45 150 1328.4
+8 threat steps in encounter zone 4c.
+--- 40 27 2f 45 4d0 1332.4
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- 40 44 2f 46 1180 1364.9
+--- 40 48 2f 46 1c0 1366.9
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 40 4e 2f 47 460 1383.9
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 40 7c 2f 48 1420 1420.9
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 40 a7 2f 49 12d0 1469.4
+--- 40 ac 2f 49 230 1471.9
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 40 ac 2f 4a 230 1471.9
+2 threat steps in encounter zone 8.
+--- 40 ae 2f 4a 3b0 1472.9
+14 threat steps in encounter zone 8.
+--- 40 bc 2f 4a e30 1479.9
+4 threat steps in encounter zone 8.
+--- 40 c0 2f 4a 1130 1481.9
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 40 c0 2f 4b 1130 1481.9
+*** ENTER THE VELDT ***
+--- 40 c0 2f 4b 1130 1481.9
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 72.0
+--- 40 dc 2f 4c 2630 1567.9
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 40 e8 2f 4d 900 1589.9
+--- 40 f3 2f 4d 840 1595.4
+*** SAVE AND RELOAD ***
+--- 3d 3d 3d 3d 840 1645.4
+*** ENTER THE VELDT ***
+--- 3d 3d 3d 3d 840 1645.4
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 3d 44 3d 3e d80 1663.9
+ENCOUNTER: Areneid 6 93 x2, Sand Ray 6 92 x1 (c) COST: 15.0
+--- 3d 4e 3d 3f 780 1683.9
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 15.0
+--- 3d 63 3d 40 fc0 1709.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 3d 7c 3d 41 12c0 1736.9
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 3d 8f 3d 42 e40 1781.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 3d a7 3d 43 1200 1814.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 3d cb 3d 44 1b00 1838.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 3d e8 3d 45 15c0 1858.9
+
+initialseed: 21
+stepseed: 3d
+battleseed: 3d
+stepcounter: e8
+battlecounter: 45
+threat: 0
+cost: 1858.9
+num_encounters: 49
+
+------------------------------------------------------------
+INITIAL SEED: 201
+--- c9 c9 c9 c9 0 0
+--- c9 c9 c9 c9 0 0
+EVENT: Guard 5 0 x2 (2)
+--- c9 c9 c9 ca 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- c9 c9 c9 cb 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- c9 c9 c9 cc 0 0
+--- c9 c9 c9 cc 0 0
+29 threat steps in encounter zone 39.
+--- c9 e6 c9 cc 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- c9 e6 c9 cd 740 14.5
+1 threat steps in encounter zone 39.
+--- c9 e7 c9 cd 780 15.0
+16 threat steps in encounter zone 3a.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- da 6 c9 ce 1510 45.5
+AVOIDED: Vaporite 5 70 x2 (47) COST: 20.0
+--- da 7 c9 ce 70 46.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- da 7 c9 cf 70 46.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- da 24 c9 d0 d20 80.5
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- da 4a c9 d1 10a0 119.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- da 65 c9 d2 bd0 148.0
+--- da 66 c9 d2 70 148.5
+--- da 66 c9 d2 70 148.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- da 66 c9 d3 70 148.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- da 66 c9 d4 70 148.5
+28 threat steps in encounter zone 0.
+--- da 82 c9 d4 af0 162.5
+1 threat steps in encounter zone 2.
+--- da 83 c9 d4 bb0 163.0
+1 threat steps in encounter zone 0.
+--- da 84 c9 d4 c10 163.5
+1 threat steps in encounter zone 2.
+ENCOUNTER: Dark Wind 5 40 x2, Leafer 5 23 x2 (8) COST: 16.0
+--- da 85 c9 d5 cd0 180.0
+--- da 85 c9 d5 0 180.2
+7 threat steps in encounter zone 0.
+--- da 8c c9 d5 2a0 183.7
+2 threat steps in encounter zone 0.
+--- da 8e c9 d5 360 184.7
+3 threat steps in encounter zone 1.
+--- da 91 c9 d5 480 186.2
+3 threat steps in encounter zone 0.
+--- da 94 c9 d5 5a0 187.7
+9 threat steps in encounter zone 1.
+--- da 9d c9 d5 900 192.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- da 9d c9 d6 900 192.2
+--- da 9d c9 d6 900 192.2
+17 threat steps in encounter zone 3c.
+--- da ae c9 d6 1070 200.7
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- da af c9 d7 10e0 213.3
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- da c5 c9 d8 9a0 236.5
+--- da f0 c9 d8 12d0 258.0
+--- da f0 c9 d8 12d0 258.0
+11 threat steps in encounter zone 3.
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 15.0
+--- da f2 c9 d9 1450 274.0
+--- da fb c9 d9 6c0 278.6
+--- da fb c9 d9 6c0 278.6
+24 threat steps in encounter zone 3f.
+--- eb 13 c9 d9 1140 290.6
+6 threat steps in encounter zone 3d.
+--- eb 19 c9 d9 13e0 293.6
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- eb 22 c9 da 17d0 319.1
+--- eb 41 c9 da d90 334.6
+--- eb 41 c9 da d90 334.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- eb 42 c9 db e00 349.1
+--- eb 77 c9 db 1730 375.7
+7 threat steps in encounter zone 3d.
+--- eb 7e c9 db 1a40 379.2
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- eb 80 c9 dc 1b20 394.2
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- eb 96 c9 dd 9a0 421.3
+--- eb 97 c9 dd 70 421.9
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- eb be c9 de 1180 455.4
+--- eb be c9 de 0 455.5
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- eb e3 c9 df 1030 498.0
+--- eb e4 c9 df 70 498.6
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- eb fe c9 e0 bd0 525.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- fc 25 c9 e1 1110 559.1
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- fc 41 c9 e2 c40 587.1
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- fc 61 c9 e3 e00 617.1
+--- fc 78 c9 e3 a10 628.6
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- fc 78 c9 e4 a10 628.6
+--- fc 78 c9 e4 a10 628.6
+4 threat steps in encounter zone 3e.
+--- fc 7c c9 e4 bd0 630.6
+21 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- fc 7e c9 e5 cb0 652.6
+--- fc 91 c9 e5 850 662.2
+7 threat steps in encounter zone 40.
+--- fc 98 c9 e5 b60 665.7
+25 threat steps in encounter zone 5.
+ENCOUNTER: Rhinotaur 8 21 x1, Rhodox 7 18 x2 (14) COST: 25.5
+--- fc a1 c9 e6 1220 695.7
+--- fc b1 c9 e6 c00 703.7
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- d7 d7 d7 d9 c00 784.8
+--- d7 d7 d7 d9 c00 784.8
+EVENT: Ultros 25 302 x1 (183)
+--- d7 d7 d7 da c00 784.8
+25 threat steps in encounter zone 6.
+--- d7 f0 d7 da 1ec0 797.3
+2 threat steps in encounter zone 7.
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- d7 f2 d7 db 2040 803.3
+--- d7 f2 d7 db 0 803.5
+1 threat steps in encounter zone 6.
+--- d7 f3 d7 db c0 804.0
+1 threat steps in encounter zone 7.
+--- d7 f4 d7 db 180 804.5
+1 threat steps in encounter zone 6.
+--- d7 f5 d7 db 240 805.0
+2 threat steps in encounter zone 7.
+--- d7 f7 d7 db 3c0 806.0
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- e8 3 d7 dc cc0 825.0
+--- e8 f d7 dc 900 831.0
+1 threat steps in encounter zone 1.
+--- e8 10 d7 dc 9c0 831.5
+EVENT: Leader 12 334 x1 (199)
+--- e8 10 d7 dd 9c0 831.5
+EVENT: Kefka 83 282 x1 (1c5)
+--- e8 10 d7 de 9c0 831.5
+EVENT: Kefka 83 282 x1 (1c5)
+--- e8 10 d7 df 9c0 831.5
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- e8 10 d7 e0 9c0 865.5
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- e8 10 d7 e1 9c0 899.5
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- e8 10 d7 e2 9c0 932.5
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- e8 10 d7 e3 9c0 965.5
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- e8 10 d7 e4 9c0 998.5
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- e8 10 d7 e5 9c0 1042.5
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- e8 10 d7 e6 9c0 1076.5
+--- e8 10 d7 e6 9c0 1076.5
+19 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- e8 24 d7 e7 18c0 1092.5
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- e8 25 d7 e7 c0 1093.0
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- e8 4a d7 e8 10f0 1138.5
+--- e8 54 d7 e8 460 1143.5
+6 threat steps in encounter zone 43.
+--- e8 5a d7 e8 700 1146.5
+24 threat steps in encounter zone 45.
+--- e8 72 d7 e8 1180 1158.5
+25 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- e8 80 d7 e9 17a0 1179.5
+--- e8 8b d7 e9 4d0 1185.0
+7 threat steps in encounter zone 4c.
+--- e8 92 d7 e9 7e0 1188.5
+27 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- e8 96 d7 ea 9a0 1204.5
+ENCOUNTER: StillGoing 12 186 x3 (55) COST: 27.0
+--- e8 a3 d7 eb 5b0 1238.1
+--- e8 ad d7 eb 460 1243.1
+10 threat steps in encounter zone 4c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- e8 be d7 ec bd0 1266.6
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- e8 bf d7 ec 70 1267.1
+2 threat steps in encounter zone 46.
+--- e8 c1 d7 ec 150 1268.1
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- e8 c1 d7 ed 150 1282.1
+8 threat steps in encounter zone 4c.
+--- e8 c9 d7 ed 4d0 1286.1
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- e8 e3 d7 ee 1030 1317.1
+--- e8 ea d7 ee 310 1320.6
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- f9 0 d7 ef cb0 1345.6
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- f9 39 d7 f0 18f0 1401.1
+--- f9 4e d7 f0 930 1411.6
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- f9 4e d7 f1 930 1411.6
+2 threat steps in encounter zone 8.
+--- f9 50 d7 f1 ab0 1412.6
+14 threat steps in encounter zone 8.
+--- f9 5e d7 f1 1530 1419.6
+4 threat steps in encounter zone 8.
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- f9 62 d7 f2 1830 1426.6
+--- f9 62 d7 f2 0 1426.8
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- f9 62 d7 f3 0 1426.8
+*** ENTER THE VELDT ***
+--- f9 62 d7 f3 0 1426.8
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 72.0
+--- f9 7e d7 f4 1500 1512.8
+--- f9 95 d7 f4 1140 1524.3
+*** SAVE AND RELOAD ***
+--- e5 e5 e5 e5 1140 1574.3
+*** ENTER THE VELDT ***
+--- e5 e5 e5 e5 1140 1574.3
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- e5 f2 e5 e6 1b00 1614.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2 (2) COST: 12.0
+--- f6 22 e5 e7 2400 1651.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 14.0
+--- f6 39 e5 e8 1140 1678.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 15.0
+--- f6 41 e5 e9 600 1698.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- f6 62 e5 ea 18c0 1739.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- f6 71 e5 eb b40 1762.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- f6 7e e5 ec 9c0 1789.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- f6 81 e5 ed 240 1805.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- f6 a1 e5 ee 1800 1827.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 24.0
+--- f6 b3 e5 ef d80 1861.3
+
+initialseed: c9
+stepseed: f6
+battleseed: e5
+stepcounter: b4
+battlecounter: ef
+threat: c0
+cost: 1861.8
+num_encounters: 45
+
+------------------------------------------------------------
+INITIAL SEED: 248
+--- f8 f8 f8 f8 0 0
+--- f8 f8 f8 f8 0 0
+EVENT: Guard 5 0 x2 (2)
+--- f8 f8 f8 f9 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- f8 f8 f8 fa 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- f8 f8 f8 fb 0 0
+--- f8 f8 f8 fb 0 0
+29 threat steps in encounter zone 39.
+--- 9 15 f8 fb 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 9 15 f8 fc 740 14.5
+1 threat steps in encounter zone 39.
+--- 9 16 f8 fc 780 15.0
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 9 23 f8 fd d30 35.5
+--- 9 26 f8 fd 150 37.1
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 9 26 f8 fe 150 37.1
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 9 38 f8 ff 930 60.1
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 9 51 f 0 af0 92.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 9 78 f 1 1110 127.1
+--- 9 79 f 1 70 127.6
+--- 9 79 f 1 70 127.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 9 79 f 2 70 127.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 9 79 f 3 70 127.6
+28 threat steps in encounter zone 0.
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 9 92 f 4 9d0 155.1
+--- 9 95 f 4 120 156.7
+1 threat steps in encounter zone 2.
+--- 9 96 f 4 1e0 157.2
+1 threat steps in encounter zone 0.
+--- 9 97 f 4 240 157.7
+1 threat steps in encounter zone 2.
+--- 9 98 f 4 300 158.2
+7 threat steps in encounter zone 0.
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 9 9f f 5 5a0 176.7
+--- 9 9f f 5 0 176.8
+2 threat steps in encounter zone 0.
+--- 9 a1 f 5 c0 177.8
+3 threat steps in encounter zone 1.
+--- 9 a4 f 5 1e0 179.3
+3 threat steps in encounter zone 0.
+--- 9 a7 f 5 300 180.8
+9 threat steps in encounter zone 1.
+--- 9 b0 f 5 660 185.3
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 9 b0 f 6 660 185.3
+--- 9 b0 f 6 660 185.3
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- 9 b6 f 7 900 200.4
+--- 9 c1 f 7 4d0 205.9
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Crawly 7 98 x3 (12) COST: 12.1
+--- 9 df f 8 11f0 233.0
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 9 ff f 9 e00 261.1
+--- 1a 3 f 9 1c0 263.1
+--- 1a 3 f 9 1c0 263.1
+11 threat steps in encounter zone 3.
+--- 1a e f 9 a00 268.6
+--- 1a e f 9 a00 268.6
+24 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 1a 1d f a 1090 291.1
+--- 1a 26 f a 3f0 295.6
+6 threat steps in encounter zone 3d.
+--- 1a 2c f a 690 298.6
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 1a 34 f b a10 323.6
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 1a 3c f c 380 342.6
+--- 1a 54 f c a80 354.6
+--- 1a 54 f c a80 354.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 1a 5d f d e70 373.1
+--- 1a 8a f d 13b0 395.6
+7 threat steps in encounter zone 3d.
+--- 1a 91 f d 16c0 399.1
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 1a 9e f e 1c70 419.6
+--- 1a aa f e 540 425.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 1a ce f f 1500 457.6
+--- 1a d1 f f 150 459.2
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 1a ef f 10 e70 490.2
+--- 1a f7 f 10 380 494.2
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 1a fd f 11 620 511.2
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 2b 1a f 12 cb0 539.7
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 2b 2f f 13 930 566.2
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 2b 49 f 14 b60 593.2
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 2b 5e f 15 930 617.7
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 2b 79 f 16 bd0 647.2
+--- 2b 8b f 16 7e0 656.2
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 2b 8b f 17 7e0 656.2
+--- 2b 8b f 17 7e0 656.2
+4 threat steps in encounter zone 3e.
+--- 2b 8f f 17 9a0 658.2
+21 threat steps in encounter zone 3f.
+--- 2b a4 f 17 12d0 668.7
+7 threat steps in encounter zone 40.
+--- 2b ab f 17 15e0 672.2
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 2b bc f 18 22a0 697.2
+--- 2b c4 f 18 600 701.2
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x2, Pterodon 12 34 x1 (27) COST: 16.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 6 6 6 8 600 782.4
+--- 6 6 6 8 600 782.4
+EVENT: Ultros 25 302 x1 (183)
+--- 6 6 6 9 600 782.4
+25 threat steps in encounter zone 6.
+--- 6 1f 6 9 18c0 794.9
+2 threat steps in encounter zone 7.
+--- 6 21 6 9 1a40 795.9
+1 threat steps in encounter zone 6.
+--- 6 22 6 9 1b00 796.4
+1 threat steps in encounter zone 7.
+--- 6 23 6 9 1bc0 796.9
+1 threat steps in encounter zone 6.
+--- 6 24 6 9 1c80 797.4
+2 threat steps in encounter zone 7.
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 6 25 6 a 1d40 802.9
+--- 6 26 6 a c0 803.6
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 6 38 6 b e40 836.6
+--- 6 3e 6 b 480 839.6
+1 threat steps in encounter zone 1.
+--- 6 3f 6 b 540 840.1
+EVENT: Leader 12 334 x1 (199)
+--- 6 3f 6 c 540 840.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 6 3f 6 d 540 840.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 6 3f 6 e 540 840.1
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 6 3f 6 f 540 874.1
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 6 3f 6 10 540 907.1
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 6 3f 6 11 540 940.1
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 6 3f 6 12 540 973.1
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 6 3f 6 13 540 1006.1
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 6 3f 6 14 540 1050.1
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 6 3f 6 15 540 1084.1
+--- 6 3f 6 15 540 1084.1
+19 threat steps in encounter zone 8.
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 6 51 6 16 12c0 1098.1
+--- 6 52 6 16 c0 1098.7
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 6 78 6 17 1160 1144.7
+--- 6 81 6 17 3f0 1149.2
+6 threat steps in encounter zone 43.
+--- 6 87 6 17 690 1152.2
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 6 90 6 18 a80 1183.7
+ENCOUNTER: Ghost 10 90 x2, Poplium 11 162 x3 (45) COST: 37.0
+--- 6 9f 6 19 690 1228.2
+--- 6 9f 6 19 0 1228.3
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 6 b6 6 1a a10 1259.8
+--- 6 b8 6 1a e0 1260.9
+7 threat steps in encounter zone 4c.
+--- 6 bf 6 1a 3f0 1264.4
+27 threat steps in encounter zone 46.
+--- 6 da 6 1a fc0 1277.9
+10 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 6 e1 6 1b 12d0 1295.4
+--- 6 e4 6 1b 150 1297.0
+2 threat steps in encounter zone 46.
+--- 6 e6 6 1b 230 1298.0
+RANDOM EVENT: Ghost 10 90 x3 (42) COST: 27.0
+--- 6 e6 6 1c 230 1325.0
+8 threat steps in encounter zone 4c.
+--- 6 ee 6 1c 5b0 1329.0
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 17 2 6 1d e70 1359.0
+--- 17 f 6 1d 5b0 1365.5
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 17 1d 6 1e bd0 1386.5
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 17 40 6 1f f50 1418.0
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 17 5d 6 20 cb0 1446.5
+--- 17 73 6 20 9a0 1457.5
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 17 73 6 21 9a0 1457.5
+2 threat steps in encounter zone 8.
+--- 17 75 6 21 b20 1458.5
+14 threat steps in encounter zone 8.
+--- 17 83 6 21 15a0 1465.5
+4 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 17 90 6 22 1f60 1478.0
+AVOIDED: Bomb 8 79 x1 (4d) COST: 15.0
+--- 17 91 6 22 c0 1478.5
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 17 91 6 23 c0 1478.5
+*** ENTER THE VELDT ***
+--- 17 91 6 23 c0 1478.5
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 30.0
+--- 17 b6 6 24 1c80 1527.0
+--- 17 c4 6 24 a80 1534.0
+*** SAVE AND RELOAD ***
+--- 14 14 14 14 a80 1584.0
+*** ENTER THE VELDT ***
+--- 14 14 14 14 a80 1584.0
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 14 1d 14 15 1140 1622.5
+ENCOUNTER: Guard 5 0 x2 (2) COST: 12.0
+--- 14 38 14 16 1440 1648.0
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 15.0
+--- 14 43 14 17 840 1668.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 15.0
+--- 14 5d 14 18 1380 1697.5
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 14 82 14 19 1bc0 1733.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Pterodon 12 34 x2 (23) COST: 12.0
+--- 14 9e 14 1a 1500 1760.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 14 b6 14 1b 1200 1815.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 14 d4 14 1c 1680 1836.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 14 de 14 1d 780 1862.0
+
+initialseed: f8
+stepseed: 14
+battleseed: 14
+stepcounter: df
+battlecounter: 1d
+threat: c0
+cost: 1862.5
+num_encounters: 48
+
+------------------------------------------------------------
+INITIAL SEED: 39
+--- 27 27 27 27 0 0
+--- 27 27 27 27 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 27 27 27 28 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 27 27 27 29 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 27 27 27 2a 0 0
+--- 27 27 27 2a 0 0
+29 threat steps in encounter zone 39.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 27 49 27 2b 880 42.0
+AVOIDED: Were-Rat 4 19 x2 (2d) COST: 20.0
+--- 27 4a 27 2b 40 42.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 27 4a 27 2c 40 42.5
+1 threat steps in encounter zone 39.
+--- 27 4b 27 2c 80 43.0
+16 threat steps in encounter zone 3a.
+--- 27 5b 27 2c 780 51.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 27 5b 27 2d 780 51.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 5e 27 2e 8d0 66.5
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 79 27 2f bd0 94.1
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 27 8d 27 30 8c0 118.1
+--- 27 a6 27 30 af0 130.6
+--- 27 a6 27 30 af0 130.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 27 a6 27 31 af0 130.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 27 a6 27 32 af0 130.6
+28 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 27 bc 27 33 1330 154.6
+--- 27 c2 27 33 240 157.6
+1 threat steps in encounter zone 2.
+--- 27 c3 27 33 300 158.1
+1 threat steps in encounter zone 0.
+--- 27 c4 27 33 360 158.6
+1 threat steps in encounter zone 2.
+--- 27 c5 27 33 420 159.1
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 27 cb 27 34 660 175.1
+--- 27 cc 27 34 60 175.7
+2 threat steps in encounter zone 0.
+--- 27 ce 27 34 120 176.7
+3 threat steps in encounter zone 1.
+--- 27 d1 27 34 240 178.2
+3 threat steps in encounter zone 0.
+--- 27 d4 27 34 360 179.7
+9 threat steps in encounter zone 1.
+--- 27 dd 27 34 6c0 184.2
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 27 dd 27 35 6c0 184.2
+--- 27 dd 27 35 6c0 184.2
+17 threat steps in encounter zone 3c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- 27 f1 27 36 f80 207.3
+AVOIDED: Hornet 6 46 x2 (d) COST: 12.1
+--- 27 f2 27 36 70 207.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 38 f 27 37 d20 234.4
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 38 2f 27 38 e00 262.5
+--- 38 34 27 38 230 265.0
+--- 38 34 27 38 230 265.0
+11 threat steps in encounter zone 3.
+--- 38 3f 27 38 a70 270.5
+--- 38 3f 27 38 a70 270.5
+24 threat steps in encounter zone 3f.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 38 59 27 39 15d0 299.5
+AVOIDED: Cirpius 10 134 x3 (1d) COST: 25.5
+--- 38 59 27 39 0 299.5
+6 threat steps in encounter zone 3d.
+--- 38 5f 27 39 2a0 302.5
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 38 63 27 3a 460 325.5
+--- 38 87 27 3a fc0 343.6
+--- 38 87 27 3a fc0 343.6
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 8f 27 3b 1340 361.6
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 a7 27 3c a80 387.6
+--- 38 bd 27 3c 9a0 398.6
+7 threat steps in encounter zone 3d.
+--- 38 c4 27 3c cb0 402.1
+25 threat steps in encounter zone 3e.
+--- 38 dd 27 3c 17a0 414.6
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 38 ec 27 3d 1e30 442.1
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 38 f9 27 3e 5b0 462.6
+--- 49 4 27 3e 4d0 468.1
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 49 1c 27 3f f50 496.1
+--- 49 2a 27 3f 620 503.1
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 44 27 40 1180 532.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 4d 27 41 3f0 552.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 77 27 42 1260 589.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 7f 27 43 380 609.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 49 99 27 44 b60 636.6
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 49 b2 27 45 af0 665.1
+--- 49 be 27 45 540 671.1
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 49 be 27 46 540 671.1
+--- 49 be 27 46 540 671.1
+4 threat steps in encounter zone 3e.
+--- 49 c2 27 46 700 673.1
+21 threat steps in encounter zone 3f.
+--- 49 d7 27 46 1030 683.6
+7 threat steps in encounter zone 40.
+--- 49 de 27 46 1340 687.1
+25 threat steps in encounter zone 5.
+ENCOUNTER: Rhinotaur 8 21 x1, Rhodox 7 18 x2 (14) COST: 25.5
+--- 49 e7 27 47 1a00 717.1
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 49 f7 27 48 c00 741.6
+--- 49 f7 27 48 0 741.7
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 35 35 35 37 0 829.6
+--- 35 35 35 37 0 829.6
+EVENT: Ultros 25 302 x1 (183)
+--- 35 35 35 38 0 829.6
+25 threat steps in encounter zone 6.
+--- 35 4e 35 38 12c0 842.1
+2 threat steps in encounter zone 7.
+--- 35 50 35 38 1440 843.1
+1 threat steps in encounter zone 6.
+--- 35 51 35 38 1500 843.6
+1 threat steps in encounter zone 7.
+--- 35 52 35 38 15c0 844.1
+1 threat steps in encounter zone 6.
+--- 35 53 35 38 1680 844.6
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x2, Stray Cat 10 24 x2 (32) COST: 5
+--- 35 59 35 39 1b00 853.6
+AVOIDED: Rhobite 10 118 x3 (38) COST: 24.0
+--- 35 59 35 39 0 853.6
+24 threat steps in encounter zone 6.
+--- 35 71 35 39 1200 865.6
+1 threat steps in encounter zone 1.
+--- 35 72 35 39 12c0 866.1
+EVENT: Leader 12 334 x1 (199)
+--- 35 72 35 3a 12c0 866.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 35 72 35 3b 12c0 866.1
+EVENT: Kefka 83 282 x1 (1c5)
+--- 35 72 35 3c 12c0 866.1
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 35 72 35 3d 12c0 900.1
+RANDOM EVENT: Grunt 12 335 x4 (3c) COST: 34.0
+--- 35 72 35 3e 12c0 934.1
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 35 72 35 3f 12c0 967.1
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 35 72 35 40 12c0 1000.1
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 35 72 35 41 12c0 1033.1
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 35 72 35 42 12c0 1077.1
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 35 72 35 43 12c0 1111.1
+--- 35 72 35 43 12c0 1111.1
+19 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 35 79 35 44 1800 1141.6
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 35 8f 35 45 1080 1158.6
+AVOIDED: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 35 8f 35 45 0 1158.6
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 35 a7 35 46 a80 1197.6
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 35 ba 35 47 850 1221.1
+--- 35 be 35 47 1c0 1223.1
+6 threat steps in encounter zone 43.
+--- 35 c4 35 47 460 1226.1
+24 threat steps in encounter zone 45.
+--- 35 dc 35 47 ee0 1238.1
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 35 ec 35 48 15e0 1266.1
+--- 35 f5 35 48 3f0 1270.6
+7 threat steps in encounter zone 4c.
+--- 35 fc 35 48 700 1274.1
+27 threat steps in encounter zone 46.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 46 18 35 49 1340 1303.1
+AVOIDED: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 46 19 35 49 70 1303.6
+10 threat steps in encounter zone 4c.
+--- 46 23 35 49 4d0 1308.6
+2 threat steps in encounter zone 46.
+--- 46 25 35 49 5b0 1309.6
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 46 25 35 4a 5b0 1323.6
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 46 2b 35 4b 850 1358.6
+--- 46 2d 35 4b e0 1359.7
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 46 48 35 4c cb0 1393.2
+--- 46 4e 35 4c 2a0 1396.2
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 46 77 35 4d 1490 1430.7
+ENCOUNTER: Bomb 8 79 x3 (4c) COST: 27.0
+--- 46 99 35 4e ee0 1474.7
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 46 b2 35 4f af0 1501.2
+--- 46 b2 35 4f 0 1501.3
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 46 b2 35 50 0 1501.3
+2 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 46 e7 35 51 27c0 1533.8
+AVOIDED: Guard 5 0 x2 (2) COST: 16.0
+--- 46 e8 35 51 c0 1534.3
+14 threat steps in encounter zone 8.
+--- 46 f6 35 51 b40 1541.3
+4 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 46 fa 35 52 e40 1570.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 57 8 35 53 a80 1605.4
+AVOIDED: Hornet 6 46 x2 (d) COST: 18.0
+--- 57 8 35 53 0 1605.4
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 57 8 35 54 0 1605.4
+*** ENTER THE VELDT ***
+--- 57 8 35 54 0 1605.4
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 57 20 35 55 1200 1633.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 18.0
+--- 57 48 35 56 1e00 1672.4
+--- 57 49 35 56 c0 1672.9
+*** SAVE AND RESET TO GAME LOAD SCREEN ***
+*** SAVE AND RELOAD ***
+--- 44 44 44 44 c0 1767.9
+*** ENTER THE VELDT ***
+--- 44 44 44 44 c0 1767.9
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 44 4e 44 45 840 1814.9
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 44 63 44 46 fc0 1830.4
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 24.0
+--- 44 77 44 47 f00 1864.4
+
+initialseed: 27
+stepseed: 44
+battleseed: 44
+stepcounter: 77
+battlecounter: 47
+threat: 0
+cost: 1864.5
+num_encounters: 46
+
+------------------------------------------------------------
+INITIAL SEED: 110
+--- 6e 6e 6e 6e 0 0
+--- 6e 6e 6e 6e 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 6e 6e 6e 6f 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 6e 6e 6e 70 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 6e 6e 6e 71 0 0
+--- 6e 6e 6e 71 0 0
+29 threat steps in encounter zone 39.
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 6e 88 6e 72 680 37.0
+--- 6e 8b 6e 72 c0 38.6
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 6e 8b 6e 73 c0 38.6
+1 threat steps in encounter zone 39.
+--- 6e 8c 6e 73 100 39.1
+16 threat steps in encounter zone 3a.
+--- 6e 9c 6e 73 800 47.1
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 6e 9c 6e 74 800 47.1
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 6e b5 6e 75 12f0 79.6
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 6e d9 6e 76 fc0 117.6
+--- 6e e7 6e 76 620 124.6
+--- 6e e7 6e 76 620 124.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 6e e7 6e 77 620 124.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 6e e7 6e 78 620 124.6
+28 threat steps in encounter zone 0.
+--- 7f 3 6e 78 10a0 138.6
+1 threat steps in encounter zone 2.
+--- 7f 4 6e 78 1160 139.1
+1 threat steps in encounter zone 0.
+--- 7f 5 6e 78 11c0 139.6
+1 threat steps in encounter zone 2.
+--- 7f 6 6e 78 1280 140.1
+7 threat steps in encounter zone 0.
+--- 7f d 6e 78 1520 143.6
+2 threat steps in encounter zone 0.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 7f 11 6e 79 16a0 159.6
+AVOIDED: Sand Ray 6 92 x2 (a) COST: 14.0
+--- 7f 11 6e 79 0 159.6
+3 threat steps in encounter zone 1.
+--- 7f 14 6e 79 240 161.1
+3 threat steps in encounter zone 0.
+--- 7f 17 6e 79 480 162.6
+9 threat steps in encounter zone 1.
+--- 7f 20 6e 79 b40 167.1
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 7f 20 6e 7a b40 167.1
+--- 7f 20 6e 7a b40 167.1
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- 7f 31 6e 7b 12b0 187.7
+--- 7f 31 6e 7b 0 187.8
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 7f 50 6e 7c d90 215.4
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 7f 70 6e 7d e00 243.5
+--- 7f 73 6e 7d 150 245.1
+--- 7f 73 6e 7d 150 245.1
+11 threat steps in encounter zone 3.
+--- 7f 7e 6e 7d 990 250.6
+--- 7f 7e 6e 7d 990 250.6
+24 threat steps in encounter zone 3f.
+--- 7f 96 6e 7d 1410 262.6
+6 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 18.0
+--- 7f 9b 6e 7e 1640 283.1
+--- 7f 9c 6e 7e 70 283.7
+40 threat steps in encounter zone 3f.
+--- 7f c4 6e 7e 11f0 303.7
+--- 7f c4 6e 7e 11f0 303.7
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 7f d0 6e 7f 1730 323.7
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 7f d7 6e 80 310 347.2
+--- 7f fa 6e 80 f50 364.7
+7 threat steps in encounter zone 3d.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 90 e 6e 81 1810 391.7
+AVOIDED: Trilium 9 50 x2 (1e) COST: 14.0
+--- 90 f 6e 81 70 392.2
+25 threat steps in encounter zone 3e.
+--- 90 28 6e 81 b60 404.7
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 90 47 6e 82 18f0 440.2
+--- 90 4f 6e 82 380 444.2
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 90 6b 6e 83 fc0 474.2
+--- 90 75 6e 83 460 479.2
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 90 8e 6e 84 f50 505.7
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 90 a8 6e 85 b60 532.7
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 90 c6 6e 86 d20 561.7
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 90 d8 6e 87 7e0 584.7
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 90 f0 6e 88 a80 612.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- a1 10 6e 89 e00 643.7
+AVOIDED: Brawler 9 11 x2 (20) COST: 15.0
+--- a1 11 6e 89 70 644.2
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- a1 11 6e 8a 70 644.2
+--- a1 11 6e 8a 70 644.2
+4 threat steps in encounter zone 3e.
+--- a1 15 6e 8a 230 646.2
+21 threat steps in encounter zone 3f.
+--- a1 2a 6e 8a b60 656.7
+7 threat steps in encounter zone 40.
+--- a1 31 6e 8a e70 660.2
+25 threat steps in encounter zone 5.
+ENCOUNTER: Rhinotaur 8 21 x1, Rhodox 7 18 x2 (14) COST: 25.5
+--- a1 47 6e 8b 1ef0 696.7
+--- a1 4a 6e 8b 240 698.3
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 7c 7c 7c 7e 240 783.7
+--- 7c 7c 7c 7e 240 783.7
+EVENT: Ultros 25 302 x1 (183)
+--- 7c 7c 7c 7f 240 783.7
+25 threat steps in encounter zone 6.
+--- 7c 95 7c 7f 1500 796.2
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 7c 9b 7c 80 1980 805.2
+AVOIDED: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 7c 9b 7c 80 0 805.2
+1 threat steps in encounter zone 6.
+--- 7c 9c 7c 80 c0 805.7
+1 threat steps in encounter zone 7.
+--- 7c 9d 7c 80 180 806.2
+1 threat steps in encounter zone 6.
+--- 7c 9e 7c 80 240 806.7
+2 threat steps in encounter zone 7.
+--- 7c a0 7c 80 3c0 807.7
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 7c a9 7c 81 a80 836.2
+--- 7c b8 7c 81 b40 843.7
+1 threat steps in encounter zone 1.
+--- 7c b9 7c 81 c00 844.2
+EVENT: Leader 12 334 x1 (199)
+--- 7c b9 7c 82 c00 844.2
+EVENT: Kefka 83 282 x1 (1c5)
+--- 7c b9 7c 83 c00 844.2
+EVENT: Kefka 83 282 x1 (1c5)
+--- 7c b9 7c 84 c00 844.2
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 7c b9 7c 85 c00 878.2
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 7c b9 7c 86 c00 911.2
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 7c b9 7c 87 c00 944.2
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 7c b9 7c 88 c00 977.2
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 7c b9 7c 89 c00 1010.2
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 7c b9 7c 8a c00 1054.2
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 7c b9 7c 8b c00 1088.2
+--- 7c b9 7c 8b c00 1088.2
+19 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- 7c d1 7c 8c 1e00 1106.2
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- 7c d2 7c 8c c0 1106.7
+47 threat steps in encounter zone 44.
+--- 8d 1 7c 8c 1550 1130.2
+6 threat steps in encounter zone 43.
+--- 8d 7 7c 8c 17f0 1133.2
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x2, Poplium 11 162 x3 (45) COST: 37.0
+--- 8d e 7c 8d 1b00 1173.7
+--- 8d 1f 7c 8d 770 1182.2
+25 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 8d 2e 7c 8e e00 1209.7
+--- 8d 38 7c 8e 460 1214.7
+7 threat steps in encounter zone 4c.
+--- 8d 3f 7c 8e 770 1218.2
+27 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 8d 47 7c 8f af0 1236.2
+--- 8d 5a 7c 8f 850 1245.7
+10 threat steps in encounter zone 4c.
+--- 8d 64 7c 8f cb0 1250.7
+2 threat steps in encounter zone 46.
+--- 8d 66 7c 8f d90 1251.7
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 8d 66 7c 90 d90 1265.7
+8 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 8d 6e 7c 91 1110 1283.7
+--- 8d 6e 7c 91 0 1283.8
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- 8d 8e 7c 92 e00 1317.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Over-Mind 13 15 x2 (4b) COST: 22.0
+--- 8d 98 7c 93 460 1345.8
+AVOIDED: Bomb 8 79 x1 (4d) COST: 14.0
+--- 8d 99 7c 93 70 1346.3
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 8d c6 7c 94 1420 1395.8
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 8d ed 7c 95 1110 1429.3
+--- 8d fd 7c 95 700 1437.3
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 8d fd 7c 96 700 1437.3
+2 threat steps in encounter zone 8.
+--- 8d ff 7c 96 880 1438.3
+14 threat steps in encounter zone 8.
+--- 9e d 7c 96 1300 1445.3
+4 threat steps in encounter zone 8.
+--- 9e 11 7c 96 1600 1447.3
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 9e 11 7c 97 1600 1447.3
+*** ENTER THE VELDT ***
+--- 9e 11 7c 97 1600 1447.3
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 9e 19 7c 98 1c00 1467.3
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 18.0
+--- 9e 2c 7c 99 e40 1494.8
+--- 9e 44 7c 99 1200 1506.8
+*** SAVE AND RELOAD ***
+--- 8a 8a 8a 8a 1200 1556.8
+*** ENTER THE VELDT ***
+--- 8a 8a 8a 8a 1200 1556.8
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 13.0
+--- 8a 9b 8a 8b 1ec0 1578.3
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 8a a8 8a 8c 9c0 1618.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2 (2) COST: 12.0
+--- 8a c6 8a 8d 1680 1646.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 14.0
+--- 8a ed 8a 8e 1d40 1681.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 20.0
+--- 8a f0 8a 8f 240 1703.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 9b e 8a 90 1680 1735.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- 9b 19 8a 91 840 1754.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 9b 2c 8a 92 e40 1806.8
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 9b 47 8a 93 1440 1826.3
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x2, Poplium 11 162 x3 (45) COST: 32.0
+--- 9b 53 8a 94 900 1865.3
+
+initialseed: 6e
+stepseed: 9b
+battleseed: 8a
+stepcounter: 53
+battlecounter: 94
+threat: 0
+cost: 1865.3
+num_encounters: 45
+
+------------------------------------------------------------
+INITIAL SEED: 115
+--- 73 73 73 73 0 0
+--- 73 73 73 73 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 73 73 73 74 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 73 73 73 75 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 73 73 73 76 0 0
+--- 73 73 73 76 0 0
+29 threat steps in encounter zone 39.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 73 a6 73 77 cc0 50.5
+AVOIDED: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 73 a6 73 77 0 50.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 73 a6 73 78 0 50.5
+1 threat steps in encounter zone 39.
+--- 73 a7 73 78 40 51.0
+16 threat steps in encounter zone 3a.
+--- 73 b7 73 78 740 59.0
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 73 b7 73 79 740 59.0
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 73 d9 73 7a 1620 90.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Vaporite 5 70 x2 (47) COST: 20.0
+--- 84 11 73 7b 1880 139.0
+--- 84 12 73 7b 70 139.5
+--- 84 12 73 7b 70 139.5
+EVENT: Soldier 2 377 x3 (1e5)
+--- 84 12 73 7c 70 139.5
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 84 12 73 7d 70 139.5
+28 threat steps in encounter zone 0.
+ENCOUNTER: Dark Wind 5 40 x1, Leafer 5 23 x2 (7) COST: 15.0
+--- 84 2e 73 7e af0 168.5
+--- 84 2e 73 7e 0 168.6
+1 threat steps in encounter zone 2.
+--- 84 2f 73 7e c0 169.1
+1 threat steps in encounter zone 0.
+--- 84 30 73 7e 120 169.6
+1 threat steps in encounter zone 2.
+--- 84 31 73 7e 1e0 170.1
+7 threat steps in encounter zone 0.
+--- 84 38 73 7e 480 173.6
+2 threat steps in encounter zone 0.
+--- 84 3a 73 7e 540 174.6
+3 threat steps in encounter zone 1.
+--- 84 3d 73 7e 660 176.1
+3 threat steps in encounter zone 0.
+--- 84 40 73 7e 780 177.6
+9 threat steps in encounter zone 1.
+--- 84 49 73 7e ae0 182.1
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 84 49 73 7f ae0 182.1
+--- 84 49 73 7f ae0 182.1
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- 84 4f 73 80 d80 197.2
+ENCOUNTER: Crawly 7 98 x2, Hornet 6 46 x1 (f) COST: 12.1
+--- 84 5a 73 81 4d0 214.8
+--- 84 5a 73 81 0 214.9
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 84 6f 73 82 930 237.5
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 84 9b 73 83 1340 271.6
+--- 84 9c 73 83 70 272.2
+--- 84 9c 73 83 70 272.2
+11 threat steps in encounter zone 3.
+--- 84 a7 73 83 8b0 277.7
+--- 84 a7 73 83 8b0 277.7
+24 threat steps in encounter zone 3f.
+--- 84 bf 73 83 1330 289.7
+6 threat steps in encounter zone 3d.
+--- 84 c5 73 83 15d0 292.7
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 84 d0 73 84 1aa0 319.2
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 84 ed 73 85 cb0 354.7
+--- 84 ed 73 85 0 354.8
+--- 84 ed 73 85 0 354.8
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 95 e 73 86 e70 385.3
+--- 95 23 73 86 930 395.8
+7 threat steps in encounter zone 3d.
+--- 95 2a 73 86 c40 399.3
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 95 2c 73 87 d20 414.3
+--- 95 43 73 87 a10 425.9
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 95 53 73 88 1110 447.9
+--- 95 6a 73 88 a10 459.4
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 95 6b 73 89 a80 475.9
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 95 8e 73 8a f50 517.5
+--- 95 90 73 8a e0 518.6
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 95 95 73 8b 310 535.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 95 ae 73 8c af0 563.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 95 d8 73 8d 1260 598.6
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 95 f3 73 8e bd0 626.1
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- a6 5 73 8f 7e0 651.1
+--- a6 24 73 8f d90 666.6
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- a6 24 73 90 d90 666.6
+--- a6 24 73 90 d90 666.6
+4 threat steps in encounter zone 3e.
+--- a6 28 73 90 f50 668.6
+21 threat steps in encounter zone 3f.
+--- a6 3d 73 90 1880 679.1
+7 threat steps in encounter zone 40.
+--- a6 44 73 90 1b90 682.6
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- a6 4b 73 91 20d0 702.6
+--- a6 5d 73 91 d80 711.6
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 81 81 81 83 d80 796.7
+--- 81 81 81 83 d80 796.7
+EVENT: Ultros 25 302 x1 (183)
+--- 81 81 81 84 d80 796.7
+25 threat steps in encounter zone 6.
+--- 81 9a 81 84 2040 809.2
+2 threat steps in encounter zone 7.
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 81 9b 81 85 2100 814.7
+--- 81 9c 81 85 c0 815.4
+1 threat steps in encounter zone 6.
+--- 81 9d 81 85 180 815.9
+1 threat steps in encounter zone 7.
+--- 81 9e 81 85 240 816.4
+1 threat steps in encounter zone 6.
+--- 81 9f 81 85 300 816.9
+2 threat steps in encounter zone 7.
+--- 81 a1 81 85 480 817.9
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1 (35) COST: 13.0
+--- 81 b1 81 86 1080 838.9
+--- 81 b9 81 86 600 842.9
+1 threat steps in encounter zone 1.
+--- 81 ba 81 86 6c0 843.4
+EVENT: Leader 12 334 x1 (199)
+--- 81 ba 81 87 6c0 843.4
+EVENT: Kefka 83 282 x1 (1c5)
+--- 81 ba 81 88 6c0 843.4
+EVENT: Kefka 83 282 x1 (1c5)
+--- 81 ba 81 89 6c0 843.4
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 81 ba 81 8a 6c0 877.4
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 81 ba 81 8b 6c0 910.4
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 81 ba 81 8c 6c0 943.4
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 81 ba 81 8d 6c0 976.4
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 81 ba 81 8e 6c0 1009.4
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 81 ba 81 8f 6c0 1053.4
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 81 ba 81 90 6c0 1087.4
+--- 81 ba 81 90 6c0 1087.4
+19 threat steps in encounter zone 8.
+--- 81 cd 81 90 1500 1096.9
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost 10 90 x1 (41) COST: 14.0
+--- 81 d0 81 91 1650 1112.4
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 27.0
+--- 81 ed 81 92 cb0 1154.0
+--- 81 fc 81 92 690 1161.5
+6 threat steps in encounter zone 43.
+--- 92 2 81 92 930 1164.5
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 92 e 81 93 e70 1197.5
+--- 92 1a 81 93 540 1203.5
+25 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 92 2d 81 94 d90 1227.0
+--- 92 33 81 94 2a0 1230.0
+7 threat steps in encounter zone 4c.
+--- 92 3a 81 94 5b0 1233.5
+27 threat steps in encounter zone 46.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 92 47 81 95 b60 1260.0
+--- 92 55 81 95 620 1267.0
+10 threat steps in encounter zone 4c.
+--- 92 5f 81 95 a80 1272.0
+2 threat steps in encounter zone 46.
+--- 92 61 81 95 b60 1273.0
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 92 61 81 96 b60 1287.0
+8 threat steps in encounter zone 4c.
+--- 92 69 81 96 ee0 1291.0
+33 threat steps in encounter zone 47.
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 92 6b 81 97 fc0 1312.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 92 8e 81 98 f50 1350.6
+AVOIDED: Bomb 8 79 x1 (4d) COST: 14.0
+--- 92 8e 81 98 0 1350.6
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 92 ae 81 99 e00 1393.6
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 92 d8 81 9a 1260 1428.6
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 92 f0 81 9b a80 1467.6
+--- 92 f2 81 9b e0 1468.7
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 92 f2 81 9c e0 1468.7
+2 threat steps in encounter zone 8.
+--- 92 f4 81 9c 260 1469.7
+14 threat steps in encounter zone 8.
+--- a3 2 81 9c ce0 1476.7
+4 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- a3 b 81 9d 13a0 1487.2
+AVOIDED: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 24.0
+--- a3 c 81 9d c0 1487.7
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- a3 c 81 9e c0 1487.7
+*** ENTER THE VELDT ***
+--- a3 c 81 9e c0 1487.7
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 21.0
+--- a3 2c 81 9f 18c0 1524.7
+--- a3 3f 81 9f e40 1534.2
+*** SAVE AND RELOAD ***
+--- 8f 8f 8f 8f e40 1584.2
+*** ENTER THE VELDT ***
+--- 8f 8f 8f 8f e40 1584.2
+ENCOUNTER: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 8f 98 8f 90 1500 1622.7
+ENCOUNTER: Guard 5 0 x2 (2) COST: 12.0
+--- 8f a8 8f 91 c00 1642.7
+ENCOUNTER: Were-Rat 4 19 x3 (e) COST: 24.0
+--- 8f ae 8f 92 480 1669.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 15.0
+--- 8f c6 8f 93 1200 1697.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 8f ed 8f 94 1d40 1732.2
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- a0 e 8f 95 18c0 1761.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- a0 10 8f 96 180 1805.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Stray Cat 10 24 x3 (31) COST: 5
+--- a0 2c 8f 97 1500 1825.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost 10 90 x1, Poplium 11 162 x2 (44) COST: 24.0
+--- a0 4b 8f 98 1740 1866.2
+
+initialseed: 73
+stepseed: a0
+battleseed: 8f
+stepcounter: 4c
+battlecounter: 98
+threat: c0
+cost: 1866.7
+num_encounters: 46
+
+------------------------------------------------------------
+INITIAL SEED: 103
+--- 67 67 67 67 0 0
+--- 67 67 67 67 0 0
+EVENT: Guard 5 0 x2 (2)
+--- 67 67 67 68 0 0
+EVENT: Guard 5 0 x2, Lobo 5 25 x1 (29)
+--- 67 67 67 69 0 0
+EVENT: Guard 5 0 x2, Vomammoth 1 27 x2 (54)
+--- 67 67 67 6a 0 0
+--- 67 67 67 6a 0 0
+29 threat steps in encounter zone 39.
+--- 67 84 67 6a 740 14.5
+EVENT: Head 6 308 x1, Whelk 4 256 x1 (1b0)
+--- 67 84 67 6b 740 14.5
+1 threat steps in encounter zone 39.
+--- 67 85 67 6b 780 15.0
+16 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 93 67 6c da0 36.0
+--- 67 95 67 6c e0 37.1
+EVENT: Tritoch 19 276 x1 (1bf)
+--- 67 95 67 6d e0 37.1
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 b5 67 6e ee0 67.1
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 d9 67 6f fc0 99.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Repo Man 5 77 x1, Vaporite 5 70 x1 (1a) COST: 14.0
+--- 67 eb 67 70 7e0 123.1
+--- 67 ec 67 70 70 123.6
+--- 67 ec 67 70 70 123.6
+EVENT: Soldier 2 377 x3 (1e5)
+--- 67 ec 67 71 70 123.6
+EVENT: Lobo 5 25 x2, Marshal 8 100 x1 (4)
+--- 67 ec 67 72 70 123.6
+28 threat steps in encounter zone 0.
+--- 78 8 67 72 af0 137.6
+1 threat steps in encounter zone 2.
+--- 78 9 67 72 bb0 138.1
+1 threat steps in encounter zone 0.
+--- 78 a 67 72 c10 138.6
+1 threat steps in encounter zone 2.
+--- 78 b 67 72 cd0 139.1
+7 threat steps in encounter zone 0.
+ENCOUNTER: Leafer 5 23 x1 (6) COST: 13.0
+--- 78 11 67 73 f10 155.1
+--- 78 12 67 73 60 155.7
+2 threat steps in encounter zone 0.
+--- 78 14 67 73 120 156.7
+3 threat steps in encounter zone 1.
+ENCOUNTER: Areneid 6 93 x3, Sand Ray 6 92 x1 (9) COST: 16.0
+--- 78 17 67 74 240 174.2
+--- 78 17 67 74 0 174.4
+3 threat steps in encounter zone 0.
+--- 78 1a 67 74 240 175.9
+9 threat steps in encounter zone 1.
+--- 78 23 67 74 900 180.4
+EVENT: M-TekArmor 8 66 x2 (22)
+--- 78 23 67 75 900 180.4
+--- 78 23 67 75 900 180.4
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary 7 99 x3, Hornet 6 46 x2 (5) COST: 12.1
+--- 78 31 67 76 f20 199.5
+--- 78 34 67 76 150 201.1
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 12.1
+--- 78 52 67 77 e70 228.2
+ENCOUNTER: Bleary 7 99 x2, Crawly 7 98 x1 (3) COST: 12.1
+--- 78 72 67 78 e00 256.3
+--- 78 76 67 78 1c0 258.3
+--- 78 76 67 78 1c0 258.3
+11 threat steps in encounter zone 3.
+--- 78 81 67 78 a00 263.8
+--- 78 81 67 78 a00 263.8
+24 threat steps in encounter zone 3f.
+--- 78 99 67 78 1480 275.8
+6 threat steps in encounter zone 3d.
+--- 78 9f 67 78 1720 278.8
+40 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 78 a6 67 79 1a30 297.3
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 15.0
+--- 78 b1 67 7a 4d0 317.8
+--- 78 c7 67 7a 9a0 328.8
+--- 78 c7 67 7a 9a0 328.8
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 78 d1 67 7b e00 347.8
+--- 78 fd 67 7b 1340 369.8
+7 threat steps in encounter zone 3d.
+--- 89 4 67 7b 1650 373.3
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Cirpius 10 134 x2, Trilium 9 50 x1, Tusker 10 122 x1 (1c) COST: 16.0
+--- 89 e 67 7c 1ab0 394.3
+--- 89 1d 67 7c 690 401.8
+39 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler 9 11 x2 (20) COST: 14.0
+--- 89 2e 67 7d e00 424.3
+--- 89 44 67 7d 9a0 435.3
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius 10 134 x3, Tusker 10 122 x1 (1f) COST: 16.0
+--- 89 47 67 7e af0 452.8
+ENCOUNTER: Cirpius 10 134 x3 (1d) COST: 24.0
+--- 89 5a 67 7f 850 486.4
+--- 89 6a 67 7f 700 494.4
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 6f 67 80 930 510.9
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 9b 67 81 1340 546.9
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 a8 67 82 5b0 567.4
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 c6 67 83 d20 596.4
+ENCOUNTER: Trilium 9 50 x2 (1e) COST: 14.0
+--- 89 ed 67 84 1110 629.9
+--- 89 fe 67 84 770 638.4
+EVENT: Ipooh 11 333 x2, Vargas 12 259 x1 (1b3)
+--- 89 fe 67 85 770 638.4
+--- 89 fe 67 85 770 638.4
+4 threat steps in encounter zone 3e.
+--- 9a 2 67 85 930 640.4
+21 threat steps in encounter zone 3f.
+--- 9a 17 67 85 1260 650.9
+7 threat steps in encounter zone 40.
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 21.0
+--- 9a 19 67 86 1340 672.9
+--- 9a 1e 67 86 230 675.5
+25 threat steps in encounter zone 5.
+ENCOUNTER: GreaseMonk 8 168 x1, Rhodox 7 18 x2 (15) COST: 16.5
+--- 9a 2c 67 87 cb0 699.0
+--- 9a 37 67 87 840 704.5
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 14.0
+RIVER: Pterodon 12 34 x2 (23) COST: 14.0
+--- 75 75 75 77 840 790.1
+--- 75 75 75 77 840 790.1
+EVENT: Ultros 25 302 x1 (183)
+--- 75 75 75 78 840 790.1
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 75 88 75 79 1680 823.6
+--- 75 8e 75 79 480 826.6
+2 threat steps in encounter zone 7.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 75 a6 75 7a 1680 844.6
+AVOIDED: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 75 a6 75 7a 0 844.6
+1 threat steps in encounter zone 6.
+--- 75 a7 75 7a c0 845.1
+1 threat steps in encounter zone 7.
+--- 75 a8 75 7a 180 845.6
+1 threat steps in encounter zone 6.
+ENCOUNTER: Beakor 11 41 x1, Rhobite 10 118 x2 (37) COST: 24.0
+--- 75 a9 75 7b 240 870.1
+--- 75 a9 75 7b 0 870.3
+2 threat steps in encounter zone 7.
+--- 75 ab 75 7b 180 871.3
+24 threat steps in encounter zone 6.
+--- 75 c3 75 7b 1380 883.3
+1 threat steps in encounter zone 1.
+--- 75 c4 75 7b 1440 883.8
+EVENT: Leader 12 334 x1 (199)
+--- 75 c4 75 7c 1440 883.8
+EVENT: Kefka 83 282 x1 (1c5)
+--- 75 c4 75 7d 1440 883.8
+EVENT: Kefka 83 282 x1 (1c5)
+--- 75 c4 75 7e 1440 883.8
+RANDOM EVENT: Soldier 11 1 x2, Templar 11 2 x2 (19a) COST: 34.0
+--- 75 c4 75 7f 1440 917.8
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 75 c4 75 80 1440 950.8
+RANDOM EVENT: Grunt 12 335 x3 (3f) COST: 33.0
+--- 75 c4 75 81 1440 983.8
+RANDOM EVENT: Cadet 13 374 x1, Grunt 12 335 x2 (3b) COST: 33.0
+--- 75 c4 75 82 1440 1016.8
+RANDOM EVENT: M-TekArmor 8 66 x1 (1b) COST: 33.0
+--- 75 c4 75 83 1440 1049.8
+RANDOM EVENT: M-TekArmor 8 66 x1, Soldier 11 1 x2 (19) COST: 44.0
+--- 75 c4 75 84 1440 1093.8
+RANDOM EVENT: M-TekArmor 8 66 x2 (22) COST: 34.0
+--- 75 c4 75 85 1440 1127.8
+--- 75 c4 75 85 1440 1127.8
+19 threat steps in encounter zone 8.
+ENCOUNTER: CrassHoppr 11 47 x3 (33) COST: 27.0
+--- 75 d5 75 86 2100 1163.3
+--- 75 d7 75 86 180 1164.4
+47 threat steps in encounter zone 44.
+--- 86 6 75 86 1610 1187.9
+6 threat steps in encounter zone 43.
+--- 86 c 75 86 18b0 1190.9
+24 threat steps in encounter zone 45.
+ENCOUNTER: Ghost 10 90 x3 (42) COST: 27.0
+--- 86 11 75 87 1ae0 1220.4
+--- 86 24 75 87 850 1229.9
+25 threat steps in encounter zone 46.
+ENCOUNTER: Whisper 12 14 x1 (5a) COST: 14.0
+--- 86 2e 75 88 cb0 1248.9
+--- 86 3d 75 88 690 1256.4
+7 threat steps in encounter zone 4c.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 86 4f 75 89 e70 1298.4
+AVOIDED: StillGoing 12 186 x3 (55) COST: 27.0
+--- 86 50 75 89 70 1298.9
+27 threat steps in encounter zone 46.
+--- 86 6b 75 89 c40 1312.4
+10 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 86 6f 75 8a e00 1328.4
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 86 9b 75 8b 1340 1365.5
+AVOIDED: Ghost 10 90 x1 (41) COST: 14.0
+--- 86 9b 75 8b 0 1365.5
+2 threat steps in encounter zone 46.
+--- 86 9d 75 8b e0 1366.5
+RANDOM EVENT: Ghost 10 90 x1 (41) COST: 14.0
+--- 86 9d 75 8c e0 1380.5
+8 threat steps in encounter zone 4c.
+--- 86 a5 75 8c 460 1384.5
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind 13 15 x1, StillGoing 12 186 x2 (4e) COST: 18.0
+--- 86 a8 75 8d 5b0 1404.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hazer 12 8 x3, Whisper 12 14 x1 (51) COST: 20.0
+--- 86 d0 75 8e 1180 1445.1
+AVOIDED: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 86 d0 75 8e 0 1445.1
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 27.0
+--- 86 ed 75 8f cb0 1486.6
+ENCOUNTER: Whisper 12 14 x4 (4a) COST: 32.0
+--- 97 2c 75 90 1b90 1550.1
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Bomb 8 79 x1 (4d) COST: 14.0
+--- 97 53 75 91 1110 1584.6
+AVOIDED: Beakor 11 41 x1, CrassHoppr 11 47 x2, Stray Cat 10 24 x1 (39) COST: 5
+--- 97 54 75 91 70 1585.1
+EVENT: GhostTrain 14 262 x1 (1b5)
+--- 97 54 75 92 70 1585.1
+2 threat steps in encounter zone 8.
+--- 97 56 75 92 1f0 1586.1
+14 threat steps in encounter zone 8.
+--- 97 64 75 92 c70 1593.1
+4 threat steps in encounter zone 8.
+--- 97 68 75 92 f70 1595.1
+EVENT: Piranha 9 340 x5, Rizopas 13 341 x1 (4f)
+--- 97 68 75 93 f70 1595.1
+*** ENTER THE VELDT ***
+--- 97 68 75 93 f70 1595.1
+ENCOUNTER: Guard 5 0 x2 (2) COST: 16.0
+--- 97 69 75 94 1030 1611.6
+ENCOUNTER: Hornet 6 46 x2 (d) COST: 18.0
+--- 97 8e 75 95 1bc0 1648.2
+ENCOUNTER: Tusker 10 122 x2 (10) COST: 24.0
+--- 97 95 75 96 540 1675.7
+--- 97 9b 75 96 480 1678.7
+*** SAVE AND RELOAD ***
+--- 83 83 83 83 480 1728.7
+*** ENTER THE VELDT ***
+--- 83 83 83 83 480 1728.7
+ENCOUNTER: Exocite 11 57 x1, Nautiloid 11 56 x1 (26) COST: 12.0
+--- 83 9b 83 84 1680 1752.7
+ENCOUNTER: Guard 5 0 x2, Lobo 5 25 x1 (29) COST: 42.0
+--- 83 b1 83 85 1080 1805.7
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor 11 41 x2, Stray Cat 10 24 x1 (36) COST: 5
+--- 83 d0 83 86 1740 1827.2
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Hazer 12 8 x1, Whisper 12 14 x2 (46) COST: 24.0
+--- 83 ed 83 87 15c0 1866.7
+
+initialseed: 67
+stepseed: 83
+battleseed: 83
+stepcounter: ee
+battlecounter: 87
+threat: c0
+cost: 1867.2
+num_encounters: 46
+
+------------------------------------------------------------

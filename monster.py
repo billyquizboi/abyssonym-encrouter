@@ -112,3 +112,7 @@ def monsters_from_table():
         monsterdict[i] = c
         monsters.append(c)
     return monsters
+
+if __name__ == "__main__":
+    for i, m in enumerate(monsters_from_table()):
+        print hex(i), m.name

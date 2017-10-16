@@ -37,7 +37,7 @@ class Formation():
             s = ', '.join([s, "%s x%s" % (name, count)])
         s = s[2:]
         #return s
-        #return "%s (%x)" % (s, self.formid)
+        return "%s (%x)" % (s, self.formid)
         return "%s (%x) %s" % (s, self.formid, bool(self.pincer_prohibited))
 
     def read_data(self, filename):

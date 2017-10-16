@@ -1,0 +1,146 @@
+Here is a variation designed to route out the Rhinotaur/Rhodox encounter. The encounter is skipped before Lete and an extra encounter is fought on the way to the Imperial Base, so the overall number of encounters is the same. The significant tradeoffs are roughly:
+Rhinotaur/Rhodox x2 <-> Beakor/Rhobite x2
+Ghost x3/Poplium x2 <-> Ghost/Poplium x2 (better)
+Hazer x3/Whisper    <-> StillGoing x3 (gained the potential to pincer)
+Hazer x1/Whisper x2 <-> Whisper x4 (worse)
+Rhinotaur/Rhodox x2 <-> Tusker x2 (veldt, probably better)
+
+INITIAL SEED: 110
+EVENT: Guard x2 (2)
+EVENT: Guard x2, Lobo x1 (29)
+EVENT: Guard x2, Vomammoth x2 (54)
+29 threat steps in encounter zone 39.
+ENCOUNTER: Were-Rat x3 (e) COST: 24.0
+EVENT: Head x1, Whelk x1 (1b0)
+1 threat steps in encounter zone 39.
+16 threat steps in encounter zone 3a.
+EVENT: Tritoch x1 (1bf)
+75 threat steps in encounter zone 3a.
+ENCOUNTER: Vaporite x2 (47) COST: 20.0
+ENCOUNTER: Vaporite x2 (47) COST: 20.0
+EVENT: Soldier x3 (1e5)
+EVENT: Lobo x2, Marshal x1 (4)
+28 threat steps in encounter zone 0.
+1 threat steps in encounter zone 2.
+1 threat steps in encounter zone 0.
+1 threat steps in encounter zone 2.
+7 threat steps in encounter zone 0.
+2 threat steps in encounter zone 0.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Leafer x1 (6) COST: 13.0
+AVOIDED: Sand Ray x2 (a) COST: 14.0
+3 threat steps in encounter zone 1.
+3 threat steps in encounter zone 0.
+9 threat steps in encounter zone 1.
+EVENT: M-TekArmor x2 (22)
+17 threat steps in encounter zone 3c.
+ENCOUNTER: Bleary x3, Hornet x2 (5) COST: 12.1
+66 threat steps in encounter zone 3b.
+ENCOUNTER: Hornet x2 (d) COST: 12.1
+ENCOUNTER: Hornet x2 (d) COST: 12.1
+11 threat steps in encounter zone 3.
+24 threat steps in encounter zone 3f.
+6 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius x3, Tusker x1 (1f) COST: 18.0
+40 threat steps in encounter zone 3f.
+54 threat steps in encounter zone 3f.
+ENCOUNTER: Brawler x2 (20) COST: 14.0
+ENCOUNTER: Tusker x2 (10) COST: 20.0
+7 threat steps in encounter zone 3d.
+25 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium x2 (1e) COST: 14.0
+39 threat steps in encounter zone 3f.
+38 threat steps in encounter zone 3d.
+ENCOUNTER: Cirpius x3, Tusker x1 (1f) COST: 16.0
+148 threat steps in encounter zone 3e.
+ENCOUNTER: Trilium x2 (1e) COST: 14.0
+ENCOUNTER: Trilium x2 (1e) COST: 14.0
+ENCOUNTER: Trilium x2 (1e) COST: 14.0
+ENCOUNTER: Trilium x2 (1e) COST: 14.0
+ENCOUNTER: Trilium x2 (1e) COST: 14.0
+ENCOUNTER: Cirpius x2, Trilium x1, Tusker x1 (1c) COST: 16.0
+EVENT: Ipooh x2, Vargas x1 (1b3)
+4 threat steps in encounter zone 3e.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Trilium x2 (1e) COST: 15.0
+AVOIDED: Brawler x2 (20) COST: 15.0
+21 threat steps in encounter zone 3f.
+7 threat steps in encounter zone 40.
+25 threat steps in encounter zone 5.
+*** GO TO RETURNER SAVE POINT ***
+*** SAVE AND RELOAD ***
+*** MANIPULATE LETE W/ RETURNER TO SEED 47 ***
+RIVER: Exocite x1, Nautiloid x1 (26) COST: 14.0
+RIVER: Pterodon x2 (23) COST: 14.0
+EVENT: Ultros x1 (183)
+25 threat steps in encounter zone 6.
+ENCOUNTER: Beakor x1 (35) COST: 13.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Beakor x1, Rhobite x2 (37) COST: 24.0
+AVOIDED: Rhobite x5 (34) COST: 32.0
+2 threat steps in encounter zone 7.
+1 threat steps in encounter zone 6.
+1 threat steps in encounter zone 7.
+1 threat steps in encounter zone 6.
+2 threat steps in encounter zone 7.
+24 threat steps in encounter zone 6.
+ENCOUNTER: Beakor x1, Rhobite x2 (37) COST: 24.0
+1 threat steps in encounter zone 1.
+EVENT: Leader x1 (199)
+EVENT: Kefka x1 (1c5)
+EVENT: Kefka x1 (1c5)
+RANDOM EVENT: Soldier x2, Templar x2 (19a) COST: 34.0
+RANDOM EVENT: Grunt x3 (3f) COST: 33.0
+RANDOM EVENT: Grunt x3 (3f) COST: 33.0
+RANDOM EVENT: Cadet x1, Grunt x2 (3b) COST: 33.0
+RANDOM EVENT: M-TekArmor x1 (1b) COST: 33.0
+RANDOM EVENT: M-TekArmor x1, Soldier x2 (19) COST: 44.0
+RANDOM EVENT: M-TekArmor x2 (22) COST: 34.0
+19 threat steps in encounter zone 8.
+47 threat steps in encounter zone 44.
+ENCOUNTER: Ghost x1, Poplium x2 (44) COST: 27.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: Ghost x1 (41) COST: 14.0
+AVOIDED: Ghost x3 (42) COST: 27.0
+6 threat steps in encounter zone 43.
+24 threat steps in encounter zone 45.
+25 threat steps in encounter zone 46.
+ENCOUNTER: Whisper x1 (5a) COST: 14.0
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: StillGoing x3 (55) COST: 27.0
+AVOIDED: Whisper x4 (4a) COST: 32.0
+7 threat steps in encounter zone 4c.
+27 threat steps in encounter zone 46.
+10 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb x1 (4d) COST: 14.0
+2 threat steps in encounter zone 46.
+RANDOM EVENT: Ghost x1 (41) COST: 14.0
+8 threat steps in encounter zone 4c.
+33 threat steps in encounter zone 47.
+ENCOUNTER: Over-Mind x2 (4b) COST: 22.0
+ENCOUNTER: Over-Mind x2 (4b) COST: 22.0
+100 threat steps in encounter zone 4c.
+ENCOUNTER: Bomb x1 (4d) COST: 14.0
+ENCOUNTER: Whisper x4 (4a) COST: 32.0
+EVENT: GhostTrain x1 (1b5)
+2 threat steps in encounter zone 8.
+14 threat steps in encounter zone 8.
+4 threat steps in encounter zone 8.
+*** FORCE ADDITIONAL ENCOUNTER ***
+ENCOUNTER: CrassHoppr x3 (33) COST: 27.0
+AVOIDED: Hornet x2 (d) COST: 18.0
+EVENT: Piranha x5, Rizopas x1 (4f)
+*** ENTER THE VELDT ***
+ENCOUNTER: Guard x2 (2) COST: 16.0
+*** ENTER THE VELDT ***
+ENCOUNTER: Hornet x2 (d) COST: 14.0
+ENCOUNTER: Tusker x2 (10) COST: 20.0
+
+initialseed: 6e
+stepseed: 9e
+battleseed: 7c
+stepcounter: 7f
+battlecounter: 9c
+threat: 1080
+cost: 1592.0
+num_encounters: 37

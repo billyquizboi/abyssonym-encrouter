@@ -266,12 +266,16 @@ class Route():
                         else:
                             return False
 
+                    cost = 0
                     if f == formations[0]:
-                        cost = 1000
-                        self.travelog += "*** VELDT PENALTY +%s ***\n" % cost
-                        self.cost += cost
-                    elif f == formations[-1]:
+                        cost += 1000
+                    elif f == formations[-1] and len(formations) <= 2:
                         self.force_additional_encounter()
+                    if hasattr(self, "veldt_up") and self.veldt_up:
+                        cost += self.veldt_up
+                    if cost > 0:
+                        self.cost += cost
+                        self.travelog += "*** VELDT PENALTY +%s ***\n" % cost
 
                 return True
         elif instr.event:
@@ -279,7 +283,6 @@ class Route():
             if instr.formation.formid < 0x200:
                 self.seen_formations.add(instr.formation.formid)
             self.increment_battle(rng=True)
-            #self.increment_battle(rng=True)
             self.overworld_threatrate = None
         elif instr.random:
             formation = self.predict_formation(instr.fset)
@@ -544,10 +547,10 @@ class Route():
                         children.append(child)
                     #children.append(child)
 
-        if instr.travel and not instr.veldt and hasattr(instr, 'fset'):
+        if instr.travel and hasattr(instr, 'fset'):
             if (self.overworld_threatrate and instr.fset.overworld and
                     self.overworld_threatrate > instr.threatrate and
-                    not instr.force_threat) and False:
+                    not instr.force_threat):
                 # change threat rate
                 child = self.copy()
                 child.menu_reset_threatrate()
@@ -578,11 +581,18 @@ class Route():
                 if ((self.overworld_threatrate and not instr.fset.overworld) or
                         (instr.fset.overworld and not self.overworld_threatrate)):
                     # reset seed
-                    if distance is not None and distance >= 10:
+                    if distance is not None and distance >= 10 and False:
                         resetted = get_reset_bunch(self)
                         children.extend(resetted)
 
         if instr.lete:
+            #DESIRED_FORMATIONS = set([0x14, 0x15, 0x16, 0x18])
+            #caught = len(DESIRED_FORMATIONS & self.seen_formations)
+            #if caught == 0:
+            #    return []
+            #if caught >= 2:
+            #    self.veldt_up = 10 * (caught-1)
+            #    self.cost -= self.veldt_up
             self.travelog += "*** GO TO RETURNER SAVE POINT ***\n"
             resetted = get_reset_bunch(self)
             for node in resetted:
@@ -865,6 +875,10 @@ if __name__ == "__main__":
         outfile = argv[3]
     else:
         outfile = "report.txt"
+    if len(argv) >= 5:
+        seed = int(argv[4])
+    else:
+        seed = None
     monsters = monsters_from_table()
     for m in monsters:
         m.read_stats(filename)
@@ -874,10 +888,20 @@ if __name__ == "__main__":
         fsetdict[fset.setid] = fset
     rng = get_rng_string(filename)
 
-    threats = [0]
-    routes = [Route(seed, rng, t) for t in threats for seed in [96]]
+    threats = [0, 0x540, 0x1080, 0x2160, 0x5555]
+    #threats = [0x5555]
     #threats = [0xC0 * i for i in range(80, 160)]
-    #routes = [Route(seed, rng, t) for t in threats for seed in range(0x100)]
+    threats = [0]
+    if seed is None:
+        #routes = [Route(seed, rng, t) for t in threats for seed in [96]]
+        routes = [Route(seed, rng, t) for t in threats for seed in range(0x100)]
+        #routes = [Route(seed, rng, t) for t in threats for seed in [108, 142, 143, 171, 198, 199, 201, 202, 232, 238, 239]]
+        #routes = [Route(seed, rng, t) for t in threats for seed in [108, 143, 171, 198, 199, 201, 202, 232, 238, 239]]
+        #routes = [Route(seed, rng, t) for t in threats for seed in [238]]
+        #routes = [Route(seed, rng, t) for t in threats for seed in [244]]
+        #routes = [Route(seed, rng, t) for t in threats for seed in [0xb9, 0xb8, 0xf4]]
+    else:
+        routes = [Route(seed, rng, t) for t in threats]
     format_script(fsets, formations, routefile)
     maxsize = 10000
     solutions = encounter_search(routes, number=20, anynode=False, maxsize=maxsize)
