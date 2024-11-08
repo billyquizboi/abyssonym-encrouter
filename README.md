@@ -2,12 +2,6 @@
 
 This codebase adds documentation to an existing tool used for step and encounter routing in FFVI. Much respect to the original author.
 
-# Disclaimer
-
-Any reference to rom in this codebase specifically means one that was obtained through an accepted legal process for personal use only in whichever jurisdiction(s) is/are applicable.
-
-Documentation here and any additions to the codebase are provided as-is purely for informational purposes without implied or expressed warranty or guarantee of any kind.
-
 # How to run
 
 *Note: The original encrouter appears to have run on python 2. This codebase contains modifications relative to the original which made it compatible with python 3.*
