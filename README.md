@@ -1,16 +1,16 @@
 # General
 
-This codebase adds some documentation to abyssonym's existing encounter routing program for FFVI. Much respect to abyssonym and others making speedrunning tools, guides, attempts, and content.
+This codebase adds documentation to an existing tool used for step and encounter routing in FFVI. Much respect to the original author.
 
 # Disclaimer
 
-Any reference to game files in this codebase specifically mean a file which was obtained through a recognized legal process for personal use only in whichever jurisdiction(s) is/are applicable.
+Any reference to rom in this codebase specifically means one that was obtained through an accepted legal process for personal use only in whichever jurisdiction(s) is/are applicable.
 
 Documentation here and any additions to the codebase are provided as-is purely for informational purposes without implied or expressed warranty or guarantee of any kind.
 
 # How to run
 
-*Note: The original encrouter by abyssonym appears to have run on python 2. This codebase contains modifications relative to the original which made it compatible with python 3.*
+*Note: The original encrouter appears to have run on python 2. This codebase contains modifications relative to the original which made it compatible with python 3.*
 
 ### Install git
 
@@ -32,7 +32,7 @@ The codebase contains 3 runnable python files. The one you probably want to run 
 
 The primary program in this codebase which runs the encounter routing logic. Relies on monster.py and formation.py.
 Requires 2, 3, or 4 command line arguments in the following order:
-- arg[1]: game file name - required
+- arg[1]: rom file name - required
 - arg[2]: route file name - required
 - arg[3]: report filename - optional argument with default value report.txt
 - arg[4]: seed - optional argument - if you want to provide this you must also provide a report filename event if it matches the default of 'report.txt'
@@ -43,7 +43,7 @@ Example usage:
 
 ```shell
 # Assumes you are in a terminal or shell with same working directory as the location of the encounter.py file
-# You must have a game file and a route file in the same directory ie: some_file.some_extension and route.txt or route.txt.catscratch
+# You must have a rom and a route file in the same directory ie: some_file.some_extension and route.txt or route.txt.catscratch
 
 # Running with default report.txt output file and for ALL possible seed values
 # It will run for a little while just fyi
@@ -60,7 +60,7 @@ python3 encouter.py "some_file.some_extension" "route.txt" "reportFileName.txt" 
 
 ### `monster.py`
 
-The `monster.py` file is used by `encounter.py` to load monster data from the game file. When run directly, `monster.py` reads the file [tables/enemycodes.txt](tables/enemycodes.txt) and prints the line number in hexadecimal followed by the monster's name for example:
+The `monster.py` file is used by `encounter.py` to load monster data from a rom. When run directly, `monster.py` reads the file [tables/enemycodes.txt](tables/enemycodes.txt) and prints the line number in hexadecimal followed by the monster's name for example:
 
 line 1 in enemycodes.txt
 ```text 
@@ -90,7 +90,7 @@ etc...
 
 ### `formation.py`
 
-The `formation.py` file is used by `encounter.py` to load formations data from the game file. When run directly, `formation.py` reads 576 formations from the rom file and then prints each formation and its mould followed by all the formation sets.
+The `formation.py` file is used by `encounter.py` to load formations data from a rom. When run directly, `formation.py` reads 576 formations from a rom and then prints each formation and its mould followed by all the formation sets.
 
 Example formation output line for a formation with 1 monster with name = 'Monster Name', formation id = 0, and mould = 8:
 
@@ -100,7 +100,7 @@ Example usage:
 
 ```shell
 # Assumes you are in a terminal or shell with same working directory as the location of the encounter.py file
-# You must have a game file in the same directory ie: some_file.some_extension
+# You must have a rom in the same directory ie: some_file.some_extension
 
 python3 formation.py "some_file.some_extension"
 ```
@@ -132,7 +132,7 @@ etc... lots more formation sets - note that the PACK ID # is in hexadecimal
 
 A description of the core objects which are used in this program. Some of these are pretty obvious and some are more specific to this program. 
 
-**Monster**: A specific enemy in the game which has particular stats and other characteristics. Called MonsterBlock in the codebase which relates to how it is stored in the game file.
+**Monster**: A specific enemy in the game which has particular stats and other characteristics. Called MonsterBlock in the codebase which relates to how it is stored in a rom.
 
 **Formation**: A grouping of monster(s) which is possible to encounter in the game.
 
@@ -195,7 +195,7 @@ example line: `ev  0   2`
 
 Third column value is a hexadecimal number which represents the index for a specific formation. Second column value is not used.
 An **Instruction** object for an event will be created with formation matching index == column 3 in the formations list.
-So which formation is that exactly? The formation at index `i` will be the formation stored in game file at byte 0xf6200 + (index * 15) and with auxiliary data at 0xf5900 + (index * 4).
+So which formation is that exactly? The formation at index `i` will be the formation stored in rom at byte 0xf6200 + (index * 15) and with auxiliary data at 0xf5900 + (index * 4).
 
 | column | value | type               | description                                                                                         |
 |--------|-------|--------------------|-----------------------------------------------------------------------------------------------------|
@@ -372,8 +372,3 @@ if the encounter is inescapable -> if avoiding gau add 30 to cost, else add 20
 add 10 to the cost
 return the calculated cost
 ```
-
-TODO: document the leteriver.txt, leterng.txt, and returnerrng.txt contents.
-TODO: document all project expected file formats including the report.txt
-TODO: find out and document what a Route object is
-TODO: study the actual execution - ie: how are instructions processed after being created, how is route optimized or not?
