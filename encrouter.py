@@ -1,7 +1,7 @@
 from sys import argv
 from monster import monsters_from_table
 from formation import formations_from_rom, fsets_from_rom
-from Queue import PriorityQueue
+from queue import PriorityQueue
 
 JAPAN = False
 STEP_VALUE = 0.5
@@ -30,7 +30,7 @@ def table_from_file(filename, hexify=False):
 def get_rng_string(filename):
     f = open(filename, 'r+b')
     f.seek(0xFD00)
-    rng = map(ord, f.read(0x100))
+    rng = list(f.read(0x100))
     return rng
 
 
@@ -41,7 +41,7 @@ def get_reset_bunch(node, ones=2, fourteens=2):
     prev = node.copy()
     prev.cost += 20
     resetted = [prev]
-    for i in xrange(ones):
+    for i in range(ones):
         child = prev.copy()
         child.reset_one()
         resetted.append(child)
@@ -49,7 +49,7 @@ def get_reset_bunch(node, ones=2, fourteens=2):
 
     resetted2 = []
     for child in resetted:
-        for i in xrange(fourteens):
+        for i in range(fourteens):
             child.reset_fourteen()
             child2 = child.copy()
             resetted2.append(child2)
@@ -77,6 +77,25 @@ class Route():
         self.smokebombs = False
         self.seen_formations = set([])
         self.gau_encounters = 0
+
+    # TODO: These were required for python 3 priority queue but results should be tested vs python 2 output
+    def __lt__(self, other):
+        if isinstance(other, Route):
+            return self.heuristic < other.heuristic
+        else:
+            return NotImplemented
+
+    def __gt__(self, other):
+        if isinstance(other, Route):
+            return self.heuristic > other.heuristic
+        else:
+            return NotImplemented
+
+    def __eq__(self, other):
+        if isinstance(other, Route):
+            return self.heuristic == other.heuristic
+        else:
+            return NotImplemented
 
     def __repr__(self):
         s = ""
@@ -135,7 +154,7 @@ class Route():
         best = None
         cost, bestcost = 0, 0
         bestnum = 0
-        for i in xrange(0x100):
+        for i in range(0x100):
             battlecounter = Route.riversequence[seed].count(True)
             if battlecounter == 2 + battles:
                 temp = self.copy()
@@ -179,9 +198,9 @@ class Route():
         value = self.rng[self.battlecounter]
         value = (value + self.battleseed) & 0xFF
         if len(fset.formations) == 4:
-            value = value / 0x50
+            value = value // 0x50
         else:
-            value = value / 0xC0
+            value = value // 0xC0
         formation = fset.formations[value]
         if formation.formid < 0x200:
             self.seen_formations.add(formation.formid)
@@ -257,7 +276,7 @@ class Route():
                         if f.formid in instr.desired_formations:
                             break
                     else:
-                        for _ in xrange(10):
+                        for _ in range(10):
                             f = self.force_additional_encounter(show_avoided=False)
                             if f:
                                 formations.append(f)
@@ -459,6 +478,7 @@ class Route():
     @property
     def heuristic(self):
         #return (self.num_encounters << 16) + self.cost + (self.threat >> 12)
+        # Note that self.threat appears to always have value 0 at runtime so heuristic returns cost at the moment
         return self.cost + (self.threat >> 12)
 
         '''
@@ -477,7 +497,7 @@ class Route():
                     best_encounter = instruction.best_encounter
 
                 tempcost += instruction.steps * STEP_VALUE
-                for i in xrange(instruction.steps):
+                for i in range(instruction.steps):
                     tempthreat += instruction.threatrate
                     #if tempthreat >= 0xFF00:
                     #if tempthreat >= 0x8000:
@@ -724,7 +744,7 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
             nextsize = size
             while nextsize > maxsize:
                 progress += 1
-                print "%s/%s/%s" % (progress, highest, Route.scriptlength)
+                print("%s/%s/%s" % (progress, highest, Route.scriptlength))
                 newfringe = PriorityQueue()
                 seen_seeds = set([])
                 seen_sigs = set([])
@@ -756,10 +776,10 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
                 fringe = newfringe
                 nextsize = fringe.qsize()
             if nextsize != size:
-                print highest, size, nextsize
+                print(highest, size, nextsize)
             else:
-                print highest, nextsize
-            #print child.scriptlength - child.scriptptr
+                print(highest, nextsize)
+            #print(child.scriptlength - child.scriptptr)
         if fringe.qsize() == 0:
             raise Exception("No valid solutions found.")
 
@@ -768,12 +788,20 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
         p, node = fringe.get()
         seeds.add(str(node.initialseed))
 
-    print "ALL SEEDS: %s" % " ".join(sorted(seeds))
-    print "%s NODES EXPANDED" % counter
+    print("ALL SEEDS: %s" % " ".join(sorted(seeds)))
+    print("%s NODES EXPANDED" % counter)
     return solutions
 
 
 def format_script(fsets, formations, filename):
+    """
+    Reads the route txt and for each uncommented line ( not starting with # )
+    it
+    :param fsets: list of FormationSet objects
+    :param formations: list of formation objects
+    :param filename: the route file ie: route.txt
+    :return:
+    """
     Route.script = []
     Route.fsets = dict((f.setid, f) for f in fsets)
     Route.formations = dict((f.formid, f) for f in formations)
@@ -814,9 +842,6 @@ def format_script(fsets, formations, filename):
         elif setid == "re":
             value = int(steps)
             i.set_restriction(rtype=threatrate, value=value)
-        elif setid == "rd":
-            steps = int(steps, 0x10)
-            i = None
         elif setid == "reset":
             i.set_reset()
         elif setid == "fc":
@@ -839,7 +864,7 @@ def format_script(fsets, formations, filename):
             i.set_travel(fset=fsets[setid], threatrate=threatrate,
                          steps=steps, force_threat=force_threat)
 
-        #print i
+        #print(i)
         Route.script.append(i)
     Route.travelscript = [i for i in Route.script if i.travel]
     Route.scriptlength = len(Route.script)
@@ -849,7 +874,7 @@ def format_script(fsets, formations, filename):
     sequence = [True if s == "fight" else False for s in sequence]
     assert len(sequence) == 0x100
     Route.riversequence = {}
-    for i in xrange(0x100):
+    for i in range(0x100):
         subseq = [True, True] + sequence[i:i+7]
         Route.riversequence[i] = subseq
 
@@ -860,7 +885,7 @@ def format_script(fsets, formations, filename):
     for i in range(64):
         a = i * 8
         b = (i+1) * 8
-        Route.veldtpacks[i] = range(a, b)
+        Route.veldtpacks[i] = list(range(a, b))
         for j, val in enumerate(Route.veldtpacks[i]):
             formation = Route.formations[val]
             if any(e for e in formation.present_enemies if e.id > 0xFF):
@@ -907,17 +932,17 @@ if __name__ == "__main__":
     solutions = encounter_search(routes, number=20, anynode=False, maxsize=maxsize)
     '''
     import pdb; pdb.set_trace()
-    print len(solutions)
+    print(len(solutions))
     solutions = [s for s in solutions if "Were-Rat x3" in s.travelog]
-    print len(solutions)
+    print(len(solutions))
     solutions = [s for s in solutions if "Repo Man x1, Vaporite x1" in s.travelog]
-    print len(solutions)
+    print(len(solutions))
     solutions = [s for s in solutions if "Vaporite x2" not in s.travelog]
-    print len(solutions)
+    print(len(solutions))
     solutions = [s for s in solutions if "Were-Rat x2" not in s.travelog]
-    print len(solutions)
+    print(len(solutions))
     solutions = [s for s in solutions if "Areneid x2, Sand Ray x1" in s.travelog]
-    print len(solutions)
+    print(len(solutions))
     '''
     '''
     seeds = sorted(set([s.initialseed for s in solutions]))

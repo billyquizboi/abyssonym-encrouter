@@ -2,6 +2,17 @@ from utils import read_multi
 from monster import monsterdict, monsters_from_table
 from sys import argv
 
+"""
+This file reads rom data relating to formations and produces 512 formations sets. 
+
+A Formation object knows how to calculate its 'cost' based on if smokebombs are present,
+if escape is possible, if pincer and back attack are possible, etc...
+
+Each FormationSet object contains collections of formations, formationIds, and a best_formation based on cost calculation.
+
+Some good information on formations is available on this page https://gamefaqs.gamespot.com/snes/554041-final-fantasy-iii/faqs/71889
+in the appendices.
+"""
 
 BASE_COST = 10
 
@@ -21,6 +32,9 @@ for line in open("tables/customcosts.txt"):
 class Formation():
     def __init__(self, formid):
         self.formid = formid
+        # Sets the pointer and auxpointer which are locations for this formation data
+        # based on a baseline location + a calculated offset
+        # this logic appears to be based just on how the data is stored in the rom
         self.pointer = 0xf6200 + (formid*15)
         self.auxpointer = 0xf5900 + (formid*4)
 
@@ -38,15 +52,15 @@ class Formation():
         s = s[2:]
         #return s
         return "%s (%x)" % (s, self.formid)
-        return "%s (%x) %s" % (s, self.formid, bool(self.pincer_prohibited))
+        #return "%s (%x) %s" % (s, self.formid, bool(self.pincer_prohibited))
 
     def read_data(self, filename):
         f = open(filename, 'r+b')
         f.seek(self.pointer)
         self.mouldbyte = ord(f.read(1))
         self.enemies_present = ord(f.read(1))
-        self.enemy_ids = map(ord, f.read(6))
-        self.enemy_pos = map(ord, f.read(6))
+        self.enemy_ids = list(f.read(6))
+        self.enemy_pos = list(f.read(6))
         self.bosses = ord(f.read(1))
 
         f.seek(self.auxpointer)
@@ -58,6 +72,12 @@ class Formation():
 
     @property
     def mould(self):
+        """
+        Copied from https://gamefaqs.gamespot.com/snes/554041-final-fantasy-iii/faqs/71889?page=0#Monster%20Mould
+        "There are only 13 monster moulds used by the game, so a lot of different monster formations use the same mould."
+        Apparently monster mould is mostly important for its impact on the sketch glitch.
+        :return:
+        """
         return self.mouldbyte >> 4
 
     @property
@@ -107,9 +127,9 @@ class Formation():
         pointer = mouldspecsptrs + (2*self.mould)
         f.seek(pointer)
         pointer = read_multi(f, length=2) | 0x20000
-        for i in xrange(6):
+        for i in range(6):
             f.seek(pointer + (i*4))
-            a, b = tuple(map(ord, f.read(2)))
+            a, b = tuple(f.read(2))
             width = ord(f.read(1))
             height = ord(f.read(1))
             enemy = self.enemies[i]
@@ -173,7 +193,7 @@ class Formation():
     @property
     def xp(self):
         xp = sum(e.stats['xp'] for e in self.present_enemies)
-        #print self, xp
+        #print(self, xp)
         return xp
 
 
@@ -207,7 +227,7 @@ class FormationSet():
             num_encounters = 4
         else:
             num_encounters = 2
-        for i in xrange(num_encounters):
+        for i in range(num_encounters):
             self.formids.append(read_multi(f, length=2))
         f.close()
 
@@ -220,24 +240,31 @@ class FormationSet():
             f = [j for j in formations if j.formid == i]
             f = f[0]
             self.formations.append(f)
-        self.best_formation = min(self.formations, key=lambda f: f.cost)
+        self.best_formation = min(self.formations, key=lambda f: f.cost())
 
     def rank(self):
         return sum(f.rank() for f in self.formations) / 4.0
 
 
 def formations_from_rom(filename):
-    formations = [Formation(i) for i in xrange(576)]
+    """
+    Copied from https://gamefaqs.gamespot.com/snes/554041-final-fantasy-iii/faqs/71889?page=0#Monster%20Mould
+    There are 575 different monster formations in the game's memory, but some of them are duplicates, used for cutscenes, or are dummied.
+    Even ignoring bosses that still leaves over 400 formations that can actually be encountered in game.
+    :param filename:
+    :return:
+    """
+    formations = [Formation(i) for i in range(576)]
     for f in formations:
         f.read_data(filename)
         f.lookup_enemies()
-        #print f
+        #print(f)
     return formations
 
 
 def fsets_from_rom(filename, formations):
     fsets = []
-    for i in xrange(0x200):
+    for i in range(0x200):
         f = FormationSet(i)
         f.read_data(filename)
         f.set_formations(formations)
@@ -253,8 +280,8 @@ if __name__ == "__main__":
         m.read_stats(filename)
     formations = formations_from_rom(filename)
     for f in formations:
-        print f, f.mould
+        print(f, f.mould)
     fsets = fsets_from_rom(filename, formations)
     for fset in fsets:
-        print fset
-        print
+        print(fset)
+        print()
