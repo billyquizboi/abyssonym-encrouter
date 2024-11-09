@@ -122,6 +122,8 @@ A Monster x3, New Monster x1 (9)
 etc... lots more formation sets - note that the PACK ID # is in hexadecimal
 ```
 
+**The formation id and PACK ID ( formation set id ) printed by formation.py can be used in the route.txt files to describe an encounter with a specific formation or a random encounter within a specific formation set**
+
 # General concepts
 
 A description of the core objects which are used in this program. Some of these are pretty obvious and some are more specific to this program. 
@@ -134,7 +136,9 @@ A description of the core objects which are used in this program. Some of these 
 
 **Instruction**: A single instruction ( can be an instruction for the program state ie: 'wt' ), an action to take, or an event/encounter in the speedrun route roadmap. Some examples: An instruction which will generate details into the report for console resets to use at the returners hideout, an instruction to enter the veldt, an instruction to travel a specific number of steps at a given threat rate, or an instruction to set the weight used when calculating formation cost.
 
-**Route**: TODO: add details
+**Route**: After a list of instructions is produced, a Route object attempts to traverse / follow the instructions. It simulates the cost of forcing an encounter vs. not forcing an encounter ( depth of 1 ) when traveling and proceeds with the route object which has the lowest cost after each encounter or other event / instruction.
+
+TODO: more route documentation
 
 # Route files
 
@@ -191,11 +195,11 @@ Third column value is a hexadecimal number which represents the index for a spec
 An **Instruction** object for an event will be created with formation matching index == column 3 in the formations list.
 So which formation is that exactly? The formation at index `i` will be the formation stored in rom at byte 0xf6200 + (index * 15) and with auxiliary data at 0xf5900 + (index * 4).
 
-| column | value | type               | description                                                                                         |
-|--------|-------|--------------------|-----------------------------------------------------------------------------------------------------|
-| 1      | ev    | string             | Causes an 'event' instruction to be created. Basically a specific enemy formation will be encountered |
-| 2      | 0     | not applicable     | Not used. The value 0 here is a placeholder here used to maintain formatting                        |
-| 3      | 2     | hexadecimal number | The index of the formation which will be encountered                                                |
+| column | value | type               | description                                                                                                             |
+|--------|-------|--------------------|-------------------------------------------------------------------------------------------------------------------------|
+| 1      | ev    | string             | Causes an 'event' instruction to be created. Basically a specific enemy formation will be encountered                   |
+| 2      | 0     | not applicable     | Not used. The value 0 here is a placeholder here used to maintain formatting                                            |
+| 3      | 2     | hexadecimal number | The index of the formation which will be encountered. **This is the formation id from the formation.py printed output** |
 
 ### `rd`
 
@@ -205,11 +209,11 @@ example line: `rd  0   12c`
 
 Describes a random encounter from a formation set. Which formation set is identified by the hexadecimal value of column 3.
 
-| column | value | type               | description                                                                             |
-|--------|-------|--------------------|-----------------------------------------------------------------------------------------|
-| 1      | rd    | string             | Creates an instruction to encounter a random encounter from a specific formation set    |
-| 2      | 0     | not applicable     | Not used. The value 0 here is a placeholder here used to maintain formatting            |
-| 3      | 12c   | hexadecimal number | The index of the formation set from which the random encounter formation will be picked |
+| column | value | type               | description                                                                                                                                                                  |
+|--------|-------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1      | rd    | string             | Creates an instruction to encounter a random encounter from a specific formation set                                                                                         |
+| 2      | 0     | not applicable     | Not used. The value 0 here is a placeholder here used to maintain formatting                                                                                                 |
+| 3      | 12c   | hexadecimal number | The index of the formation set from which the random encounter formation will be picked. **This is the formation set id ( PACK ID # ) from the formation.py printed output** |
 
 
 ### `lete`
@@ -366,3 +370,18 @@ if the encounter is inescapable -> if avoiding gau add 30 to cost, else add 20
 add 10 to the cost
 return the calculated cost
 ```
+
+# Reading the report files
+
+### debug strings
+
+example line: `--- f4 f4 f4 f4 0 0`
+
+Contains information about the currently selected route object's internal state in this order left to right:
+- stepseed
+- stepcounter
+- battleseed
+- battlecounter
+- threat
+- cost
+

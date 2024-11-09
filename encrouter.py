@@ -58,6 +58,16 @@ def get_reset_bunch(node, ones=2, fourteens=2):
 
 
 class Route():
+    scriptlength = 0
+    script = []
+    fsets = {}
+    formations = {}
+    travelscript = []
+    riversequence = {}
+    leterng = {}
+    returnerrng = {}
+    veldtpacks = {}
+
     def __init__(self, seed=None, rng=None, threat=0):
         self.initialseed = seed
         self.set_seed(seed)
@@ -65,7 +75,7 @@ class Route():
         self.rng = rng
         self.cost = 0
         self.travelog = ""
-        self.scriptptr = 0
+        self.scriptptr = 0 # the index of the Instruction within Route.script which will be processed next
         self.boundary_flag = False
         self.overworld_threatrate = None
         #self.forced_encounters = 0
@@ -78,7 +88,6 @@ class Route():
         self.seen_formations = set([])
         self.gau_encounters = 0
 
-    # TODO: These were required for python 3 priority queue but results should be tested vs python 2 output
     def __lt__(self, other):
         if isinstance(other, Route):
             return self.heuristic < other.heuristic
@@ -194,9 +203,14 @@ class Route():
         return double_pterodon
 
     def predict_formation(self, fset):
+        """
+        Predicts the formation which will encountered in a battle
+        :param fset:
+        :return:
+        """
         self.increment_battle(rng=True)
         value = self.rng[self.battlecounter]
-        value = (value + self.battleseed) & 0xFF
+        value = (value + self.battleseed) & 0xFF # values between 0 and 255 inclusive
         if len(fset.formations) == 4:
             value = value // 0x50
         else:
@@ -207,12 +221,20 @@ class Route():
         return formation
 
     def predict_battle(self):
+        """
+        Predicts if a battle will be encountered based on the step counter, step seed, threat, and rng string
+        :return:
+        """
         self.increment_step(rng=True)
         value = self.rng[self.stepcounter]
         value = (value + self.stepseed) & 0xFF
         return value < (self.threat >> 8)
 
     def predict_veldt_formation(self):
+        """
+        Predicts a veldt battle monster formation which will be encountered
+        :return:
+        """
         self.veldtseed += 1
         while True:
             self.veldtseed = self.veldtseed & 0x3F
@@ -241,14 +263,28 @@ class Route():
             self.stepseed = self.stepseed & 0xFF
 
     def increment_battle(self, rng=True):
+        """
+        Value of rng is ALWAYS True at runtime
+        :param rng: always True
+        :return:
+        """
+        # I assume the battlecounter has a max size of 255 so this masking allows handles keeping battlecounter: 0 >= value <= 255
         self.battlecounter = (self.battlecounter+1) & 0xFF
         if self.battlecounter == 0 and rng:
-            self.battleseed += 0x17
-            self.battleseed = self.battleseed & 0xFF
+            self.battleseed += 0x17 # += 23 I am guessing for some reason internal to the logic of the game
+            self.battleseed = self.battleseed & 0xFF # values allowed are between 0 and 255
 
     def execute_script(self, debug=True):
+        """
+        Processes a single instruction ( for some types of instructions ) in the route
+        often adding information to the travel log and/or updating internal state of the
+        Route object based on the Instruction.
+        :param debug:
+        :return:
+        """
         if (self.previous_instr and self.previous_instr.veldt
                 and not self.previous_instr.avoidgau):
+            # look for gau
             while self.gau_encounters <= 1:
                 self.force_additional_encounter(show_avoided=False)
 
@@ -329,6 +365,13 @@ class Route():
         return True
 
     def predict_encounters(self, instr, steps=None, debug=True):
+        """
+        Takes a given number of steps and returns the formations encountered.
+        :param instr:
+        :param steps:
+        :param debug:
+        :return:
+        """
         # note: seed changes when RNG is called and counter is at 0xFF
         # battlecounter += 0x11
         # stepcounter += 0x17
@@ -362,6 +405,12 @@ class Route():
                 formations.append(formation)
 
     def take_a_step(self, instr, debug=True):
+        """
+        Simulates taking a step and returns a formation if encountered else None
+        :param instr:
+        :param debug:
+        :return:
+        """
         if instr.force_threat:
             self.overworld_threatrate = instr.threatrate
             threatrate = self.overworld_threatrate
@@ -429,6 +478,12 @@ class Route():
         return bool(instr)
 
     def force_additional_encounter(self, show_avoided=True):
+        """
+        Simulates forcing an additional encounter and returns the formation which will be encountered.
+        Simulates and prints encounters which will be met if NOT forcing an encounter if show_avoided is true.
+        :param show_avoided: compute and print the avoided encounters if true
+        :return: a formation which will result from taking steps
+        """
         if self.boundary_flag:
             self.cost += 0.9
         else:
@@ -540,6 +595,13 @@ class Route():
         self.travelog += "*** OPEN MENU TO RESET THREAT RATE ***\n"
 
     def expand(self):
+        """
+        Drives the processing of a single Instruction located at Route.script[self.scriptptr].
+        Each instruction is processed according to its type.
+        Returns a list of Route objects - will either contain 'self', a copy of 'self', or some
+        number of copies of self route with cost modified because of resetting.
+        :return:
+        """
         if self.scriptptr == 24:
             if " 420 " not in self.debug_string and False:
                 return []
@@ -571,6 +633,9 @@ class Route():
             if (self.overworld_threatrate and instr.fset.overworld and
                     self.overworld_threatrate > instr.threatrate and
                     not instr.force_threat):
+                # I think this function relates to some times/places in the route where
+                # on the overworld the threat rate is incorrect and the route instructs to open the menu
+                # in order to reset/correct the threat rate ie: to force an encounter between phantom train and piranha fight before veldt
                 # change threat rate
                 child = self.copy()
                 child.menu_reset_threatrate()
@@ -620,10 +685,13 @@ class Route():
                 #if child.get_best_river(battles=1) and child.execute_script():
                 if child.get_best_river(battles=0) and child.execute_script():
                     children.append(child)
-                continue
-                child = node
-                if child.get_best_river(battles=1) and child.execute_script():
-                    children.append(child)
+                # The commented code below in this for loop was previously uncommented but unreachable so this is
+                # identical functionality but a little less confusing. Left commented in case it should be added back in at some point
+                # with the continue statement indented one more level
+                # continue
+                # child = node
+                # if child.get_best_river(battles=1) and child.execute_script():
+                #     children.append(child)
         elif instr.reset:
             children = []
             resetted = get_reset_bunch(self, ones=13, fourteens=5)
@@ -715,6 +783,15 @@ class Instruction():
 
 
 def encounter_search(routes, number=1, anynode=True, maxsize=25000):
+    """
+    For fixed seed value, routes will have size 1. For all seeds will have size 255.
+    TODO: add more documentation
+    :param routes: the route(s) read in from route.txt and similar route files. One Route object per seed value it looks like.
+    :param number: the number of solutions to make
+    :param anynode: always false at runtime
+    :param maxsize: the max allowed priority queue size
+    :return:
+    """
     fringe = PriorityQueue()
     for r in routes:
         fringe.put((r.heuristic, r))
@@ -725,6 +802,9 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
     solutions = []
     while len(solutions) < number:
         counter += 1
+        # TODO: build a debug log so I can inspect the optimization process more
+        print("{solutions length: " + str(solutions) + ", number: " + str(number) + ", counter: " + str(counter) + ", fringe: " + str(fringe.qsize()) + ",\nqueue: " + str(fringe.queue) + "\n")
+        print("COUNTER: " + str(counter))
         p, node = fringe.get()
         highest = max(highest, node.scriptptr)
         if node.scriptptr == Route.scriptlength:
@@ -735,50 +815,56 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
                 break
             else:
                 continue
-
+        childCount = 0
         for child in node.expand():
+            childCount += 1
+            print("EXPANDED CHILD: " + str(childCount) + " " + str(child) + "\n")
             fringe.put((child.heuristic, child))
 
+        print("EXPANDED CHILD COUNT: " + str(childCount) + "\n")
+
         if not counter % 1000:
+            print("count mod 1000 is " + str(counter % 1000) + "\n")
             size = fringe.qsize()
             nextsize = size
             while nextsize > maxsize:
-                progress += 1
-                print("%s/%s/%s" % (progress, highest, Route.scriptlength))
+                progress += 1 # TODO: is this right? we are not guaranteed to have always processed the same amount of script items for any given node as times through the encounter_search while loop
+                print("{progress: %s, highest: %s, Route.scriptlength: %s}\n" % (progress, highest, Route.scriptlength))
                 newfringe = PriorityQueue()
                 seen_seeds = set([])
                 seen_sigs = set([])
-                toggler = [False] * 0x100
+                toggler = [False] * 0x100 # list of 256 False items ie: [False, False, False, ...] size == 256
                 seencount = 0
                 fringesize = fringe.qsize()
                 while fringe.qsize() > 0:
-                    p, node = fringe.get()
+                    p, node = fringe.get() # we know we are working in order of least cost
                     seencount += 1
                     signature = (node.initialseed, node.scriptptr)
                     if (node.scriptptr >= progress or
                             node.initialseed not in seen_seeds or
                             (node.scriptptr >= progress * 0.5 and
-                             signature not in seen_sigs)):
+                             signature not in seen_sigs)): # in order of least cost so this picks the route with less cost for that signature
                         newfringe.put((p, node))
                         seen_sigs.add(signature)
                         seen_seeds.add(node.initialseed)
-                    elif (toggler[node.initialseed] is False
+                    elif (toggler[node.initialseed] is False # allows saving up to 2 of the same seed
                             or (node.scriptptr == highest
-                                and seencount < fringesize / 2)):
+                                and seencount < fringesize / 2)): # either this is the furthest progress in the script OR in the first half of the priority queue ie: top 50% of routes by cost
                         newfringe.put((p, node))
                         seen_sigs.add(signature)
                         seen_seeds.add(node.initialseed)
                         toggler[node.initialseed] = True
                     else:
-                        toggler[node.initialseed] = False
+                        toggler[node.initialseed] = False # means the next one of that seed in the queue would be allowed?
+                        print("DELETING NODE: " + str(node) + "\n")
                         del(node)
                 del(fringe)
                 fringe = newfringe
                 nextsize = fringe.qsize()
             if nextsize != size:
-                print(highest, size, nextsize)
+                print("{highest: " + str(highest) + ", size: " + str(size) + ", nextsize: " + str(nextsize) + "}")
             else:
-                print(highest, nextsize)
+                print("{highest: " + str(highest) + ", nextsize: " + str(nextsize) + "}")
             #print(child.scriptlength - child.scriptptr)
         if fringe.qsize() == 0:
             raise Exception("No valid solutions found.")
@@ -796,7 +882,8 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
 def format_script(fsets, formations, filename):
     """
     Reads the route txt and for each uncommented line ( not starting with # )
-    it
+    it creates an instruction object. It builds the Route data which is required
+    for later processing of the instructions and reporting of the travel log.
     :param fsets: list of FormationSet objects
     :param formations: list of formation objects
     :param filename: the route file ie: route.txt
