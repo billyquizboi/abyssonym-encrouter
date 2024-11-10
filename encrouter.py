@@ -121,6 +121,8 @@ def get_rng_string(filename):
 
 
 def get_reset_bunch(node, ones=2, fourteens=2):
+    method_logger = MethodContextLogger("get_reset_bunch")
+    method_logger.log("Start get_reset_bunch")
     if JAPAN:
         ones += 1
         fourteens += 1
@@ -140,6 +142,8 @@ def get_reset_bunch(node, ones=2, fourteens=2):
             child2 = child.copy()
             resetted2.append(child2)
 
+    method_logger.log("Returning resetted2: %s" % str(resetted2))
+    method_logger.log("End get_reset_bunch")
     return resetted2
 
 
@@ -274,11 +278,15 @@ class Route():
         return new
 
     def get_best_river(self, battles=1):
+        method_logger = MethodContextLogger("get_best_river", self, Route.script[self.scriptptr])
+        method_logger.log("Start get_best_river")
         #self.reset_fourteen()
         self.overworld_threatrate = None
         try:
             seed = Route.leterng[self.seed]
+            method_logger.log("seed %s" % seed)
         except KeyError:
+            method_logger.log("seed not found!")
             return False
 
         best = None
@@ -303,10 +311,15 @@ class Route():
         self.predict_river(best)
         self.cost += bestcost
         self.scriptptr += 1
+        method_logger.log("%s -> %s" % (best, cost))
+        method_logger.log("End get_best_river")
         return True
 
     def predict_river(self, seed):
+        method_logger = MethodContextLogger("predict_river", self, Route.script[self.scriptptr])
+        method_logger.log("Start predict_river")
         sequence = Route.riversequence[seed]
+        method_logger.log("Sequence %s" % sequence)
         formids = [0x107, 0x108, 0x107, 0x107, 0x108, 0x107, 0x108, 0x108, 0x107]
         double_pterodon = False
         for decision, formid in zip(sequence, formids):
@@ -320,8 +333,10 @@ class Route():
                 cost = formation.cost(self.weight, self.smokebombs)
                 self.cost += cost
                 self.travelog += "RIVER: " + str(formation) + " COST: %s" % cost + "\n"
+                method_logger.log("{decision: %s, formation: %s, xp: %s, cost: %s, fset: %s}" % (decision, formation, formation.xp, cost, fset))
+        method_logger.log("End predict_river")
         return True
-        return double_pterodon
+        #return double_pterodon # unreachable code I commented out
 
     def predict_formation(self, fset):
         """
@@ -329,16 +344,23 @@ class Route():
         :param fset:
         :return:
         """
+        method_logger = MethodContextLogger("predict_formation", self, Route.script[self.scriptptr])
+        method_logger.log("Start predict_formation")
         self.increment_battle(rng=True)
         value = self.rng[self.battlecounter]
         value = (value + self.battleseed) & 0xFF # values between 0 and 255 inclusive
+        method_logger.log("{ value: %s, battlecounter: %s, battleseed: %s self.rng[self.battlecounter]: %s }" % (value, self.battlecounter, self.battleseed, self.rng[self.battlecounter]))
         if len(fset.formations) == 4:
             value = value // 0x50
         else:
             value = value // 0xC0
         formation = fset.formations[value]
+        method_logger.log("Predicted formation %s" % formation)
         if formation.formid < 0x200:
+            method_logger.log("Adding formation.formid %s to seen formations" % formation.formid)
             self.seen_formations.add(formation.formid)
+        method_logger.log("Returning formation %s" % formation)
+        method_logger.log("End predict_formation")
         return formation
 
     def predict_battle(self):
@@ -346,7 +368,7 @@ class Route():
         Predicts if a battle will be encountered based on the step counter, step seed, threat, and rng string
         :return:
         """
-        method_logger = MethodContextLogger("predict_battle", self)
+        method_logger = MethodContextLogger("predict_battle", self, Route.script[self.scriptptr])
         method_logger.log("Predicting battle from step counter")
         self.increment_step(rng=True)
         value = self.rng[self.stepcounter]
@@ -363,32 +385,48 @@ class Route():
         Predicts a veldt battle monster formation which will be encountered
         :return:
         """
+        method_logger = MethodContextLogger("predict_veldt_formation", self, Route.script[self.scriptptr])
+        method_logger.log("Start predict_veldt_formation with veldtseed=%d" % self.veldtseed)
         self.veldtseed += 1
         while True:
             self.veldtseed = self.veldtseed & 0x3F
             pack = Route.veldtpacks[self.veldtseed]
+            method_logger.log("Veldt pack is %s" % pack)
             if set(pack) & self.seen_formations:
                 break
+
             self.veldtseed += 1
 
+        method_logger.log("updated veldtseed is %s" % self.veldtseed)
         self.increment_battle(rng=True)
         value = self.rng[self.battlecounter]
         value = (value + self.battleseed)
+        method_logger.log("self.rng[self.battlecounter] + self.battleseed is %s" % value)
         while True:
             value = value & 0x07
+            method_logger.log("Value for pack selection is %s" % value)
             formid = pack[value]
+            method_logger.log("Formation id is %s" % formid)
             if formid in self.seen_formations:
+                method_logger.log("Breaking as formation id was seen. formation %s" % formid)
                 break
             value += 1
 
         formation = Route.formations[formid]
+        method_logger.log("Returning formation %s" % formation)
+        method_logger.log("End predict_veldt_formation")
         return formation
 
     def increment_step(self, rng=True):
+        method_logger = MethodContextLogger("increment_step", self, Route.script[self.scriptptr])
+        method_logger.log("Start increment_step with { rng: %s, stepcounter: %s, stepseed: %s }" % (rng, self.stepcounter, self.stepseed))
         self.stepcounter = (self.stepcounter+1) & 0xFF
+        method_logger.log("Updated stepcounter to %s" % self.stepcounter)
         if self.stepcounter == 0 and rng:
             self.stepseed += 0x11
             self.stepseed = self.stepseed & 0xFF
+            method_logger.log("Updated stepseed to %s" % self.stepseed)
+        method_logger.log("End increment_step")
 
     def increment_battle(self, rng=True):
         """
@@ -396,11 +434,16 @@ class Route():
         :param rng: always True
         :return:
         """
+        method_logger = MethodContextLogger("increment_battle", self, Route.script[self.scriptptr])
+        method_logger.log("Start increment_battle with {rng: %s, battlecounter: %s, battleseed}" % (rng, self.battlecounter, self.battleseed))
         # I assume the battlecounter has a max size of 255 so this masking allows handles keeping battlecounter: 0 >= value <= 255
         self.battlecounter = (self.battlecounter+1) & 0xFF
+        method_logger.log("Updated battlecounter to %s" % self.battlecounter)
         if self.battlecounter == 0 and rng:
             self.battleseed += 0x17 # += 23 I am guessing for some reason internal to the logic of the game
             self.battleseed = self.battleseed & 0xFF # values allowed are between 0 and 255
+            method_logger.log("Updated battleseed to %s" % self.battleseed)
+        method_logger.log("End increment_battle")
 
     def execute_script(self, debug=True):
         """
@@ -410,32 +453,51 @@ class Route():
         :param debug:
         :return:
         """
+        method_logger = MethodContextLogger("execute_script", self, Route.script[self.scriptptr])
+        method_logger.log("Start execute_script with { debug: %s }" % debug)
         if (self.previous_instr and self.previous_instr.veldt
                 and not self.previous_instr.avoidgau):
             # look for gau
+            method_logger.log("Looking for gau. Current num_encounters = %s" % self.num_encounters)
+            starting_num_encounters = self.num_encounters
             while self.gau_encounters <= 1:
+                method_logger.log("Gau not found! num_encounters = %s" % self.num_encounters)
                 self.force_additional_encounter(show_avoided=False)
+            method_logger.log("Gau found after %s extra encounters" % (self.num_encounters - starting_num_encounters))
 
         if self.scriptptr == Route.scriptlength:
             raise Exception("Script pointer out of bounds.")
         if debug:
             self.travelog += self.debug_string
         instr = Route.script[self.scriptptr]
+        method_logger.log("Located instruction { scriptptr: %s, instruction: %s }" % (self.scriptptr, instr))
         self.scriptptr += 1
 
         if instr.restriction:
+            method_logger.log("Restriction instruction found { rtype: %s, value: %s }" % (instr.rtype if hasattr(instr, 'rtype') else None, instr.value if hasattr(instr, 'value') else None))
             if instr.value is None:
                 setattr(self, instr.rtype, 0)
             else:
                 value = getattr(self, instr.rtype)
                 if value < instr.value:
+                    method_logger.log("Restriction not met: { value: %s, required_value: %s }" % (value, instr.value))
                     return False
                 else:
+                    method_logger.log("Restriction satisfied: { value: %s, required_value: %s }" % (value, instr.value))
                     setattr(self, instr.rtype, 0)
         elif instr.travel:
+            method_logger.log("Travel instruction found { veldt: %s, avoidgau: %s, steps: %s, threatrate: %s, force_threat: %s, fset: %s }" % (
+                instr.veldt,
+                instr.avoidgau,
+                instr.steps,
+                instr.threatrate,
+                instr.force_threat,
+                instr.fset.log_string if hasattr(instr, 'fset') and instr.fset is not None else None
+            ))
             formations = self.predict_encounters(instr, debug=debug)
             if instr.veldt and not instr.avoidgau:
                 if instr.seek_rage:
+                    method_logger.log("Seeking a rage %s" % instr.seek_rage)
                     for f in formations:
                         if f.formid in instr.desired_formations:
                             break
@@ -460,36 +522,48 @@ class Route():
                         self.cost += cost
                         self.travelog += "*** VELDT PENALTY +%s ***\n" % cost
 
+                method_logger.log("Completed on veldt and not avoiding gau %s")
                 return True
         elif instr.event:
+            method_logger.log("Event instruction found { formation: %s, instruction: %s }" % (instr.formation, instr.log_string))
             self.travelog += "EVENT: %s\n" % instr.formation
             if instr.formation.formid < 0x200:
+                method_logger.log("Add formation to seend_formations: formation: %s" % instr.formation)
                 self.seen_formations.add(instr.formation.formid)
             self.increment_battle(rng=True)
             self.overworld_threatrate = None
+            method_logger.log("Zero overworld threat")
         elif instr.random:
+            method_logger.log("Random encounter instruction found { fset: %s, instruction: %s }" % (instr.fset, instr.log_string))
             formation = self.predict_formation(instr.fset)
             self.xp += formation.xp
             cost = formation.cost(self.weight, self.smokebombs)
             self.cost += cost
             self.travelog += "RANDOM EVENT: " + str(formation) + " COST: %s" % cost + "\n"
             self.overworld_threatrate = None
+            method_logger.log("Random encounter details: { cost: %s, xp: %s, formation: %s }" % (cost, formation.xp, formation))
         elif instr.weight:
+            method_logger.log("Weight instruction found %s" % instr.weightval)
             self.weight = instr.weightval
             #if self.weight <= 0.09:
             #    self.smokebombs = True
         elif instr.lete:
+            method_logger.log("Lete instruction found - noop here %s" % instr.log_string)
             return False
         elif instr.reset:
+            method_logger.log("Reset instruction found - noop here %s" % instr.log_string)
             return False
         elif instr.force:
+            method_logger.log("Force instruction found %s" % instr.log_string)
             prevtrav = [i for i in self.script[:self.scriptptr] if i.travel][-1]
             instr.force_threat = prevtrav.force_threat
             instr.fset = prevtrav.fset
             instr.threatrate = prevtrav.threatrate
+            method_logger.log("Forcing additional encounter: { force_threat: %s, threatrate: %s, fset: %s }" % (instr.force_threat, instr.threatrate, instr.fset))
             self.force_additional_encounter()
+            method_logger.log("Completed forcing additional encounter")
             return True
-
+        method_logger.log("End execute_script - default exit")
         return True
 
     def predict_encounters(self, instr, steps=None, debug=True):
@@ -500,6 +574,8 @@ class Route():
         :param debug:
         :return:
         """
+        method_logger = MethodContextLogger("predict_encuonters", self, instr)
+        method_logger.log("Start predict_encounters with { steps: %s, debug: %s, instr.steps: %s }" % (steps, debug, instr.steps if instr is not None and instr.steps is not None else None))
         # note: seed changes when RNG is called and counter is at 0xFF
         # battlecounter += 0x11
         # stepcounter += 0x17
@@ -507,11 +583,14 @@ class Route():
         steps = instr.steps if steps is None else steps
         self.boundary_flag = False
         if steps and hasattr(instr, "fset"):
+            method_logger.log("Instruction has fset %s" % instr.fset)
             self.travelog += "%s threat steps in encounter zone %x.\n" % (steps, instr.fset.setid)
 
         formations = []
         while True:
             if steps == 0:
+                method_logger.log("Return formations: %s" % str(formations))
+                method_logger.log("End predict_encounters")
                 return formations
 
             steps -= 1
@@ -531,6 +610,7 @@ class Route():
                     self.cost += 0.1
                 taken = 0
                 formations.append(formation)
+                method_logger.log("Encountered formation { steps: %s, taken: %s, total: %s, formations.size: %s, formation: %s }" % (steps, taken, total, len(formations), formation))
 
     def take_a_step(self, instr, debug=True):
         """
@@ -541,18 +621,6 @@ class Route():
         """
         method_logger = MethodContextLogger("take_a_step", self, instr)
         method_logger.log("Start take_a_step")
-
-        # TODO: also add logging to:
-        #  encrouter.Route.predict_veldt_formation
-        #  encrouter.Route.increment_step
-        #  encrouter.Route.increment_battle
-        #  encrouter.Route.execute_script
-        #  encrouter.Route.predict_encounters
-        #  encrouter.Route.reset_value
-        #  encrouter.Route.reset_one
-        #  encrouter.Route.reset_fourteen
-        #  encrouter.Route.menu_reset_threatrate
-        #  encrouter.Route.expand - only partially done
 
         if instr.force_threat:
             method_logger.log("force threat")
@@ -643,7 +711,7 @@ class Route():
         :param show_avoided: compute and print the avoided encounters if true
         :return: a formation which will result from taking steps
         """
-        method_logger = MethodContextLogger("force_additional_encounter", self)
+        method_logger = MethodContextLogger("force_additional_encounter", self, Route.script[self.scriptptr])
         method_logger.log("Start force_additional_encounter. show_avoided=%s" % show_avoided)
         if self.boundary_flag:
             method_logger.log("Boundary flag")
@@ -737,37 +805,46 @@ class Route():
 
     @property
     def reset_value(self):
+        method_logger = MethodContextLogger("reset_value", self)
+        method_logger.log("Start reset_value { num_encounters: %s, last_reset: %s }" % (self.num_encounters, self.last_reset))
         if self.last_reset is None:
             return None
         diff = self.num_encounters - self.last_reset
+        method_logger.log("Returning difference: %s" % diff)
+        method_logger.log("End reset_value")
         return diff
 
     def reset_one(self):
+        method_logger = MethodContextLogger("reset_one", self, Route.script[self.scriptptr])
+        method_logger.log("Start reset_one { cost: %s, seed: %s }" % (self.cost, self.seed))
         if JAPAN:
             self.cost += 10
         else:
             self.cost += 25
         self.set_seed(self.seed+1)
+        method_logger.log("End reset_one { cost: %s, seed: %s }" % (self.cost, self.seed))
         self.travelog += "*** RESET TO GAME LOAD SCREEN ***\n"
 
     def reset_fourteen(self):
+        method_logger.log("Start reset_fourteen { cost: %s, seed: %s, last_reset: %s }" % (self.cost, self.seed, self.last_reset))
         if JAPAN:
             self.cost += 15
         else:
             self.cost += 30
         self.set_seed(self.seed+14)
         self.last_reset = self.num_encounters
+        method_logger.log("End reset_fourteen { cost: %s, seed: %s, last_reset: %s }" % (self.cost, self.seed, self.last_reset))
         self.travelog += "*** RELOAD ***\n"
 
     def menu_reset_threatrate(self):
         method_logger = MethodContextLogger("menu_reset_threatrate", self, Route.script[self.scriptptr])
-        method_logger.log("Start menu_reset_threatrate")
         self.cost += 1
         instr = Route.script[self.scriptptr]
+        method_logger.log("Start menu_reset_threatrate { cost: %s, overworld_threatrate: %s, instr.threatrate: %s }" % (self.cost, self.overworld_threatrate, instr.threatrate))
         assert instr.fset.overworld
         self.overworld_threatrate = instr.threatrate
         self.travelog += "*** OPEN MENU TO RESET THREAT RATE ***\n"
-        method_logger.log("End menu_reset_threatrate")
+        method_logger.log("End menu_reset_threatrate { cost: %s, overworld_threatrate: %s, instr.threatrate: %s }" % (self.cost, self.overworld_threatrate, instr.threatrate))
 
     def expand(self):
         """
@@ -828,9 +905,12 @@ class Route():
                 children.append(child)
 
             distance = self.reset_value or 0
+            method_logger.log("Distince: %s" %distance)
             if self.previous_instr.travel:
+                method_logger.log("Previous instruction was travel")
                 if (self.previous_instr.threatrate < instr.threatrate and
                         self.previous_instr.steps >= 2):
+                    method_logger.log("Previous instruction was travel")
                     for steps in [10, 8, 6, 4, 2]:
                         if steps > instr.steps:
                             continue
@@ -838,6 +918,7 @@ class Route():
                         child = self.copy()
                         child.travelog += "*** TAKE %s EXTRA STEPS ***\n" % steps
                         formations = child.predict_encounters(self.previous_instr, steps=steps)
+                        method_logger.log("Predicted formations %s" % formations)
                         if not formations:
                             parallel1 = self.copy()
                             parallel2 = child.copy()
@@ -847,16 +928,20 @@ class Route():
                                 break
 
                             if len(formations1) > len(formations2) and child.execute_script():
+                                method_logger.log("Appending child: %s" % child.log_string)
                                 children.append(child)
 
                 if ((self.overworld_threatrate and not instr.fset.overworld) or
                         (instr.fset.overworld and not self.overworld_threatrate)):
+                    method_logger.log("Entering condition where fset overworld and overworld_threatrate don't matchup which will never execute. Not sure of the primary intention here.")
                     # reset seed
-                    if distance is not None and distance >= 10 and False:
-                        resetted = get_reset_bunch(self)
-                        children.extend(resetted)
+                    # I commented this out because 'and False' in the if condition means it will never execute
+                    # if distance is not None and distance >= 10 and False:
+                    #     resetted = get_reset_bunch(self)
+                    #     children.extend(resetted)
 
         if instr.lete:
+            method_logger.log("Lete instruction found %s" % instr.log_string)
             #DESIRED_FORMATIONS = set([0x14, 0x15, 0x16, 0x18])
             #caught = len(DESIRED_FORMATIONS & self.seen_formations)
             #if caught == 0:
@@ -870,6 +955,7 @@ class Route():
                 child = node.copy()
                 #if child.get_best_river(battles=1) and child.execute_script():
                 if child.get_best_river(battles=0) and child.execute_script():
+                    method_logger.log("Adding best river child %s" % child)
                     children.append(child)
                 # The commented code below in this for loop was previously uncommented but unreachable so this is
                 # identical functionality but a little less confusing. Left commented in case it should be added back in at some point
@@ -879,8 +965,10 @@ class Route():
                 # if child.get_best_river(battles=1) and child.execute_script():
                 #     children.append(child)
         elif instr.reset:
+            method_logger.log("Reset instruction found %s" % instr.log_string)
             children = []
             resetted = get_reset_bunch(self, ones=13, fourteens=5)
+            method_logger.log("Processing resetted %s" % resetted)
             for node in resetted:
                 child = node.copy()
                 child.execute_script()
@@ -889,11 +977,20 @@ class Route():
             instr.force_threat = self.previous_instr.force_threat
             instr.fset = self.previous_instr.fset
             instr.threatrate = self.previous_instr.threatrate
+            method_logger.log("Force instruction found { force_threat: %s, threatrate: %s, fset: %s, instruction: %s}" % (
+                instr.force_threat,
+                instr.threatrate,
+                instr.fset,
+                instr.log_string))
             self.force_additional_encounter()
+            method_logger.log("Finished force additional encounter and appending self %s" % self.log_string)
             children.append(self)
         elif self.execute_script():
+            method_logger.log("Executed script and appending %s" % self.log_string)
             children.append(self)
 
+        method_logger.log("Returning expanded children %s" % str(list(map(lambda x: x.short_string, children))) if children else None)
+        method_logger.log("End expand")
         return children
 
 
