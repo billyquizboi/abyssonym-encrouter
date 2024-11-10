@@ -1,11 +1,92 @@
+from datetime import datetime
 from sys import argv
 from monster import monsters_from_table
 from formation import formations_from_rom, fsets_from_rom
 from queue import PriorityQueue
+import logging
+from inspect import currentframe, getframeinfo
 
 JAPAN = False
 STEP_VALUE = 0.5
 fsetdict = {}
+
+logging.basicConfig(filename="./logs/main.log", level=logging.DEBUG, format='%(asctime)s %(name)s %(levelname)s:%(message)s')
+logger = logging.getLogger(__name__)
+
+# turn this to true to allow large amounts of queue logging of some target queue items
+ALLOW_QUEUE_LOGGING = False
+
+def log_info(method_name, route, instr, line_num=None, queue_size=None, selected_node=None, queue=None, message=None):
+    """
+    Standardize log output format for easier tracing of events and smaller log files
+    :param method_name:
+    :param route:
+    :param instr:
+    :param line_num:
+    :param queue_size:
+    :param selected_node:
+    :param queue:
+    :param message:
+    :return:
+    """
+    logger.info("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s" % (method_name,
+                                    line_num,
+                                    route.id if route else None,
+                                    route.initialseed if route else None,
+                                    route.cost if route else None,
+                                    route.scriptptr if route else None,
+                                    route.stepseed if route else None,
+                                    route.stepcounter if route else None,
+                                    route.rng[route.stepcounter] if (route and route.stepcounter and route.rng) else None,
+                                    route.threat if route else None,
+                                    route.overworld_threatrate if route else None,
+                                    instr.id if instr else None,
+                                    instr.type if instr else None,
+                                    instr.threatrate if (instr and hasattr(instr, 'threatrate')) else None,
+                                    queue_size,
+                                    selected_node.short_string if selected_node else None,
+                                    get_queue_other_items(selected_node, queue),
+                                    message))
+
+def get_queue_other_items(selected_node, queue):
+    """
+    Allows logging queue items which have a higher script ptr but also a higher cost within some given boundary.
+    Could log a lot of data so be prepared for multi GB log files.
+    :param selected_node:
+    :param queue:
+    :return:
+    """
+    if selected_node and queue:
+        if not ALLOW_QUEUE_LOGGING:
+            return None
+        sub_queue = []
+        for item in queue:
+            if item.scriptptr > selected_node.scriptptr and ( item.cost == selected_node.cost or item.cost < selected_node.cost + 30 ):
+                sub_queue.append(item)
+        return str(sub_queue)
+    else:
+        return None
+
+
+class MethodContextLogger:
+    """
+    Used to simplify logging standard info which includes enclosing method, line number, route, and instruction context
+    as well as an optional free-form message
+    """
+    def __init__(self, method_name=None, route=None, instr=None):
+        self.method_name = method_name
+        self.route = route
+        self.instr = instr
+
+    def log(self, message=None):
+        line_num = currentframe().f_back.f_lineno
+        log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=None,
+                 selected_node=None, queue=None, message=message)
+
+    def lqueue(self, selected_node=None, queue_size=None, queue=None, message=None):
+        line_num = currentframe().f_back.f_lineno
+        log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=queue_size,
+                 selected_node=selected_node, queue=queue, message=message)
 
 
 def table_from_file(filename, hexify=False):
@@ -67,6 +148,7 @@ class Route():
     leterng = {}
     returnerrng = {}
     veldtpacks = {}
+    next_id = 0
 
     def __init__(self, seed=None, rng=None, threat=0):
         self.initialseed = seed
@@ -87,6 +169,8 @@ class Route():
         self.smokebombs = False
         self.seen_formations = set([])
         self.gau_encounters = 0
+        self.id = Route.next_id
+        Route.next_id += 1
 
     def __lt__(self, other):
         if isinstance(other, Route):
@@ -121,6 +205,38 @@ class Route():
             self.stepseed, self.stepcounter, self.battleseed,
             self.battlecounter, self.threat, self.cost)
         return debug_string
+
+    @property
+    def log_string(self):
+        return str({
+            'class': self.__class__.__name__,
+            'id': self.id,
+            'initialseed': self.initialseed,
+            'seed': self.seed,
+            'veldtseed': self.veldtseed,
+            'stepseed': self.stepseed,
+            'battleseed': self.battleseed,
+            'stepcounter': self.stepcounter,
+            'battlecounter': self.battlecounter,
+            'threat': self.threat,
+            'cost': self.cost,
+            'travelog': self.travelog,
+            'scriptptr': self.scriptptr,
+            'boundary_flag': self.boundary_flag,
+            'overworld_threatrate': self.overworld_threatrate,
+            'last_forced_encounter': self.last_forced_encounter,
+            'last_reset': self.last_reset,
+            'num_encounters': self.num_encounters,
+            'xp': self.xp,
+            'weight': self.weight,
+            'smokebombs': self.smokebombs,
+            'seen_formations': self.seen_formations,
+            'gau_encounters': self.gau_encounters,
+        })
+
+    @property
+    def short_string(self):
+        return "(id: %s, cost: %s, script_ptr: %s, num_encounters: %s)" % (self.id, self.cost, self.scriptptr, self.num_encounters)
 
     @property
     def previous_instr(self):
@@ -225,10 +341,17 @@ class Route():
         Predicts if a battle will be encountered based on the step counter, step seed, threat, and rng string
         :return:
         """
+        method_logger = MethodContextLogger("predict_battle", self)
+        method_logger.log("Predicting battle from step counter")
         self.increment_step(rng=True)
         value = self.rng[self.stepcounter]
         value = (value + self.stepseed) & 0xFF
-        return value < (self.threat >> 8)
+        is_battle_predicted = value < (self.threat >> 8)
+        if is_battle_predicted:
+            method_logger.log("Battle is predicted")
+        else:
+            method_logger.log("Battle is NOT predicted")
+        return is_battle_predicted
 
     def predict_veldt_formation(self):
         """
@@ -411,48 +534,79 @@ class Route():
         :param debug:
         :return:
         """
+        method_logger = MethodContextLogger("take_a_step", self, instr)
+        method_logger.log("Start take_a_step")
+
+        # TODO: also add logging to:
+        #  encrouter.Route.predict_veldt_formation
+        #  encrouter.Route.increment_step
+        #  encrouter.Route.increment_battle
+        #  encrouter.Route.execute_script
+        #  encrouter.Route.predict_encounters
+        #  encrouter.Route.reset_value
+        #  encrouter.Route.reset_one
+        #  encrouter.Route.reset_fourteen
+        #  encrouter.Route.menu_reset_threatrate
+        #  encrouter.Route.expand - only partially done
+
         if instr.force_threat:
+            method_logger.log("force threat")
             self.overworld_threatrate = instr.threatrate
             threatrate = self.overworld_threatrate
         elif instr.fset.overworld:
+            method_logger.log("fset.overworld=True")
             if self.overworld_threatrate is None:
+                method_logger.log("overworld_threatrate is None")
                 self.overworld_threatrate = instr.threatrate
             threatrate = self.overworld_threatrate
+            method_logger.log("resulting threatrate=%s" % threatrate)
         else:
             self.overworld_threatrate = None
             threatrate = instr.threatrate
+            method_logger.log("not force threat or fset.overworld so threatrate=%s" % threatrate)
 
         self.cost += STEP_VALUE
         self.threat += threatrate
+        method_logger.log("increment cost by STEP_VALUE=%s and threat by threatrate=%s" % (STEP_VALUE, threatrate))
         if self.predict_battle():
-            if instr.veldt:
-                '''
-                self.travelog += "%x %x %x %x %x\n" % (
-                    self.stepseed, self.stepcounter, self.battleseed,
-                    self.battlecounter, self.threat)
-                '''
-
+            method_logger.log("Battle is predicted")
+            # if instr.veldt: # commented out as it is no-op
+            #     '''
+            #     self.travelog += "%x %x %x %x %x\n" % (
+            #         self.stepseed, self.stepcounter, self.battleseed,
+            #         self.battlecounter, self.threat)
+            #     '''
+            #     logger.info("take_a_step: Veldt battle predicted for %s" % (route_instruction_log_string(self, instr)))
             self.num_encounters += 1
+            method_logger.log("Increment num_encounters to %d" % self.num_encounters)
             if instr.veldt:
                 formation = self.predict_veldt_formation()
                 if not instr.avoidgau:
                     self.gau_encounters += 1
+                method_logger.log("Veldt battle predicted. avoidgau=%s, gau_encounters=%s, formation=%s" % (instr.avoidgau, self.gau_encounters, formation))
             else:
                 formation = self.predict_formation(instr.fset)
+                method_logger.log("Not a veldt battle. formation=%s" % formation)
             self.xp += formation.xp
+            method_logger.log("Gained %s xp for total_xp=%s from formation=%s" % (formation.xp, self.xp, formation))
             if instr.veldt:
                 cost = formation.cost(self.weight, self.smokebombs, avoidgau=instr.avoidgau)
             else:
                 cost = formation.cost(self.weight, self.smokebombs)
             self.cost += cost
+            method_logger.log("formation.cost=%s, route_current_cost=%s" % (cost, self.cost))
             self.travelog += "ENCOUNTER: " + str(formation) + " COST: %s\n" % cost
             if debug:
                 debug_string = self.debug_string
                 self.travelog += debug_string
             self.threat = 0
+            method_logger.log("Zero the threat")
             if not instr.veldt and instr.fset.overworld:
                 self.overworld_threatrate = instr.threatrate
+                method_logger.log("Set overworld_threatrate=%s" % self.overworld_threatrate)
 
+            method_logger.log("Returning formation=%s" % formation)
+            method_logger.log("End take_a_step")
             return formation
 
     @property
@@ -484,9 +638,13 @@ class Route():
         :param show_avoided: compute and print the avoided encounters if true
         :return: a formation which will result from taking steps
         """
+        method_logger = MethodContextLogger("force_additional_encounter", self)
+        method_logger.log("Start force_additional_encounter. show_avoided=%s" % show_avoided)
         if self.boundary_flag:
+            method_logger.log("Boundary flag")
             self.cost += 0.9
         else:
+            method_logger.log("No boundary flag")
             self.cost += 1
         self.boundary_flag = False
         self.travelog += "*** FORCE ADDITIONAL ENCOUNTER ***\n"
@@ -494,6 +652,7 @@ class Route():
             parallel = self.copy()
             parallel.travelog = ""
             avoidance = None
+            method_logger.log("Made parallel copy with id %d" % parallel.id)
             while True:
                 if parallel.scriptptr == Route.scriptlength:
                     break
@@ -512,22 +671,32 @@ class Route():
         step = 0
         done = False
         instr = self.previous_instr
+        method_logger.log("Previous instruction %s" % instr.log_string if instr else None)
         while True:
             step += 1
+            logging.info("force_additional_encounter: step %d" % step)
+            method_logger.log("Step %d" % step)
             if not done:
                 formation = self.take_a_step(instr)
+                method_logger.log("Formation %s" % formation)
             else:
-                self.take_a_step(instr)
+                logging.info("force_additional_encounter: DONE = True and taking a step")
+                method_logger.log("Done and taking a step")
+                self.take_a_step(instr) # this takes a step after formation has happened ( maybe this is completing a step after the battle or something? )
 
             if formation:
                 done = True
 
-            if done and (step & 1) == 0:
+            if done and (step & 1) == 0: # step & 1 -> I assume this means steps is odd?
+                method_logger.log("Break out as done and step %d & 1 == 0" % step)
                 break
 
         if show_avoided and avoidance:
+            method_logger.log("Avoidance: %s" % avoidance)
             self.travelog += avoidance + "\n"
 
+        method_logger.log("Returning formation: %s" % formation)
+        method_logger.log("End force_additional_encounter")
         return formation
 
     @property
@@ -588,11 +757,14 @@ class Route():
         self.travelog += "*** RELOAD ***\n"
 
     def menu_reset_threatrate(self):
+        method_logger = MethodContextLogger("menu_reset_threatrate", self, Route.script[self.scriptptr])
+        method_logger.log("Start menu_reset_threatrate")
         self.cost += 1
         instr = Route.script[self.scriptptr]
         assert instr.fset.overworld
         self.overworld_threatrate = instr.threatrate
         self.travelog += "*** OPEN MENU TO RESET THREAT RATE ***\n"
+        method_logger.log("End menu_reset_threatrate")
 
     def expand(self):
         """
@@ -602,12 +774,17 @@ class Route():
         number of copies of self route with cost modified because of resetting.
         :return:
         """
+        method_logger = MethodContextLogger("expand", self, Route.script[self.scriptptr])
+        method_logger.log("Start expand")
         if self.scriptptr == 24:
+            method_logger.log("Script pointer is 24")
             if " 420 " not in self.debug_string and False:
+                method_logger.log("420 is not in the debug string. Not sure of the significance of this but returning empty expanded nodes list")
                 return []
         children = []
         instr = Route.script[self.scriptptr]
         if instr.veldt:
+            method_logger.log("Entering veldt")
             self.travelog += "*** ENTER THE VELDT ***\n"
             '''
             self.travelog += "%x %x %x %x %x\n" % (
@@ -620,24 +797,30 @@ class Route():
                 and self.previous_instr.steps >= 2):
             # force encounter
             distance = self.force_value
+            method_logger.log("Instruction has previous travel instruction with steps > 2. distance=%s, previous_instruction=%s" % (self.force_value, self.previous_instr.log_string))
             if distance is not None and distance < 2:
                 pass
             elif self.scriptptr < (Route.scriptlength-1):
                 child = self.copy()
+                method_logger.log("Made child copy %s" % child.short_string)
                 if child.force_additional_encounter():
                     if child.execute_script():
+                        method_logger.log("execute_script was true for child copy %s" % child.short_string)
                         children.append(child)
                     #children.append(child)
 
         if instr.travel and hasattr(instr, 'fset'):
+            method_logger.log("Travel instruction hasAttr fset %s" % instr.fset.log_string)
             if (self.overworld_threatrate and instr.fset.overworld and
                     self.overworld_threatrate > instr.threatrate and
                     not instr.force_threat):
+                method_logger.log("Instruction resetting overworld threat")
                 # I think this function relates to some times/places in the route where
                 # on the overworld the threat rate is incorrect and the route instructs to open the menu
                 # in order to reset/correct the threat rate ie: to force an encounter between phantom train and piranha fight before veldt
                 # change threat rate
                 child = self.copy()
+                method_logger.log("Child copy made while resetting overworld threat %s" % child.log_string)
                 child.menu_reset_threatrate()
                 children.append(child)
 
@@ -712,6 +895,8 @@ class Route():
 
 
 class Instruction():
+    next_id = 0
+
     def __init__(self):
         self.event, self.travel = False, False
         self.restriction = False
@@ -721,9 +906,91 @@ class Instruction():
         self.veldt = False
         self.reset = False
         self.force = False
+        self.id = Instruction.next_id
+        Instruction.next_id += 1
+
+        # a bunch of stuff that is used later but I want it always loggable
+        # self.threatrate = None
+        # self.steps = None
+        # self.force_threat = None
+        # self.avoidgau = None
+        # self.steps = None
+        # self.force_threat = None
+        # self.event = None
+        # self.rng = None
+        # self.restriction = None
+        # self.rtype = None
+        # self.value = None
+        # self.lete = None
+        # self.weight = None
+        # self.weightVal = None
+        # self.random = None
+        # self.fset = {}
+        # self.veldt = None
+        # self.avoidgau = None
+        # self.seek_rage = None
+        # self.desired_formations = []
+        # self.reset = None
+        # self.force = None
+        # self.formation = None
 
     def __repr__(self):
         return "event" if self.event else "travel" if self.travel else "restriction" if self.restriction else "lete" if self.lete else "None"
+
+    @property
+    def type(self):
+        if (self.travel):
+            return "travel"
+        elif (self.event):
+            return "event"
+        elif (self.restriction):
+            return "restriction"
+        elif (self.lete):
+            return "lete"
+        elif (self.weight):
+            return "weight"
+        elif (self.random):
+            return "random"
+        elif (self.veldt):
+            return "veldt"
+        elif (self.reset):
+            return "reset"
+        elif (self.force):
+            return "force"
+        else:
+            "unknown"
+
+    @property
+    def log_string(self):
+        return str(
+            {
+                'class': self.__class__.__name__,
+                'id': self.id,
+                'instr_type': self.type,
+                'travel' : self.travel,
+                'threatrate' : self.threatrate if hasattr(self, 'threatrate') else None,
+                'steps' : self.steps if hasattr(self, 'steps') else None,
+                'force_threat' : self.force_threat if hasattr(self, 'force_threat') else None,
+                'event' : self.event if hasattr(self, 'event') else None,
+                'rng' : self.rng if hasattr(self, 'rng') else None,
+                'restriction' : self.restriction if hasattr(self, 'restriction') else None,
+                'restrictiontype' : self.rtype if hasattr(self, 'rtype') else None,
+                'value' : self.value if hasattr(self, 'value') else None,
+                'lete' : self.lete if hasattr(self, 'lete') else None,
+                'weight' : self.weight if hasattr(self, 'weight') else None,
+                'weightVal' : self.weightval if hasattr(self, 'weightval') else None,
+                'random' : self.random if hasattr(self, 'random') else None,
+                'fset' : self.fset.log_string if hasattr(self, 'fset') else None,
+                'veldt' : self.veldt if hasattr(self, 'veldt') else None,
+                'avoidgau' : self.avoidgau if hasattr(self, 'avoidgau') else None,
+                'seek_rage' : self.seek_rage if hasattr(self, 'seek_rage') else None,
+                'desired_formations' : self.desired_formations if hasattr(self, 'desired_formations') else None,
+                'reset' : self.reset if hasattr(self, 'reset') else None,
+                'force' : self.force if hasattr(self, 'force') else None,
+                'best_encounter' : self.best_encounter if hasattr(self, 'best_encounter') and hasattr(self, 'fset') else None,
+                'formation' : self.formation if hasattr(self, 'formation') else None,
+            }
+        )
 
     def set_lete(self):
         self.lete = True
@@ -793,53 +1060,65 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
     :return:
     """
     fringe = PriorityQueue()
+    method_logger = MethodContextLogger("encounter_search")
+    method_logger.log("Start encounter_search")
+    method_logger.log("Searching %s routes to make %s solutions anyNode=%s, maxsize=%s, Route.scriptlength=%s" % (len(routes), number, anynode, maxsize, Route.scriptlength))
     for r in routes:
+        method_logger.log("Add %s to priority queue " % r.short_string)
         fringe.put((r.heuristic, r))
 
+    method_logger.log("Initial priority queue size is %d" % fringe.qsize())
     counter = 0
     progress = 0
     highest = 0
     solutions = []
     while len(solutions) < number:
         counter += 1
-        # TODO: build a debug log so I can inspect the optimization process more
-        print("{solutions length: " + str(solutions) + ", number: " + str(number) + ", counter: " + str(counter) + ", fringe: " + str(fringe.qsize()) + ",\nqueue: " + str(fringe.queue) + "\n")
-        print("COUNTER: " + str(counter))
         p, node = fringe.get()
         highest = max(highest, node.scriptptr)
+        method_logger.route = node
+        method_logger.log("{ counter: %s, max_script_ptr: %s, total_script_length: %s, selected: %s }" % (counter, highest, Route.scriptlength, node.short_string))
+        method_logger.lqueue(node, fringe.qsize(), fringe.queue)
         if node.scriptptr == Route.scriptlength:
             if anynode or len([s for s in solutions if s.initialseed == node.initialseed]) < 2:
+                method_logger.log("Appending solution %s" % node.short_string)
                 solutions.append(node)
 
             if fringe.qsize() == 0:
+                method_logger.log("Breaking out as queue is empty")
                 break
             else:
+                method_logger.log("Continuing on as queue has size %d" % fringe.qsize())
                 continue
+
         childCount = 0
         for child in node.expand():
             childCount += 1
-            print("EXPANDED CHILD: " + str(childCount) + " " + str(child) + "\n")
+            method_logger.log("Adding expanded child %d to queue %s" % (childCount, child.log_string))
             fringe.put((child.heuristic, child))
 
-        print("EXPANDED CHILD COUNT: " + str(childCount) + "\n")
+        method_logger.log("Expanded %d nodes" % childCount)
 
         if not counter % 1000:
-            print("count mod 1000 is " + str(counter % 1000) + "\n")
+            method_logger.log("Counter value %d mod 1000 == 0 for queue size %d" % (counter, fringe.qsize()))
             size = fringe.qsize()
             nextsize = size
             while nextsize > maxsize:
                 progress += 1 # TODO: is this right? we are not guaranteed to have always processed the same amount of script items for any given node as times through the encounter_search while loop
-                print("{progress: %s, highest: %s, Route.scriptlength: %s}\n" % (progress, highest, Route.scriptlength))
+                method_logger.log("nextsize %d > maxsize %d for progress=%d, highest=%d, scriptlength=%d" % (nextsize, maxsize, progress, highest, Route.scriptlength))
                 newfringe = PriorityQueue()
                 seen_seeds = set([])
                 seen_sigs = set([])
                 toggler = [False] * 0x100 # list of 256 False items ie: [False, False, False, ...] size == 256
                 seencount = 0
                 fringesize = fringe.qsize()
+                method_logger.log("{ seen_count: %d, seend_seeds: %s, seen_signatures: %s }" % (seencount, str(seen_seeds), str(seen_sigs)))
                 while fringe.qsize() > 0:
                     p, node = fringe.get() # we know we are working in order of least cost
                     seencount += 1
                     signature = (node.initialseed, node.scriptptr)
+                    method_logger.route = node
+                    method_logger.log("Processing if node should remain in queue")
                     if (node.scriptptr >= progress or
                             node.initialseed not in seen_seeds or
                             (node.scriptptr >= progress * 0.5 and
@@ -847,6 +1126,7 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
                         newfringe.put((p, node))
                         seen_sigs.add(signature)
                         seen_seeds.add(node.initialseed)
+                        method_logger.log("Selected %s with signature=%s for new queue" % (node.short_string, signature))
                     elif (toggler[node.initialseed] is False # allows saving up to 2 of the same seed
                             or (node.scriptptr == highest
                                 and seencount < fringesize / 2)): # either this is the furthest progress in the script OR in the first half of the priority queue ie: top 50% of routes by cost
@@ -854,29 +1134,78 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
                         seen_sigs.add(signature)
                         seen_seeds.add(node.initialseed)
                         toggler[node.initialseed] = True
+                        method_logger.log(
+                            "Selected %s because %s with signature=%s for new queue" % (
+                                node.short_string,
+                                "toggler " if highest != node.scriptptr else "highest",
+                                signature))
                     else:
                         toggler[node.initialseed] = False # means the next one of that seed in the queue would be allowed?
-                        print("DELETING NODE: " + str(node) + "\n")
+                        method_logger.log("Deleting node! signature=%s, %s" % (signature, node.short_string))
                         del(node)
                 del(fringe)
                 fringe = newfringe
                 nextsize = fringe.qsize()
             if nextsize != size:
-                print("{highest: " + str(highest) + ", size: " + str(size) + ", nextsize: " + str(nextsize) + "}")
+                method_logger.log("Reduced the queue size from %d to %d" % (size, nextsize))
             else:
-                print("{highest: " + str(highest) + ", nextsize: " + str(nextsize) + "}")
+                method_logger.log("nextsize still equal to size %d" % size)
             #print(child.scriptlength - child.scriptptr)
         if fringe.qsize() == 0:
+            method_logger.log("ERROR NO VALID SOLUTIONS FOUND!")
             raise Exception("No valid solutions found.")
 
     seeds = set([])
+    select_order = 0
     while fringe.qsize() > 0:
+        select_order += 1
         p, node = fringe.get()
         seeds.add(str(node.initialseed))
+        method_logger.log("{ selected: %s, order: %d, initial_seed: %d, full: %s }" % (node.short_string, select_order, node.initialseed, node.log_string))
 
+    method_logger.log("ALL SEEDS: %s" % " ".join(sorted(seeds)))
     print("ALL SEEDS: %s" % " ".join(sorted(seeds)))
+    method_logger.log("%s NODES EXPANDED" % counter)
     print("%s NODES EXPANDED" % counter)
     return solutions
+
+
+def map_routes_to_log_strings(iter):
+    """
+    Helper method for mapping iterable of Route objects to r.log_string
+    for output to the log
+    :param iter:
+    :return:
+    """
+    result = []
+    if iter is not None:
+        for r in iter:
+            if isinstance(r, Route):
+                result.append(r.log_string)
+            elif isinstance(r, tuple):
+                result.append(r[1].log_string)
+    return result
+
+
+def route_instruction_log_string(route, instruction):
+    """
+    Helper method to get a map of the unique route id and instruction id + type
+    :param route:
+    :param instruction:
+    :return:
+    """
+    result = {}
+    if route is not None:
+        result['route_id'] = route.id
+    else:
+        result['route_id'] = None
+    if instruction is not None:
+        result['instruction_id'] = instruction.id
+        result['instruction_type'] = instruction.type
+    else:
+        result['instruction_id'] = None
+        result['instruction_type'] = None
+    return str(result)
 
 
 def format_script(fsets, formations, filename):
@@ -981,6 +1310,9 @@ def format_script(fsets, formations, filename):
 
 
 if __name__ == "__main__":
+    date = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
+    method_logger = MethodContextLogger("__main__")
+    method_logger.log("STARTING MAIN!")
     filename = argv[1]
     routefile = argv[2]
     if len(argv) >= 4:
@@ -994,12 +1326,15 @@ if __name__ == "__main__":
     monsters = monsters_from_table()
     for m in monsters:
         m.read_stats(filename)
+    method_logger.log("Loaded %s monsters from table" % len(monsters))
     formations = formations_from_rom(filename)
+    method_logger.log("Loaded: %s formations from rom" % len(formations))
     fsets = fsets_from_rom(filename, formations)
+    method_logger.log("Loaded: %s formation sets from rom" % len(fsets))
     for fset in fsets:
         fsetdict[fset.setid] = fset
     rng = get_rng_string(filename)
-
+    method_logger.log("Loaded: rng string of length %s. %s" % (len(rng), str(rng)))
     threats = [0, 0x540, 0x1080, 0x2160, 0x5555]
     #threats = [0x5555]
     #threats = [0xC0 * i for i in range(80, 160)]
@@ -1048,5 +1383,6 @@ if __name__ == "__main__":
         f.write(str(solution) + "\n\n")
         f.write("-" * 60 + "\n")
     f.close()
+    method_logger.log("Completed program")
 
 # interesting... because of the way FF6's RNG works, it's possible to "eat" an encounter by taking extra steps in a low-rate zone, shifting the RNG pointer past a dangerous value

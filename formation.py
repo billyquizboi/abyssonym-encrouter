@@ -1,6 +1,7 @@
 from utils import read_multi
 from monster import monsterdict, monsters_from_table
 from sys import argv
+import logging
 
 """
 This file reads rom data relating to formations and produces 512 formations sets. 
@@ -15,6 +16,9 @@ in the appendices.
 """
 
 BASE_COST = 10
+
+logging.basicConfig(filename="./logs/main.log", level=logging.DEBUG, format='%(asctime)s %(name)s %(levelname)s:%(message)s')
+logger = logging.getLogger(__name__)
 
 customcosts = {}
 for line in open("tables/customcosts.txt"):
@@ -217,6 +221,15 @@ class FormationSet():
         s += "PACK ID %x\n" % self.setid
         for f in self.formations:
             s += "%s\n" % str(f)
+        return s.strip()
+
+    @property
+    def log_string(self):
+        s = ""
+        s += "PACK ID %x " % self.setid
+        if self.formations:
+            for f in self.formations:
+                s += "%s, " % str(f)
         return s.strip()
 
     def read_data(self, filename):

@@ -1,4 +1,5 @@
 from utils import hex2int, read_multi, ENEMY_TABLE
+import logging
 
 """
 Looking at the location values here:
@@ -35,6 +36,9 @@ aiptr - 2 bytes each monster
 stat_order = ['speed', 'attack', 'hit%', 'evade%', 'mblock%',
               'def', 'mdef', 'mpow']
 """The first 8 bytes of a monster's data are apparently 1 byte each of these stat values in this order"""
+
+logging.basicConfig(filename="./logs/main.log", level=logging.DEBUG, format='%(asctime)s %(name)s %(levelname)s:%(message)s')
+logger = logging.getLogger(__name__)
 
 
 class MonsterBlock:
