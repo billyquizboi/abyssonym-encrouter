@@ -13,8 +13,11 @@ fsetdict = {}
 logging.basicConfig(filename="./logs/main.log", level=logging.DEBUG, format='%(asctime)s %(name)s %(levelname)s:%(message)s')
 logger = logging.getLogger(__name__)
 
-# turn this to true to allow large amounts of queue logging of some target queue items
+# turn this to true to allow large amounts of queue logging of some target queue items - will make this get set from command line arg
 ALLOW_QUEUE_LOGGING = False
+
+# turn on to produce logging output - will make this set from command line arg
+ALLOW_LOGGING = False
 
 def log_info(method_name, route, instr, line_num=None, queue_size=None, selected_node=None, queue=None, message=None):
     """
@@ -79,14 +82,16 @@ class MethodContextLogger:
         self.instr = instr
 
     def log(self, message=None):
-        line_num = currentframe().f_back.f_lineno
-        log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=None,
-                 selected_node=None, queue=None, message=message)
+        if ALLOW_LOGGING:
+            line_num = currentframe().f_back.f_lineno
+            log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=None,
+                     selected_node=None, queue=None, message=message)
 
     def lqueue(self, selected_node=None, queue_size=None, queue=None, message=None):
-        line_num = currentframe().f_back.f_lineno
-        log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=queue_size,
-                 selected_node=selected_node, queue=queue, message=message)
+        if ALLOW_LOGGING:
+            line_num = currentframe().f_back.f_lineno
+            log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=queue_size,
+                     selected_node=selected_node, queue=queue, message=message)
 
 
 def table_from_file(filename, hexify=False):
@@ -674,13 +679,11 @@ class Route():
         method_logger.log("Previous instruction %s" % instr.log_string if instr else None)
         while True:
             step += 1
-            logging.info("force_additional_encounter: step %d" % step)
             method_logger.log("Step %d" % step)
             if not done:
                 formation = self.take_a_step(instr)
                 method_logger.log("Formation %s" % formation)
             else:
-                logging.info("force_additional_encounter: DONE = True and taking a step")
                 method_logger.log("Done and taking a step")
                 self.take_a_step(instr) # this takes a step after formation has happened ( maybe this is completing a step after the battle or something? )
 
