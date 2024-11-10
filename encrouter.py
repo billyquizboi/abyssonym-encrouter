@@ -435,7 +435,7 @@ class Route():
         :return:
         """
         method_logger = MethodContextLogger("increment_battle", self, Route.script[self.scriptptr])
-        method_logger.log("Start increment_battle with {rng: %s, battlecounter: %s, battleseed}" % (rng, self.battlecounter, self.battleseed))
+        method_logger.log("Start increment_battle with {rng: %s, battlecounter: %s, battleseed: %s}" % (rng, self.battlecounter, self.battleseed))
         # I assume the battlecounter has a max size of 255 so this masking allows handles keeping battlecounter: 0 >= value <= 255
         self.battlecounter = (self.battlecounter+1) & 0xFF
         method_logger.log("Updated battlecounter to %s" % self.battlecounter)
@@ -487,11 +487,11 @@ class Route():
                     setattr(self, instr.rtype, 0)
         elif instr.travel:
             method_logger.log("Travel instruction found { veldt: %s, avoidgau: %s, steps: %s, threatrate: %s, force_threat: %s, fset: %s }" % (
-                instr.veldt,
-                instr.avoidgau,
-                instr.steps,
-                instr.threatrate,
-                instr.force_threat,
+                instr.veldt if hasattr(instr, 'veldt') else None,
+                instr.avoidgau if hasattr(instr, 'avoidgau') else None,
+                instr.steps if hasattr(instr, 'steps') else None,
+                instr.threatrate if hasattr(instr, 'threatrate') else None,
+                instr.force_threat if hasattr(instr, 'force_threat') else None,
                 instr.fset.log_string if hasattr(instr, 'fset') and instr.fset is not None else None
             ))
             formations = self.predict_encounters(instr, debug=debug)
@@ -1205,6 +1205,7 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
             nextsize = size
             while nextsize > maxsize:
                 progress += 1 # TODO: is this right? we are not guaranteed to have always processed the same amount of script items for any given node as times through the encounter_search while loop
+                print("%s/%s/%s" % (progress, highest, Route.scriptlength))
                 method_logger.log("nextsize %d > maxsize %d for progress=%d, highest=%d, scriptlength=%d" % (nextsize, maxsize, progress, highest, Route.scriptlength))
                 newfringe = PriorityQueue()
                 seen_seeds = set([])
@@ -1247,10 +1248,12 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
                 fringe = newfringe
                 nextsize = fringe.qsize()
             if nextsize != size:
-                method_logger.log("Reduced the queue size from %d to %d" % (size, nextsize))
+                print(highest, size, nextsize)
+                method_logger.log("Highest: %s. Reduced the queue size from %d to %d" % (highest, size, nextsize))
             else:
-                method_logger.log("nextsize still equal to size %d" % size)
-            #print(child.scriptlength - child.scriptptr)
+                print(highest, nextsize)
+                method_logger.log("highest %s. nextsize still equal to size %d" % (highest, size))
+            print(child.scriptlength - child.scriptptr)
         if fringe.qsize() == 0:
             method_logger.log("ERROR NO VALID SOLUTIONS FOUND!")
             raise Exception("No valid solutions found.")
