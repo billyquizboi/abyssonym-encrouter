@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 ALLOW_QUEUE_LOGGING = False
 
 # turn on to produce logging output - will make this set from command line arg
-ALLOW_LOGGING = False
+ALLOW_DEBUG_LOGGING = False
 
 def log_info(method_name, route, instr, line_num=None, queue_size=None, selected_node=None, queue=None, message=None):
     """
@@ -32,23 +32,23 @@ def log_info(method_name, route, instr, line_num=None, queue_size=None, selected
     :param message:
     :return:
     """
-    logger.info("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s" % (method_name,
-                                    line_num,
-                                    route.id if route else None,
-                                    route.initialseed if route else None,
-                                    route.cost if route else None,
-                                    route.scriptptr if route else None,
-                                    route.stepseed if route else None,
-                                    route.stepcounter if route else None,
-                                    route.rng[route.stepcounter] if (route and route.stepcounter and route.rng) else None,
-                                    route.threat if route else None,
-                                    route.overworld_threatrate if route else None,
-                                    instr.id if instr else None,
-                                    instr.type if instr else None,
-                                    instr.threatrate if (instr and hasattr(instr, 'threatrate')) else None,
-                                    queue_size,
-                                    selected_node.short_string if selected_node else None,
-                                    get_queue_other_items(selected_node, queue),
+    logger.info("%s| route: { id: %s, init_seed: %s, cost: %s, scriptptr: %s, step_seed: %s, step_counter: %s, rng: %s, threat: %s, overworld_rate: %s } | instr: { id: %s, type: %s, threat_rate: %s } | queue_size: %s | selected: %s |%s" % (
+                                    ("%s:%s" % (method_name, line_num)).ljust(30),
+                                    str(route.id).ljust(5) if route else None,
+                                    str(route.initialseed).ljust(3) if route else None,
+                                    str(round(route.cost, 2)).ljust(6) if route else None,
+                                    str(route.scriptptr).ljust(4) if route else None,
+                                    str(route.stepseed).ljust(4) if route else None,
+                                    str(route.stepcounter).ljust(4) if route else None,
+                                    str(route.rng[route.stepcounter]).ljust(4) if (route and route.stepcounter and route.rng) else None,
+                                    str(route.threat).ljust(4) if route else None,
+                                    str(route.overworld_threatrate).ljust(4) if route else None,
+                                    str(instr.id).ljust(5) if instr else str("None").ljust(5),
+                                    str(instr.type).ljust(11) if instr else str("None").ljust(11),
+                                    str(instr.threatrate).ljust(4) if (instr and hasattr(instr, 'threatrate')) else str("None").ljust(4),
+                                    str(queue_size).ljust(6) if queue_size else str("None").ljust(6),
+                                    str(selected_node.short_string).ljust(90) if selected_node else str("None").ljust(90),
+                                    # get_queue_other_items(selected_node, queue),
                                     message))
 
 def get_queue_other_items(selected_node, queue):
@@ -82,13 +82,13 @@ class MethodContextLogger:
         self.instr = instr
 
     def log(self, message=None):
-        if ALLOW_LOGGING:
+        if ALLOW_DEBUG_LOGGING:
             line_num = currentframe().f_back.f_lineno
             log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=None,
                      selected_node=None, queue=None, message=message)
 
     def lqueue(self, selected_node=None, queue_size=None, queue=None, message=None):
-        if ALLOW_LOGGING:
+        if ALLOW_DEBUG_LOGGING:
             line_num = currentframe().f_back.f_lineno
             log_info(method_name=self.method_name, route=self.route, instr=self.instr, line_num=line_num, queue_size=queue_size,
                      selected_node=selected_node, queue=queue, message=message)
@@ -245,7 +245,7 @@ class Route():
 
     @property
     def short_string(self):
-        return "(id: %s, cost: %s, script_ptr: %s, num_encounters: %s)" % (self.id, self.cost, self.scriptptr, self.num_encounters)
+        return "(id: %s, cost: %s, script_ptr: %s, num_encounters: %s)" % (self.id, round(self.cost, 2), self.scriptptr, self.num_encounters)
 
     @property
     def previous_instr(self):
@@ -574,7 +574,7 @@ class Route():
         :param debug:
         :return:
         """
-        method_logger = MethodContextLogger("predict_encuonters", self, instr)
+        method_logger = MethodContextLogger("predict_encounters", self, instr)
         method_logger.log("Start predict_encounters with { steps: %s, debug: %s, instr.steps: %s }" % (steps, debug, instr.steps if instr is not None and instr.steps is not None else None))
         # note: seed changes when RNG is called and counter is at 0xFF
         # battlecounter += 0x11
@@ -583,7 +583,7 @@ class Route():
         steps = instr.steps if steps is None else steps
         self.boundary_flag = False
         if steps and hasattr(instr, "fset"):
-            method_logger.log("Instruction has fset %s" % instr.fset)
+            method_logger.log("Instruction has fset %s" % instr.fset.log_string)
             self.travelog += "%s threat steps in encounter zone %x.\n" % (steps, instr.fset.setid)
 
         formations = []
@@ -852,6 +852,7 @@ class Route():
         Each instruction is processed according to its type.
         Returns a list of Route objects - will either contain 'self', a copy of 'self', or some
         number of copies of self route with cost modified because of resetting.
+        In usage this always returns 1 or 2 nodes
         :return:
         """
         method_logger = MethodContextLogger("expand", self, Route.script[self.scriptptr])
@@ -905,7 +906,7 @@ class Route():
                 children.append(child)
 
             distance = self.reset_value or 0
-            method_logger.log("Distince: %s" %distance)
+            method_logger.log("Distance: %s" %distance)
             if self.previous_instr.travel:
                 method_logger.log("Previous instruction was travel")
                 if (self.previous_instr.threatrate < instr.threatrate and
@@ -1148,7 +1149,6 @@ class Instruction():
     def best_encounter(self):
         return min(self.fset.formations, key=lambda f: f.cost())
 
-
 def encounter_search(routes, number=1, anynode=True, maxsize=25000):
     """
     For fixed seed value, routes will have size 1. For all seeds will have size 255.
@@ -1199,7 +1199,7 @@ def encounter_search(routes, number=1, anynode=True, maxsize=25000):
 
         method_logger.log("Expanded %d nodes" % childCount)
 
-        if not counter % 1000:
+        if not (counter % 1000):
             method_logger.log("Counter value %d mod 1000 == 0 for queue size %d" % (counter, fringe.qsize()))
             size = fringe.qsize()
             nextsize = size
@@ -1426,6 +1426,25 @@ if __name__ == "__main__":
         seed = int(argv[4])
     else:
         seed = None
+    if len(argv) >= 6:
+        print("INFO: ALLOW_DEBUG_LOGGING is currently a disabled feature. Argument argv[5] '%s' will be ignored. This is due to the size of resulting debug log files as currently implemented being estimated to exceed 10 GB." % argv[5])
+        # ALLOW_DEBUG_LOGGING = 'true' == (argv[5].lower() if argv[5] else 'false')
+        # print("ALLOW_LOGGING = %s" % ALLOW_DEBUG_LOGGING)
+        # if not ALLOW_DEBUG_LOGGING:
+        #     print("Did you mean to provide a falsey argument '%s' for ALLOW_DEBUG_LOGGING? It is false by default..." % argv[5])
+        # else:
+        #     print("WARNING: Setting ALLOW_DEBUG_LOGGING to true will make I estimate a 10-20 GB size log file at ./logs/main.log. If you need to kill the program just type ctrl + c in a bash window or whatever steps kill a program on your device ie: task manager/command prompt if needed.")
+    if len(argv) >= 7:
+        print("INFO: ALLOW_QUEUE_LOGGING is currently a disabled feature. Argument argv[6] '%s' will be ignored. This is due to the size of resulting debug log files as currently implemented being estimated to exceed 10 GB." %
+              argv[6])
+        # ALLOW_QUEUE_LOGGING = 'true' == (argv[5].lower() if argv[6] else 'false')
+        # print("ALLOW_QUEUE_LOGGING = %s" % ALLOW_QUEUE_LOGGING)
+        # if not ALLOW_QUEUE_LOGGING:
+        #     print("Did you mean to provide a falsey argument for ALLOW_QUEUE_LOGGING? It is false by default...")
+        # elif ALLOW_QUEUE_LOGGING and not ALLOW_DEBUG_LOGGING:
+        #     print("Setting ALLOW_QUEUE_LOGGING to true without ALLOW_DEBUG_LOGGING being true is noop")
+        # else:
+        #     print("WARNING: Setting ALLOW_DEBUG_LOGGING and ALLOW_QUEUE_LOGGING to true will make multi-GB log file at ./logs/main.log. If you need to kill the program just type ctrl + c in a bash window or whatever steps kill a program on your device ie: task manager/command prompt if needed.")
     monsters = monsters_from_table()
     for m in monsters:
         m.read_stats(filename)
