@@ -1,0 +1,658 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Page-1" id="51zZCJCDt76mLKS8F5TF">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-19" value="Iteration 2" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="210" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-33" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 0&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="265" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-37" value="Iteration 3" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="400" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-44" value="Iteration 1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-48" target="o2y_uzs_rTrTbRGigiPA-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-48" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="92.5" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-49" value="Add Route 0 to queue again" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="112.5" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-50" target="mFsEzYHHnM5vLVgshcpD-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-50" value="Execute script&lt;div&gt;Set route weight 1.0&lt;/div&gt;&lt;div&gt;No cost&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="103.75" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-51" target="mFsEzYHHnM5vLVgshcpD-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-51" value="Instruction 0&lt;div&gt;Set weight&lt;/div&gt;&lt;div&gt;value 1.0&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="102.5" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-52" target="mFsEzYHHnM5vLVgshcpD-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-52" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 0&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="72.5" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-55" target="mFsEzYHHnM5vLVgshcpD-48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-55" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;step counter&amp;nbsp;&lt;/div&gt;&lt;div&gt;threat 0&lt;/div&gt;&lt;div&gt;battle counter 244&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="63.75" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-65" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="23.75" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-68" target="o2y_uzs_rTrTbRGigiPA-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-68" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="285" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-72" value="Instruction 1&lt;div&gt;Event&lt;/div&gt;&lt;div&gt;Guard x2 (2)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="295" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="325.5" as="sourcePoint" />
+            <mxPoint x="190" y="325.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="mFsEzYHHnM5vLVgshcpD-68" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="325.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-75" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 1&lt;/span&gt;&lt;/div&gt;&lt;div&gt;step counter&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 244&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="256.25" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-77" target="mFsEzYHHnM5vLVgshcpD-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-77" value="Execute script&lt;div&gt;Increment battle counter&lt;/div&gt;&lt;div&gt;Add to seen formations&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="285" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-82" value="Add Route 0 to queue again" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="311.25" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-94" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 0&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="468.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o2y_uzs_rTrTbRGigiPA-83" target="mFsEzYHHnM5vLVgshcpD-97" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-96" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="488.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-97" target="mFsEzYHHnM5vLVgshcpD-101" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-97" value="Instruction 2&lt;div&gt;Event&lt;/div&gt;&lt;div&gt;Guard x2, Lobo x1 (29)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="498.75" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="529.25" as="sourcePoint" />
+            <mxPoint x="190" y="529.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="mFsEzYHHnM5vLVgshcpD-96" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="529.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-100" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;step counter&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 245&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="460" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-101" target="mFsEzYHHnM5vLVgshcpD-102" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-101" value="Execute script&lt;div&gt;Increment battle counter&lt;/div&gt;&lt;div&gt;Add to seen formations&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="482.5" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-102" value="Add Route 0 to queue again" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="508.75" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-105" value="Iteration 4" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="51" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-106" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 0&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="678.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-108" target="o2y_uzs_rTrTbRGigiPA-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-108" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="698.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-110" target="mFsEzYHHnM5vLVgshcpD-115" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-110" value="Instruction 3&lt;div&gt;Event&lt;/div&gt;&lt;div&gt;Guard x2, Vomammoth x2 (54)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="692.5" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-111" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="739.25" as="sourcePoint" />
+            <mxPoint x="190" y="739.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="mFsEzYHHnM5vLVgshcpD-108" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="739.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-113" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 3&lt;/span&gt;&lt;/div&gt;&lt;div&gt;step counter&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 246&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="670" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-114" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-115" target="mFsEzYHHnM5vLVgshcpD-116" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-115" value="Execute script&lt;div&gt;Increment battle counter&lt;/div&gt;&lt;div&gt;Add to seen formations&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="692.5" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-116" value="Add Route 0 to queue again" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="718.75" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-117" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="216.25" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-118" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="420" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-119" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="630" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-120" value="Iteration 5" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="810" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-121" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 0&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="878.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o2y_uzs_rTrTbRGigiPA-78" target="mFsEzYHHnM5vLVgshcpD-125" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-123" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="898.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-125" target="mFsEzYHHnM5vLVgshcpD-130" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-125" value="Instruction 4&lt;div&gt;XP restriction&lt;/div&gt;&lt;div&gt;value&amp;nbsp; 0&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="893.13" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="939.25" as="sourcePoint" />
+            <mxPoint x="190" y="939.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-127" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="mFsEzYHHnM5vLVgshcpD-123" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="939.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-128" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 4&lt;/span&gt;&lt;/div&gt;&lt;div&gt;step counter&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 247&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="870" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-129" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-130" target="mFsEzYHHnM5vLVgshcpD-131" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-130" value="Execute script&lt;div&gt;Set xp restriction in route to 0&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="892.51" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-131" value="Add Route 0 to queue again" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="918.76" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-132" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="830" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-133" value="Iteration 6" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1010" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-134" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 0&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1078.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-135" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o2y_uzs_rTrTbRGigiPA-76" target="mFsEzYHHnM5vLVgshcpD-138" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-136" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="1098.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-138" target="mFsEzYHHnM5vLVgshcpD-143" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-138" value="Instruction 5&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Travel 29 steps&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threatrate 64&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Pack Id 39&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="1093.76" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-139" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="1139.25" as="sourcePoint" />
+            <mxPoint x="190" y="1139.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-140" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="mFsEzYHHnM5vLVgshcpD-136" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="1139.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-141" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 5&lt;/span&gt;&lt;/div&gt;&lt;div&gt;step counter&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 247&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="1070" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-142" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-143" target="mFsEzYHHnM5vLVgshcpD-144" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-143" value="Execute script&lt;div&gt;Takes 29 steps&lt;/div&gt;&lt;div&gt;Predicts no encounters&lt;/div&gt;&lt;div&gt;Increase cost + (0.5 * num steps)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="1092.5" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-144" value="Add Route 0 to queue again" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="1118.75" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-145" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="1030" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-146" value="Iteration 7" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-147" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 14.5&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1288.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-149" target="mFsEzYHHnM5vLVgshcpD-160" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-149" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="1308.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-152" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="1349.25" as="sourcePoint" />
+            <mxPoint x="190" y="1349.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-153" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="mFsEzYHHnM5vLVgshcpD-149" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="1349.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-154" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 14.5&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 6&lt;/span&gt;&lt;/div&gt;&lt;div&gt;step counter 17&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 1856&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 247&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="1280" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-157" value="Add Route 0 to queue" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="1395" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-158" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="1240" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-197" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-160" target="mFsEzYHHnM5vLVgshcpD-195" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-160" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1370" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-184" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-163" target="mFsEzYHHnM5vLVgshcpD-183" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-163" value="Simulate force encounter&lt;div&gt;Takes 20 steps to force encounter Repo Man x1, Were-Rat x1 (2c)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="610" y="1239.38" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-166" value="Add Route 1 to queue" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="1268.75" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-167" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-168" target="mFsEzYHHnM5vLVgshcpD-163" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-168" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Create Route 1&lt;/span&gt;&lt;/div&gt;&lt;div&gt;as clone of Route 0&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1239.38" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-194" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-180" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="1285.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-180" value="Execute script&lt;div&gt;Increment battle counter&lt;/div&gt;&lt;div&gt;Add to seen formations&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="1239.38" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-185" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-183" target="mFsEzYHHnM5vLVgshcpD-180" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-183" value="Instruction 6&lt;div&gt;Event&lt;/div&gt;&lt;div&gt;Head x, Whelk x1 (1b0)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="1240" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-193" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.02;entryY=0.434;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mFsEzYHHnM5vLVgshcpD-149" target="mFsEzYHHnM5vLVgshcpD-168" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-199" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-195" target="mFsEzYHHnM5vLVgshcpD-198" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-195" value="Instruction 6&lt;div&gt;Event&lt;/div&gt;&lt;div&gt;Head x1, Whelk x1 (1b0)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="1370" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-200" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-198" target="mFsEzYHHnM5vLVgshcpD-157" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-198" value="Execute script&lt;div&gt;Increment battle counter&lt;/div&gt;&lt;div&gt;Add to seen formations&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="1368.75" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-201" value="Iteration 8" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1500" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-202" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 15&lt;/div&gt;&lt;div&gt;Route 1 cost 45.5&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1568.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-204" target="mFsEzYHHnM5vLVgshcpD-211" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-204" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="340" y="1588.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-205" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="1629.25" as="sourcePoint" />
+            <mxPoint x="190" y="1629.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-206" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="mFsEzYHHnM5vLVgshcpD-204" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="1629.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-207" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 15&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 7&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;step counter 18&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 1856&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 248&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="190" y="1560" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-208" value="Add Route 0 to queue" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="1610" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-209" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="1520" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-211" target="mFsEzYHHnM5vLVgshcpD-224">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-211" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1583.13" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-226" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-224" target="mFsEzYHHnM5vLVgshcpD-225" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-224" value="Instruction 7&lt;div&gt;Travel 1 step&lt;/div&gt;&lt;div&gt;threatrate 64&lt;/div&gt;&lt;div&gt;Pack Id 39&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="1583.13" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-228" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mFsEzYHHnM5vLVgshcpD-225" target="mFsEzYHHnM5vLVgshcpD-208" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mFsEzYHHnM5vLVgshcpD-225" value="Execute script&lt;div&gt;Takes 1 step&lt;/div&gt;&lt;div&gt;Predicts no encounters&lt;/div&gt;&lt;div&gt;Increase cost + 0.5&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="890" y="1583.13" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.017;entryY=0.432;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-72" target="mFsEzYHHnM5vLVgshcpD-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-4" value="Iteration 9" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1750" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-5" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 15&lt;/div&gt;&lt;div&gt;Route 1 cost 45.5&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1818.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-7" target="o2y_uzs_rTrTbRGigiPA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-7" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1838.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="1879.25" as="sourcePoint" />
+            <mxPoint x="190" y="1879.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="o2y_uzs_rTrTbRGigiPA-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="1879.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-10" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 15&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 8&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;step counter 18&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 1920&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 248&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1810" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-11" value="Add Route 0 to queue" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1860" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-12" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="1770" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-14" target="o2y_uzs_rTrTbRGigiPA-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-14" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1833.13" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-16" target="o2y_uzs_rTrTbRGigiPA-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-16" value="Instruction 8&lt;div&gt;Travel 16 steps&lt;/div&gt;&lt;div&gt;threatrate 112&lt;/div&gt;&lt;div&gt;Pack Id 3a&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1833.13" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-18" target="o2y_uzs_rTrTbRGigiPA-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-18" value="Execute script&lt;div&gt;Takes 16 steps&lt;/div&gt;&lt;div&gt;Predicts no encounters&lt;/div&gt;&lt;div&gt;Increase cost&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1833.13" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-19" value="Iteration 10" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1970" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-20" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 23&lt;/div&gt;&lt;div&gt;Route 1 cost 45.5&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2038.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-22" target="o2y_uzs_rTrTbRGigiPA-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-22" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2058.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="2099.25" as="sourcePoint" />
+            <mxPoint x="190" y="2099.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="o2y_uzs_rTrTbRGigiPA-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="2099.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-25" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 23&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 9&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;step counter 34&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 3712&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 248&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="190" y="2030" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-26" value="Add Route 0 to queue" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="2146.25" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-27" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="1990" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-29" target="o2y_uzs_rTrTbRGigiPA-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-29" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2120" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-31" target="o2y_uzs_rTrTbRGigiPA-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-31" value="Instruction 9&lt;div&gt;Event&lt;/div&gt;&lt;div&gt;Tritoch x1 (1bf)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="750" y="2120" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-33" target="o2y_uzs_rTrTbRGigiPA-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-33" value="Execute script&lt;div&gt;Increment battle counter&lt;/div&gt;&lt;div&gt;Add to seen formations&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2120" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-34" target="o2y_uzs_rTrTbRGigiPA-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-34" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Create Route 3&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;as clone of Route 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;( Route 2 is created internally previously to add avoided encounters to Route 1 travel log)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1950" width="100" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.43;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-22" target="o2y_uzs_rTrTbRGigiPA-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-36" target="o2y_uzs_rTrTbRGigiPA-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-36" value="Simulate force encounter&lt;div&gt;Takes 4 steps to force encounter Repo Man x1, Vaporite x1 (1a)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="610" y="1979.38" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-37" target="o2y_uzs_rTrTbRGigiPA-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-37" value="Instruction 9&lt;div&gt;Event&lt;/div&gt;&lt;div&gt;Tritoch x1 (1bf)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1979.38" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-40" target="o2y_uzs_rTrTbRGigiPA-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-40" value="Execute script&lt;div&gt;Increment battle counter&lt;/div&gt;&lt;div&gt;Add to seen formations&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1978.13" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-42" value="Add Route 3 to queue" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="2004.38" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-44" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;Route 0 cost 23&lt;/div&gt;&lt;div&gt;Route 1 cost 45.5&lt;/div&gt;&lt;div&gt;Route 3 cost 40.0&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2270" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-46" value="Iteration 11" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="51" y="2211.25" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-47" target="o2y_uzs_rTrTbRGigiPA-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-47" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2288.75" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="2329.25" as="sourcePoint" />
+            <mxPoint x="190" y="2329.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="o2y_uzs_rTrTbRGigiPA-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="2329.25" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-50" value="Route&lt;div&gt;id 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 23&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 10&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;step counter 34&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 3712&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 249&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="190" y="2260" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-51" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Route 0 selected from queue&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="2220" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-52" target="o2y_uzs_rTrTbRGigiPA-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-52" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2283.13" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-54" target="o2y_uzs_rTrTbRGigiPA-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-54" value="Instruction 10&lt;div&gt;Travel 75 steps&lt;/div&gt;&lt;div&gt;Pack Id 3a&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="750" y="2283.13" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-55" target="o2y_uzs_rTrTbRGigiPA-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-55" value="Execute script&lt;div&gt;Takes 75 steps&lt;/div&gt;&lt;div&gt;Predicts 3 encounters&lt;/div&gt;&lt;div&gt;Increase cost&lt;/div&gt;&lt;div&gt;Increase encounters&lt;/div&gt;&lt;div&gt;Formations: 1a, 1a, 47&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2263.76" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-57" value="Add Route 0 to queue" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="2308.75" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-61" value="&lt;b&gt;Priority Queue&lt;/b&gt;&lt;div&gt;&lt;font color=&quot;#ff3333&quot;&gt;Route 0 cost 108.6&lt;/font&gt;&lt;/div&gt;&lt;div&gt;Route 1 cost 45.5&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#336600&quot;&gt;&lt;b&gt;Route 3 cost 40.0&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2498.75" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-62" value="Iteration 12" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="51" y="2440" width="99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-64" target="o2y_uzs_rTrTbRGigiPA-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-64" value="Expand" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2517.5" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="2558" as="sourcePoint" />
+            <mxPoint x="190" y="2558" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="o2y_uzs_rTrTbRGigiPA-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="2558" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-67" value="Route&lt;div&gt;id 3&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;seed 244&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;cost 40.0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encounters 1&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;script pointer 10&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;step counter 38&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;threat 112&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;battle counter 250&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="190" y="2488.75" width="120" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-68" value="&lt;font color=&quot;#336600&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;u&gt;Route 3 selected from queue&lt;/u&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=center;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="2448.75" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-136" target="o2y_uzs_rTrTbRGigiPA-76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1139" as="sourcePoint" />
+            <mxPoint x="750" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-76" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1093.75" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-123" target="o2y_uzs_rTrTbRGigiPA-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="939" as="sourcePoint" />
+            <mxPoint x="750" y="939" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-78" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="892.51" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-80" target="mFsEzYHHnM5vLVgshcpD-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-80" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="692.5" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mFsEzYHHnM5vLVgshcpD-96" target="o2y_uzs_rTrTbRGigiPA-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="529" as="sourcePoint" />
+            <mxPoint x="750" y="529" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-83" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="482.5" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-85" target="mFsEzYHHnM5vLVgshcpD-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-85" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="279.38" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o2y_uzs_rTrTbRGigiPA-88" target="mFsEzYHHnM5vLVgshcpD-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-88" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Route 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="86.87" width="100" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o2y_uzs_rTrTbRGigiPA-94" value="Etc...&lt;div&gt;There are other situations also where new routes are created to simulate taking extra steps or forcing encounters but this is the general idea of how additional potential routes are created and selected for processing&lt;span style=&quot;background-color: initial;&quot;&gt;.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;There are also other instruction types ie: lete / random encounters from a formation set like the floating continent, etc...&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The idea that the &lt;b&gt;LOWEST COST &lt;/b&gt;route is &lt;b&gt;ALWAYS &lt;/b&gt;selected next from the priority queue is the core of how it optimizes for calculated cost and iterates through the possible encounter routes.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Taking an item from the queue actually removes it which is why they are added back in by the way.&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="2432.34" width="380" height="250.31" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
