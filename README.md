@@ -136,9 +136,16 @@ A description of the core objects which are used in this program. Some of these 
 
 **Instruction**: A single instruction ( can be an instruction for the program state ie: 'wt' ), an action to take, or an event/encounter in the speedrun route roadmap. Some examples: An instruction which will generate details into the report for console resets to use at the returners hideout, an instruction to enter the veldt, an instruction to travel a specific number of steps at a given threat rate, or an instruction to set the weight used when calculating formation cost.
 
-**Route**: After a list of instructions is produced, a Route object attempts to traverse / follow the instructions. It simulates the cost of forcing an encounter vs. not forcing an encounter ( depth of 1 ) when traveling and proceeds with the route object which has the lowest cost after each encounter or other event / instruction.
+**Route**: After a list of instructions is produced it is stored in a list referred to as the script which is traversed by Route objects.
+Initially, a single Route object per seed will be created. During each iteration ( until a desired number of solutions ( 20 ) is created or the queue is exhausted ) the **lowest cost Route is selected for processing**.
+During this processing, the Route object will execute the next instruction which it has not yet executed and can also be 'expanded' ie: cloned into other Route objects which simulate taking extra steps or forcing encounters.
+The Route object stores state about the total cost of the route, where in the script the route is, the number of encounters, step counter, battle counter, threat, initial seed information, step & battle seed information,
+**and importantly the travel log for that route which becomes the content of the report.txt** as well as other information which allows it to accurately predict encounters as it traverses the instruction script.
+The **report.txt** file is produced from one or more completed Route travel logs after they finish processing the script.
 
-TODO: more route documentation
+**Note that in the code, the report will contain only 1 or a maximum of 2 results *per seed* which will logically be the first two to complete the script and be selected for processing as lowest cost available at that time.**
+
+See [diagrams/encounter_search_flowchart.drawio.html/](diagrams/encounter_search_flowchart.drawio.html) which models route processing for a single seed example up to iteration 12.
 
 # Route files
 
@@ -176,7 +183,7 @@ Short for **weight**.
 
 example line: `wt  0   1.0`
 
-An instruction to set the weight used when calculating formation cost to the value in the third column. The weight is used when [calculating the cost of a formation](#calculating-formation-cost).
+An instruction to set the weight used when calculating formation cost to the value in the third column. The weight is used when [calculating the cost of a formation](#calculating-the-cost-of-a-formation).
 
 
 | column | value | type                     | description                                                                  |
@@ -321,6 +328,33 @@ Creates an instruction to move a given number of steps.
 | 2      | 70    | hexadecimal number optionally suffixed with '!'        | The threat rate used along with step count to predict encounters. The optional '!' suffix is called force_threat in the codebase and results in the overworld threat rate being used to increment the threat after a step. |
 | 3      | 17    | decimal number or two decimal numbers separated by '-' | The number of steps to take. If contains a '-' character separating two numbers, then the number of steps is first number - second number                                                                                  |
 
+# How is the route optimized
+
+### Flowchart
+
+The flowcharts in directory [diagrams](diagrams) are potentially the best resource to understand program execution flow ie: [diagrams/encounter_search_flowchart.drawio.html/](diagrams/encounter_search_flowchart.drawio.html).
+The flowchart ( provided in different file formats ) show an example execution of the first 11 or 12 iterations of the program when using a single seed '244' for instruction script [route.txt](route.txt).
+Notable events are when the route queue is first expanded beyond a single Route and when a newly created Route is first selected for processing other than the initial Route.
+Just note that this program continues for 1000s of iterations and that the Route that is chosen for processing and expansion will change many times.
+
+For example, for a single seed the program will report that 334,928 total routes were created during processing.
+
+```text
+ALL SEEDS: 
+334928 NODES EXPANDED
+```
+
+### Algorithm summary
+
+The Route searching or optimization algorithm is driven by function `encrouter.encounter_search`. It starts with 1 Route object *per seed* in a queue ordered by lowest cost first and selects the **lowest cost Route object available each iteration for processing**
+until it produces a specified maximum number of solutions ( hard-coded to 20 ) or until the queue is exhausted.
+During this processing, it 'expands' the Route in `encrouter.Route.expand` if the route's previous instruction was to travel some number of steps. 'Expand' in this context means that it clones the Route object, and simulates taking extra steps 
+or forcing an encounter with that cloned route before executing the next instruction and stores the resulting cloned Route along with the original Route ( following execution of the next instruction ) in the queue.
+Some conditions will result in the cloned Route not being considered for further processing - thus it is not added to the queue. The execution of a single instruction for a route takes place in `encrouter.Route.execute_script`.
+
+Also notable, is that the route queue is cleaned each 1000th iteration if it has exceeded a specified maximum size which is currently hard-coded to 10000.
+This cleaning process intends to retain the lowest cost Routes, Routes which are furthest along the instruction script, and representational routes of each seed while also reducing total queue size below 10000 items.
+
 # Calculating the cost of a formation
 
 This codebase calculates cost for a formation based on:
@@ -371,9 +405,7 @@ add 10 to the cost
 return the calculated cost
 ```
 
-# Reading the report files
-
-### debug strings
+# Debug strings in travel log report.txt files
 
 example line: `--- f4 f4 f4 f4 0 0`
 
@@ -384,4 +416,3 @@ Contains information about the currently selected route object's internal state 
 - battlecounter
 - threat
 - cost
-
