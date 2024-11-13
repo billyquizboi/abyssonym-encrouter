@@ -345,12 +345,11 @@ The [flowchart](diagrams/encounter_search_flowchart.drawio.svg) - provided in di
 
 The flowchart shows an example execution of the first 11 or 12 iterations of the program when using a single seed '244' for instruction script [route.txt](route.txt).
 Notable events are when the route queue is first expanded beyond a single Route and when a newly created Route is first selected for processing other than the initial Route.
-Just note that this program continues for 1000s of iterations and that the Route that is chosen for processing and expansion will change many times.
+Just note that this program continues for a large number of iterations and that the Route that is chosen for processing and expansion will change many times.
 
 For example, for a single seed the program will report that 334,928 total routes were created during processing.
 
 ```text
-ALL SEEDS: 
 334928 NODES EXPANDED
 ```
 
