@@ -154,7 +154,7 @@ The **report.txt** file is produced from one or more completed Route travel logs
 
 **Note: Currently hardcoded into the code is that the report travel log should contain only 1 or a maximum of 2 solutions *per seed*. These solutions should logically be the first two to complete the script and then be selected again for processing as lowest cost available at that time.**
 
-See [diagrams/encounter_search_flowchart.drawio.html/](diagrams/encounter_search_flowchart.drawio.html) which models route processing for a single seed example up to iteration 12.
+Optionally, see this [flowchart](diagrams/encounter_search_flowchart.drawio.svg) which models route processing for a single seed example up to iteration 12.
 
 # Route files
 
@@ -341,8 +341,9 @@ Creates an instruction to move a given number of steps.
 
 ### Flowchart
 
-The flowcharts in directory [diagrams](diagrams) are potentially the best resource to understand program execution flow ie: [diagrams/encounter_search_flowchart.drawio.html/](diagrams/encounter_search_flowchart.drawio.html).
-The flowchart ( provided in different file formats ) show an example execution of the first 11 or 12 iterations of the program when using a single seed '244' for instruction script [route.txt](route.txt).
+The [flowchart](diagrams/encounter_search_flowchart.drawio.svg) - provided in different file formats in directory [diagrams](diagrams) - is one resource for understanding program execution flow.
+
+The flowchart shows an example execution of the first 11 or 12 iterations of the program when using a single seed '244' for instruction script [route.txt](route.txt).
 Notable events are when the route queue is first expanded beyond a single Route and when a newly created Route is first selected for processing other than the initial Route.
 Just note that this program continues for 1000s of iterations and that the Route that is chosen for processing and expansion will change many times.
 
