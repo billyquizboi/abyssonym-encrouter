@@ -2,6 +2,15 @@
 
 This codebase adds documentation to an existing tool used for step and encounter routing in FFVI. Much respect to the original author.
 
+# Quick links
+
+- [How to setup and run this program](#how-to-run)
+- [General concepts present in the codebase](#general-concepts)
+- [Understanding the route instruction script files](#route-files) used by the program for example [route.txt](route.txt)
+- [Route file instruction types](#route-file-instruction-types) meaning the allowed formats for each line and details of each type of instruction line which can appear in a route.txt file and its required format
+- [How this program searches for encounter routes](#how-is-the-route-optimized)
+- [How the cost of an enemy formation is calculated](#calculating-the-cost-of-a-formation)
+
 # How to run
 
 *Note: The original encrouter appears to have run on python 2. This codebase contains modifications relative to the original which made it compatible with python 3.*
@@ -143,7 +152,7 @@ The Route object stores state about the total cost of the route, where in the sc
 **and importantly the travel log for that route which becomes the content of the report.txt** as well as other information which allows it to accurately predict encounters as it traverses the instruction script.
 The **report.txt** file is produced from one or more completed Route travel logs after they finish processing the script.
 
-**Note that in the code, the report will contain only 1 or a maximum of 2 results *per seed* which will logically be the first two to complete the script and be selected for processing as lowest cost available at that time.**
+**Note: Currently hardcoded into the code is that the report travel log should contain only 1 or a maximum of 2 solutions *per seed*. These solutions should logically be the first two to complete the script and then be selected again for processing as lowest cost available at that time.**
 
 See [diagrams/encounter_search_flowchart.drawio.html/](diagrams/encounter_search_flowchart.drawio.html) which models route processing for a single seed example up to iteration 12.
 
